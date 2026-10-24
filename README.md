@@ -16,13 +16,15 @@ The project will examine authorization, semantic deviation, approval evidence, a
 
 ## Independence and relationship to BAES
 
-This is an independent research project that may use publicly available descriptions of the Babak AI Engineering Standard (BAES) as one analytical reference. It is not a BAES layer, model, profile, policy, compliance claim, or amendment.
+This is an independent research project informed by the researcher's existing work on the Babak AI Engineering Standard (BAES). It is not a BAES layer, model, profile, policy, compliance claim, or amendment.
 
 - No BAES repository is modified by work in this repository.
-- No private BAES material is required or presumed to be available to this project.
+- Pre-existing private material may inform internal research design, but it is not part of the public research record and must not be reproduced or exposed here.
+- The public protocol, evidence packet, and findings must be independently understandable without access to private BAES material.
 - Research findings do not automatically establish that BAES is valid, invalid, novel, or superior to another approach.
 - Any future comparison with external standards will use only sources that may lawfully be accessed and quoted.
 - The project will separate observations, interpretations, limitations, and conclusions.
+- The project's confidentiality rules are defined in [Confidentiality and Publication Boundary](06-Confidentiality-and-Publication-Boundary.md).
 
 ## Initial scenario
 
@@ -30,7 +32,7 @@ A regulated financial institution migrates a legacy deposit-interest module. The
 
 The evaluation asks whether technical success and ordinary pull-request approval, without further evidence, establish authorization for the behavioral deviation.
 
-This scenario is a research case, not a claim about a real institution or production incident.
+This scenario is a research case, not a claim about a real institution or production incident. The public implementation will use real code only after the researcher has sanitized it and confirmed that it may be disclosed; otherwise, a synthetic reproduction will be used.
 
 ## Research questions
 
@@ -46,8 +48,9 @@ This scenario is a research case, not a claim about a real institution or produc
 2. Define evaluation criteria before scoring evidence.
 3. Construct controlled scenario variants that differ only in the authorization evidence available.
 4. Record evidence separately from reviewer interpretations.
-5. Evaluate technical correctness, authorization, and evidence sufficiency as distinct dimensions.
-6. Document disagreement, ambiguity, limitations, and any protocol changes.
+5. Evaluate technical correctness, intent alignment, authorization, and evidence sufficiency as distinct dimensions.
+6. Compare a conventional engineering review with a structured evaluation using task-specific distinctions informed by BAES, applying the same scenario evidence to both.
+7. Document disagreement, ambiguity, limitations, and any protocol changes.
 
 ## Scope and exclusions
 
@@ -58,6 +61,7 @@ This project does not initially aim to:
 - infer a person's intent without evidence;
 - equate passing tests with preservation of authorized behavior;
 - publish confidential, licensed, or third-party material without permission;
+- disclose or reconstruct confidential BAES Foundation material;
 - modify the BAES Foundation or any other BAES repository.
 
 ## Repository map
@@ -67,17 +71,19 @@ This project does not initially aim to:
 - [Scenario S01](03-Scenarios/S01-semantic-deviation.md)
 - [Evidence and results register](04-Evidence-and-Results/README.md)
 - [Final report template](05-Final-Report.md)
+- [Confidentiality and Publication Boundary](06-Confidentiality-and-Publication-Boundary.md)
 - [Task list](ToDo-List.md)
 
 ## Evidence and reporting principles
 
-- Preserve source material and record its provenance.
+- Preserve source material and record its provenance without publishing restricted source material.
 - Separate observed facts from interpretations and recommendations.
 - Record missing evidence explicitly; do not fill gaps with assumptions.
 - Report negative, inconclusive, and mixed results.
 - Do not use a composite score unless a justified and pre-registered method is developed.
 - Label all illustrative or synthetic scenario material as such.
 - Do not present a planned activity as a completed result.
+- Review every public artifact for confidentiality, licensing, privacy, and third-party rights before publication.
 
 ## Current status
 
