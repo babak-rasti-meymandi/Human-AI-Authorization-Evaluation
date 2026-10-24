@@ -39,6 +39,7 @@
 ## D. Evaluation and evidence
 
 - [x] Create an initial evidence register and provenance fields.
+- [x] Create a blank investigator-side C1–C20 coding worksheet; no case results have been entered.
 - [x] Draft the reviewer recording template for both review conditions.
 - [ ] Conduct a packet-consistency check across all four condition/variant cells.
 - [ ] Run a pilot review and log misunderstandings before any formal evaluation.
