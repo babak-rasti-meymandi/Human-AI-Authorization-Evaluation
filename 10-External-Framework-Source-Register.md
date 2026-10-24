@@ -1,6 +1,6 @@
 # External Framework Source Register — Initial Scope and Limits
 
-**Status:** Source inventory draft; criterion-level crosswalk not yet completed  
+**Status:** Source inventory draft; initial NIST criterion-level mapping drafted; independent verification and ISO clause-level review pending  
 **Access date:** 2026-10-24  
 **Purpose:** Establish traceable public sources before mapping scenario criteria. This register is not a finding that any framework does or does not address a criterion.
 
@@ -53,4 +53,4 @@
 
 ## Current status
 
-The public source inventory is established, but the criterion-level crosswalk has not yet been written. The next step is to retrieve the exact frozen C1–C20 criteria table and map each criterion independently to NIST AI RMF 1.0 and, only where public evidence permits, ISO/IEC 42001:2023. Until then, no comparative result is claimed.
+The public source inventory is established. A new proposed C1–C20 draft has been created because no authoritative frozen table was available, and an initial NIST AI RMF 1.0 mapping is now recorded in [the crosswalk file](11-Criterion-Crosswalk-Template.md). This mapping is a first pass and requires independent verification. ISO/IEC 42001:2023 clause-level mapping remains pending; the public preview and FDIS-era crosswalk are not treated as substitutes for complete authorized final-edition text. No comparative score or framework-superiority claim is made.
