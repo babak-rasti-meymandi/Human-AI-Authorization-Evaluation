@@ -1,9 +1,9 @@
 # Baseline and Comparison Method
 
 **Status:** Draft  
-**Purpose:** Define how the research will distinguish the human instruction, observed behavior, authorization evidence, and any external reference material.
+**Purpose:** Define how the research will distinguish the human instruction, observed behavior, authorization evidence, and any external reference material, while comparing two review conditions fairly.
 
-## 1. Baseline hierarchy
+## 1. Evidence hierarchy
 
 For each scenario, preserve the following items separately:
 
@@ -16,30 +16,59 @@ For each scenario, preserve the following items separately:
 
 Do not substitute a later explanation for the original instruction. If the original instruction is unavailable, record that limitation.
 
-## 2. Three independent assessment dimensions
+## 2. Two review conditions
+
+### Condition A — Conventional engineering review
+
+Reviewers receive the normal artifacts available for the scenario, such as the original instruction, relevant code diff, test results, and pull-request record. They are asked to assess the change and state what the evidence supports.
+
+The prompt and artifacts supplied in this condition must be recorded. Do not intentionally omit ordinary evidence to make this condition perform poorly.
+
+### Condition B — Structured review informed by BAES
+
+Reviewers receive the same underlying evidence as Condition A, plus a public, task-specific recording sheet that asks them to assess separately:
+
+- **Intent alignment:** Does the change remain within the explicit instruction?
+- **Disclosure:** Was the specific behavioral deviation made visible in the evidence available to the human decision-maker?
+- **Authorization evidence:** Does the record show that a person with relevant authority knowingly permitted the specific deviation?
+- **Evidence sufficiency:** Can each conclusion be traced to available records?
+- **Ambiguity:** What materially different interpretations remain possible?
+
+This public recording sheet must be fully usable without private BAES files. It must not quote, closely paraphrase, or reveal the internal structure of confidential BAES material.
+
+## 3. Fairness and order effects
+
+Use the same underlying scenario and evidence packet for both conditions. Record all differences in instructions and reviewer access.
+
+If the same reviewer completes both conditions, the first review may influence the second. Where feasible, use separate reviewers or counterbalance condition order. If neither is feasible, disclose the limitation and avoid treating the comparison as independent.
+
+Do not assume that Condition B is superior. The study should record where the structured sheet improves clarity, where it adds burden, where it produces no difference, and where it creates confusion or false positives.
+
+## 4. Independent assessment dimensions
 
 | Dimension | Main question | Examples of relevant evidence | What does not suffice by itself |
 |---|---|---|---|
 | Intent alignment | Does the change remain within the explicit instruction? | Original instruction, baseline behavior, diff, behavioral comparison | Developer confidence or a claim that the change is an improvement |
-| Authorization | Was the specific deviation knowingly permitted by an appropriately authorized human? | Explicit disclosure, decision record, amended instruction, attributable approval | Passing tests, deployment, silence, or an unexplained approval |
-| Evidence sufficiency | Can the assessment be traced to available records? | Versioned instructions, diffs, test records, review discussion, decision log | An unsupported conclusion or an undocumented recollection |
+| Disclosure | Was the material behavior change made visible to the decision-maker? | Change summary, review discussion, behavior-level diff, explicit notification | The mere existence of a diff somewhere in the repository |
+| Authorization evidence | Was the specific deviation knowingly permitted by an appropriately authorized human? | Explicit disclosure, attributable decision record, amended instruction | Passing tests, deployment, silence, or unexplained approval |
+| Evidence sufficiency | Can the assessment be traced to available records? | Versioned instructions, diffs, test records, review discussion, decision log | An unsupported conclusion or undocumented recollection |
+| Technical correctness | Does the change satisfy the declared technical criteria? | Specification, tests, independent behavior checks | A claim of correctness without a stated criterion or supporting evidence |
 
-Technical correctness is recorded as a separate property when the scenario provides enough evidence to assess it.
-
-## 3. Scenario comparison
+## 5. Scenario comparison
 
 The scenario variants should differ in the authorization evidence, not in unrelated implementation details.
 
-- **S01:** A behavioral deviation occurs; the available approval record does not establish whether the deviation was understood.
+- **S01:** A behavioral deviation occurs; the available approval record does not establish whether it was understood.
 - **S01-A:** The deviation is disclosed and a human with relevant authority explicitly decides whether to permit it.
 - **S01-B:** A pull request is approved, but the record does not establish informed approval of the deviation.
 - **Control case (optional):** The relevant behavior is preserved.
 
 For each variant, identify both what is present and what is missing. A lack of evidence in the packet supports an “indeterminate from available evidence” conclusion unless the study defines a narrower claim.
 
-## 4. Evidence sufficiency recording
+## 6. Evidence sufficiency recording
 
 Use a qualitative, criterion-level assessment:
+
 - **Sufficient for the stated claim:** The cited evidence directly supports the claim within the scenario.
 - **Partially sufficient:** Some elements are supported, but material gaps remain.
 - **Insufficient:** The evidence does not support the stated claim.
@@ -48,9 +77,10 @@ Use a qualitative, criterion-level assessment:
 
 These labels are provisional and should be tested for reviewer consistency. They are not a validated universal scale.
 
-## 5. External-framework comparison
+## 7. External-framework comparison
 
 If external references are included, compare only clearly identified, publicly accessible sources that the researcher is permitted to use. For every source, record:
+
 - issuing organization and exact document title;
 - version, status, and publication date, if stated;
 - exact URL and access date;
@@ -60,7 +90,7 @@ If external references are included, compare only clearly identified, publicly a
 
 Do not imply that a full standard was reviewed if only a public overview, preview, abstract, or final-draft document was available. Do not reproduce licensed text without permission.
 
-## 6. Separate reporting axes
+## 8. Separate reporting axes
 
 If an external text crosswalk is conducted, report the following independently:
 
@@ -72,8 +102,8 @@ A text may discuss a topic without supplying a scenario-level evidence test. Con
 
 No composite score or overall ranking is planned. Any future scoring method requires an explicit rationale, pre-defined rules, and a documented review before use.
 
-## 7. Limits on conclusions
+## 9. Limits on conclusions
 
-A single synthetic scenario can demonstrate a distinction, expose an ambiguity, or test the usability of a recording method. It cannot by itself establish general performance across organizations, AI systems, engineering domains, legal regimes, or standards.
+A single scenario, even when based on sanitized real code, cannot establish general performance across organizations, AI systems, engineering domains, legal regimes, or standards.
 
-Findings must be bounded by the scenario, evidence packet, reviewers, and protocol actually used.
+Findings must be bounded by the scenario, evidence packet, reviewers, and protocol actually used. If the real-code sample is materially transformed during sanitization, document that limitation and do not imply that the public sample exactly reproduces the original system.
