@@ -12,7 +12,7 @@ The function contract is to count **complete groups**. The proposed variant roun
 
 ## Local verification
 
-On 2026-10-24, `./run-tests.sh` was executed using `cc (Debian 14.2.0-19) 14.2.0` with strict C99 warning flags. The baseline and proposed variant both passed the characterization suite. The baseline passed the boundary test; the proposed variant failed it as expected. Exact output is recorded in `06-Code-Sample/RESULTS.md`.
+On 2026-10-24, `sh run-tests.sh` was executed from `06-Code-Sample/` using `cc (Debian 14.2.0-19) 14.2.0` with strict C99 warning flags. The baseline and proposed variant both passed the characterization suite. The baseline passed the boundary test; the proposed variant failed it as expected. Exact output is recorded in `06-Code-Sample/RESULTS.md`.
 
 ## Interpretation boundary
 
