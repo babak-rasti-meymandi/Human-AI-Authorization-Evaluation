@@ -48,15 +48,17 @@
 - [ ] Separate pilot observations from final findings.
 - [ ] Record false positives, missed deviations, unresolved cases, and reviewer burden where measurable.
 
-## E. Comparison
+## E. External-framework comparison
 
-- [x] Identify the official public source for NIST AI RMF 1.0 and record version/status caveats.
-- [x] Identify the official ISO/IEC 42001:2023 publication page and public preview.
+- [x] Identify official public sources for NIST AI RMF 1.0 and ISO/IEC 42001:2023.
 - [x] Record the FDIS-era NIST-to-ISO/IEC 42001 crosswalk and its limits.
-- [ ] Retrieve and verify the exact frozen S01 C1–C20 criterion wording.
+- [x] Add a C1–C20 crosswalk scaffold without inventing missing criterion wording.
+- [ ] Recover the exact frozen C1–C20 criterion wording, source, and version.
+- [ ] Verify the recovered criterion table against its source before mapping.
 - [ ] Map each criterion to NIST AI RMF 1.0 with exact public section/subcategory references.
-- [ ] Map each criterion to ISO/IEC 42001 only where public evidence permits; mark licensed-text gaps as unreviewed.
-- [ ] Report text coverage, evidence sufficiency, and ambiguity separately.
+- [ ] Map each criterion to ISO/IEC 42001 only where public evidence permits; mark licensed-text gaps as unreviewed/access-limited.
+- [ ] Conduct a second-pass check of mapping labels and citations.
+- [ ] Report text coverage, scenario evidence sufficiency, and ambiguity separately.
 - [ ] Do not create a composite score without a justified, pre-registered basis.
 
 ## F. Reporting and publication
