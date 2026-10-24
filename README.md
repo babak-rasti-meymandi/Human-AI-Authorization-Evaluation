@@ -80,6 +80,7 @@ This project does not initially aim to:
 - [Proposed C1–C20 evaluation criteria, draft v0.1](12-Proposed-Criteria-C1-C20.md)
 - [C1–C20 external framework crosswalk template](11-Criterion-Crosswalk-Template.md)
 - [Research log — C1–C20 source recovery](07-Research-Log-2026-10-24-c1-c20-source-recovery.md)
+- [Research log — proposed C1–C20 criteria](07-Research-Log-2026-10-24-proposed-c1-c20-criteria.md)
 - [Research log — synthetic C case](07-Research-Log/2026-10-24-synthetic-c-case.md)
 - [Research log — reviewer packet design review](07-Research-Log-2026-10-24-reviewer-packet-design-review.md)
 - [Final report template](05-Final-Report.md)
