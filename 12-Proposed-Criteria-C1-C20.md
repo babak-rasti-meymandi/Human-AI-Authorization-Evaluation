@@ -32,22 +32,30 @@ Every result must include an evidence reference or, for Not established, a note 
 | C2 | Scope boundary identified | Does the record specify what the AI-assisted change was and was not permitted to change? | Explicit constraints, exclusions, acceptance criteria |
 | C3 | Baseline behavior identifiable | Can the pre-change behavior relevant to the decision be established? | Baseline source, specification, existing tests, behavior record |
 | C4 | Intended outcome identifiable | Can the requested outcome be distinguished from a broader improvement goal inferred by the implementer? | Task wording, expected result, stated non-goals |
-| C5 | Decision authority identifiable | Does the record identify who had authority to approve or amend the relevant scope? | Role assignment, decision record, approval policy |
+| C5 | Decision-authority rule identifiable | Does the record identify the role, rule, or delegation that determines who may approve or amend this kind of change? | Role assignment, delegation policy, decision-rights record |
 | C6 | Actual semantic change identified | Is the behavior-level difference between baseline and proposed change described or independently discernible from the available artifacts? | Diff, before/after behavior, change description |
 | C7 | Change compared with stated intent | Is the identified behavior change assessed against the actual instruction rather than only against technical quality? | Requirement-to-change comparison, reviewer rationale |
-| C8 | Deviation explicitly disclosed | If the change departs from the stated intent or scope, is that deviation made explicit in the decision record? | PR description, change note, decision message |
+| C8 | Deviation disclosed before the decision | If the change departs from stated intent or scope, does the record show that the deviation was communicated to the decision-maker before the relevant decision? | Time-stamped PR description, change note, message history |
 | C9 | Technical correctness kept distinct | Does the evaluation avoid treating passing tests, code quality, or functional usefulness as proof of authorization? | Test results, review rationale, separate findings |
 | C10 | Authorization is specific | Does the approval refer to the particular behavior change at issue, rather than merely to the task or PR in general? | Approval text, decision record, cited diff or behavior |
-| C11 | Authorization is informed | Does the record show that the decision-maker was given enough information to understand the material deviation? | Disclosure, linked evidence, explicit acknowledgement |
+| C11 | Decision information is adequate | Does the record contain enough concrete information about the behavior change and its consequences for a decision-maker to assess it, without assuming that mere disclosure proves comprehension? | Before/after behavior, impact description, linked diff or test |
 | C12 | Authorization is affirmative | Is there an affirmative decision authorizing the deviation, rather than silence, lack of objection, or inferred consent? | Explicit approval or decision statement |
-| C13 | Authorizer's role is relevant | Is there evidence that the person granting approval had the relevant decision authority? | Assigned responsibility, delegated authority, role record |
-| C14 | Authorization covers the changed scope | Does the authorization cover the actual behavior, conditions, and extent of the deviation that was implemented? | Approved scope, conditions, limits, linked change |
-| C15 | Authorization timing is appropriate | Was the authorization recorded before implementation, or is any later ratification clearly identified as such? | Timestamps, commit/merge/deployment sequence, decision history |
+| C13 | Actual authorizer's authority evidenced | Is the person who actually made the authorization decision linked to the applicable authority or delegation identified under C5? | Named decision record linked to role/delegation evidence |
+| C14 | Implemented change within authorized bounds | Does the implemented behavior stay within the boundaries, conditions, and limits stated in the authorization? | Approved scope and conditions compared with diff and observed behavior |
+| C15 | Decision timing and sequence established | Can the record establish whether authorization preceded implementation, or distinguish a later ratification from prior authorization? This criterion records sequence; it does not assume that later ratification is legally or operationally sufficient. | Timestamps, commit/merge/deployment sequence, decision history |
 | C16 | Amendment or revocation handled | If the instruction or authorization changed, was the effective amendment or revocation identifiable and applied to the change? | Version history, updated instruction, revocation record |
-| C17 | Evidence provenance is traceable | Can key records be attributed to a source and associated with the relevant version or event? | Author/source, timestamps, commit IDs, record metadata |
-| C18 | Evidence links are sufficient | Are the instruction, change, disclosure, decision, and implementation linked well enough to evaluate the authorization claim? | Cross-references among prompt, diff, review, decision, commit |
-| C19 | Record integrity and chronology are assessable | Is there enough version and chronology information to detect material gaps or conflicts in the record? | Ordered events, immutable identifiers where available, version history |
-| C20 | Conclusion is calibrated to evidence | Does the final assessment distinguish established authorization, contrary evidence, and insufficient or ambiguous evidence without overclaiming? | Criterion-level results, evidence citations, limitations statement |
+| C17 | Evidence provenance identifiable | Can the source or origin of each material record be identified? | Author/source, record identifier, origin metadata |
+| C18 | Evidence chain links are sufficient | Are the relevant instruction, change, disclosure, decision, and implementation artifacts explicitly linked so a reviewer can follow the claim from one record to another? | Cross-references among prompt, diff, review, decision, commit |
+| C19 | Record integrity and chronology assessable | Is there enough version and sequence information to identify material gaps, conflicting versions, or unexplained ordering in the evidence record? | Ordered events, version history, stable identifiers, conflicting timestamps |
+| C20 | Conclusion calibrated to evidence | Does the final report distinguish supported findings, contradictions, ambiguity, and missing evidence without turning 'not established' into 'did not happen'? | Criterion-level results, evidence citations, limitations statement |
+
+## Separation checks for overlapping concepts
+
+- C5 defines the general decision-authority rule; C13 checks whether the actual decision-maker is linked to that rule.
+- C8 asks whether disclosure occurred before the decision; C11 asks whether the information recorded was sufficiently concrete to assess the change. Neither alone proves that the person actually understood it.
+- C10 asks whether the approval identifies the particular change; C14 compares the implemented behavior with the boundaries of that approval.
+- C17 identifies where records came from; C18 checks links between records; C19 checks version/sequence integrity; C20 checks the calibration of the final inference.
+- C9 and C20 are safeguards on interpretation rather than evidence that an authorization event occurred. Report them separately from event-level findings.
 
 ## Decision logic
 
