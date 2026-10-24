@@ -16,6 +16,7 @@
    - C17 concerns record origin; C18 concerns links among records; C19 concerns version/sequence integrity; C20 concerns calibration of the final conclusion.
 5. Added these distinctions to the criterion document and aligned the crosswalk names.
 6. Conducted an internal consistency read of the NIST table. C16 and C19 were retained as NE rather than I: system deactivation/change management and risk tracking do not establish a specific authorization amendment/revocation mechanism or an integrity-preserving authorization chronology.
+7. Aligned the status vocabulary in the research protocol and reviewer recording sheet with the proposed criteria: supported, contradicted, not established, ambiguous, and not applicable. The documents now clarify that not established is not proof that an event did not occur.
 
 ## Preliminary mapping outcome
 
