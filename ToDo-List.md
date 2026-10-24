@@ -10,6 +10,7 @@
 - [x] Add a public confidentiality and publication-boundary rule.
 - [ ] Review all public files for accidental disclosure of private or licensed material.
 - [x] Add a dated research log for the synthetic-case decision and initial test run.
+- [x] Add draft reviewer packets and investigator-only mapping; keep the investigator key out of reviewer-facing materials.
 
 ## B. Protocol
 
@@ -20,24 +21,28 @@
 - [~] Align and freeze the initial scenario wording and baseline instruction.
 - [x] Draft a repeatable reviewer recording sheet.
 - [ ] Decide whether a second reviewer can participate; do not imply independent review until it occurs.
+- [ ] Review and approve the draft pre-registration plan.
 - [ ] Record the protocol version and freeze date before formal evaluation.
 
 ## C. Scenario design
 
 - [x] Draft S01: semantic deviation in a bounded engineering change.
-- [ ] Validate that scenario variants differ only in the intended evidence or authorization condition.
-- [ ] Prepare S01-A: explicit deviation disclosure and amended authorization.
-- [ ] Prepare S01-B: approval without explicit evidence that the deviation was understood.
-- [ ] Add a no-deviation control case if useful.
+- [~] Validate that scenario variants differ only in the intended evidence or authorization condition.
+- [x] Prepare S01-A: explicit deviation disclosure and amended authorization.
+- [x] Prepare S01-B: approval without explicit evidence that the deviation was understood.
+- [ ] Add a no-deviation control case if useful; not required for the initial pilot.
 - [ ] Check that scenario wording does not predetermine the evaluation result.
 - [x] Create a minimal synthetic C implementation, characterization test, boundary test, and reproducible test runner.
 - [x] Record the initial local test outcomes and their limits.
+- [x] Decide the default reviewer-packet policy: exclude boundary-test source/result from all reviewer cells and record the rationale in the research log.
 
 ## D. Evaluation and evidence
 
 - [x] Create an initial evidence register and provenance fields.
 - [x] Draft the reviewer recording template for both review conditions.
+- [ ] Conduct a packet-consistency check across all four condition/variant cells.
 - [ ] Run a pilot review and log misunderstandings before any formal evaluation.
+- [ ] Recruit/confirm reviewers and record assignment method.
 - [ ] Record each criterion result with a specific evidence reference.
 - [ ] Record missing evidence and disagreements without resolving them by assumption.
 - [ ] Separate pilot observations from final findings.
