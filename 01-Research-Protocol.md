@@ -1,6 +1,6 @@
 # Research Protocol
 
-**Protocol version:** 0.2-draft  
+**Protocol version:** 0.3-draft  
 **Status:** Draft — not yet frozen  
 **Research domain:** Human authorization and semantic deviation in AI-assisted engineering
 
@@ -14,7 +14,7 @@ When an AI-assisted engineering change departs from a human's explicit instructi
 - What evidence shows that the responsible human was made aware of the specific deviation?
 - What distinguishes approval of an artifact from authorization of a disclosed change in behavior?
 - Which observations remain indeterminate because the available evidence is incomplete?
-- Does a structured review using task-specific distinctions informed by BAES produce different or more defensible findings than a conventional engineering review of the same evidence?
+- Does a structured review using task-specific distinctions informed by BAES produce different or more defensible findings than a conventional review of the same evidence?
 
 ## 3. Unit of analysis
 
@@ -25,7 +25,9 @@ The unit of analysis is a bounded engineering change represented by:
 4. review or approval records, if any; and
 5. a defined decision point.
 
-The intended public demonstration will originate from real code supplied and sanitized by the researcher, provided the researcher has the right to disclose it. The raw, unredacted source must not be placed in this public repository. If a safe, rights-cleared reduction is not possible, use a synthetic reproduction instead. Until the sample has been provided, reviewed, and cleared, no claim is made that a real-code case has been implemented.
+The initial public implementation is a synthetic C99 example created specifically for this repository. It does not derive from the researcher's personal source code, a production system, or a named model's output. The function contract is to count complete groups; the proposed variant instead rounds up to count groups required to accommodate all items. The code and initial local test results are in [06-Code-Sample](06-Code-Sample/README.md).
+
+This synthetic example was selected to avoid unnecessary disclosure of private code and to make the behavior reproducible. It is a constructed demonstration, not an empirical observation of a real AI system or a human review. Any later use of external code requires a separate rights and confidentiality review.
 
 ## 4. Assessment dimensions
 
@@ -33,7 +35,7 @@ Reviewers must assess these dimensions separately.
 
 ### 4.1 Technical correctness
 
-Does the implementation behave as intended by its technical specification, tests, or other declared correctness criteria?
+Does the implementation behave as intended by its declared contract, specification, tests, or other declared correctness criteria?
 
 Technical correctness alone does not establish that the change was authorized.
 
@@ -72,10 +74,10 @@ The evaluation must allow evidence to challenge these propositions. The protocol
 
 ## 6. Scenario variants
 
-- **S01 baseline:** The human instruction requires preservation of existing behavior. The AI changes a behavior and the change is approved, but the evidence does not establish whether the deviation was disclosed.
-- **S01-A explicit authorization:** The deviation is explicitly described, and an authorized human makes a traceable decision to permit it or amends the instruction.
-- **S01-B artifact approval only:** A pull request is approved, but the available record does not establish that the reviewer knew about the specific behavioral deviation.
-- **Optional control:** The implementation preserves the relevant behavior and stays within the stated instruction.
+- **S01 baseline:** The instruction requires preserving complete-group semantics. A proposed change rounds up for non-divisible quantities. The decision record leaves disclosure and authorization unresolved.
+- **S01-A explicit authorization:** The specific behavioral deviation is disclosed, and a responsible human makes a traceable decision to permit it or amends the instruction.
+- **S01-B artifact approval only:** A proposed change is approved, but the available record does not establish that the reviewer knew about the specific behavioral deviation.
+- **Optional control:** The implementation preserves the complete-group behavior and stays within the stated instruction.
 
 Variants must be checked for unintended differences. Use the smallest code and evidence packet that still demonstrates the target behavior. Public scenario wording must not expose confidential BAES text, internal definitions, or distinctive internal structures.
 
@@ -92,9 +94,9 @@ Do not publish confidential BAES clauses or internal derivations as the basis fo
 
 ## 8. Procedure
 
-1. Obtain and sanitize a code sample, or create a synthetic reproduction if safe disclosure is not possible.
-2. Record provenance, ownership/licensing checks, and the sanitization changes without retaining or publishing removed secrets in the public evidence packet.
-3. Freeze the scenario text and baseline instruction.
+1. Preserve the synthetic baseline, proposed variant, test files, and test results as versioned artifacts.
+2. Freeze the scenario instruction and public evaluation criteria before formal reviewer scoring.
+3. Prepare separate, versioned reviewer packets and record the exact materials supplied to each condition.
 4. Publish or preserve the public criteria and reviewer recording template before scoring.
 5. Provide reviewers the same underlying evidence for a given condition.
 6. Ask reviewers to record observations and cite the evidence supporting each judgment.
@@ -148,4 +150,4 @@ Do not claim certification, legal compliance, universal validity, or superiority
 
 ## 12. Protocol status
 
-This document is a draft. The formal evaluation must not be represented as complete until the scenario, criteria, comparison instructions, and recording method are reviewed and the protocol version is explicitly frozen.
+This document remains a draft. The synthetic code test is not a formal human-review evaluation. The formal evaluation must not be represented as complete until the scenario, criteria, comparison instructions, and recording method are reviewed and the protocol version is explicitly frozen.
