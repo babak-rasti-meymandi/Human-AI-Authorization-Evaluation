@@ -1,12 +1,8 @@
 # C1–C20 External Framework Crosswalk — Working Template
 
-**Status:** Scaffold only; not ready for scoring  
-**Criterion wording:** Pending recovery of the exact frozen C1–C20 source  
-**No criterion-level conclusion is made in this file.**
-
-## Why this file is intentionally incomplete
-
-The current public research repository does not contain the authoritative wording of C1–C20. A prior conversation summary indicates that a criterion-level mapping was previously discussed, but it is not a substitute for the frozen source table. To avoid silently changing the criteria, the rows below preserve only the known identifiers. Do not populate the criterion wording or make final mappings until the exact source text and version are recovered and verified.
+**Status:** Template populated with proposed criterion names; not yet mapped or ready for scoring  
+**Criterion source:** [Proposed Evaluation Criteria C1–C20, draft v0.1](12-Proposed-Criteria-C1-C20.md)  
+**Important:** This is a new proposed set, not a recovered historical or frozen version. Review and freeze the criteria before formal data collection.
 
 ## Mapping labels
 
@@ -15,37 +11,38 @@ The current public research repository does not contain the authoritative wordin
 - **NE — Not established from reviewed text:** the reviewed material does not establish coverage. This is not a claim that the complete framework lacks the concept.
 - **UL — Unreviewed / access-limited:** relevant text has not been reviewed or is not available for lawful public inspection.
 - **N/A — Not applicable:** use only with a written rationale; do not use as a substitute for missing source access.
+- **Pending:** criterion-level mapping has not yet been performed.
 
 These labels describe text-to-criterion correspondence, not scenario evidence sufficiency and not a quality score.
 
 ## Required row fields
 
-For every criterion, record: (1) exact frozen criterion wording and source/version; (2) NIST AI RMF 1.0 category/subcategory and page or section; (3) ISO/IEC 42001:2023 public evidence location, or UL where the public preview is insufficient; (4) the mapping label and concise rationale; (5) whether a secondary crosswalk was used; (6) known limitations; and (7) a second-pass verification note.
+For every criterion, record: (1) the wording and version of the proposed criterion; (2) NIST AI RMF 1.0 category/subcategory and page or section; (3) ISO/IEC 42001:2023 public evidence location, or UL where the public preview is insufficient; (4) the mapping label and concise rationale; (5) whether a secondary crosswalk was used; (6) known limitations; and (7) a second-pass verification note.
 
 ## Working matrix
 
-| ID | Exact frozen criterion wording | NIST AI RMF 1.0 reference | NIST mapping | ISO/IEC 42001:2023 public reference | ISO mapping | Limit / verification note |
+| ID | Proposed criterion | NIST AI RMF 1.0 reference | NIST mapping | ISO/IEC 42001:2023 public reference | ISO mapping | Limit / verification note |
 |---|---|---|---|---|---|---|
-| C1 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C2 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C3 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C4 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C5 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C6 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C7 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C8 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C9 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C10 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C11 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C12 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C13 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C14 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C15 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C16 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C17 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C18 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C19 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
-| C20 | Pending source recovery | — | UL | — | UL | Do not infer wording from prior summaries |
+| C1 | Intent statement identified (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C2 | Scope boundary identified (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C3 | Baseline behavior identifiable (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C4 | Intended outcome identifiable (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C5 | Decision authority identifiable (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C6 | Actual semantic change identified (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C7 | Change compared with stated intent (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C8 | Deviation explicitly disclosed (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C9 | Technical correctness kept distinct (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C10 | Authorization is specific (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C11 | Authorization is informed (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C12 | Authorization is affirmative (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C13 | Authorizer's role is relevant (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C14 | Authorization covers the changed scope (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C15 | Authorization timing is appropriate (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C16 | Amendment or revocation handled (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C17 | Evidence provenance is traceable (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C18 | Evidence links are sufficient (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C19 | Record integrity and chronology are assessable (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
+| C20 | Conclusion is calibrated to evidence (proposed draft v0.1) | — | Pending | — | UL | Map only after criterion review; cite exact public text and rationale |
 
 ## Interpretation safeguards
 
@@ -55,7 +52,8 @@ For every criterion, record: (1) exact frozen criterion wording and source/versi
 4. ISO/IEC 42001's public preview is not the complete normative text. Where the available public material cannot establish a criterion-level mapping, use UL rather than guessing.
 5. Keep **text coverage**, **scenario evidence sufficiency**, and **ambiguity** as separate axes. Do not infer that an external framework lacks an idea merely because the scenario packet lacks evidence of a specific event.
 6. Do not generate an overall score, rank, or superiority claim from this matrix.
+7. Do not imply that these proposed criteria have been validated; no formal reviewer data have been collected.
 
 ## Next gate
 
-Recover the exact frozen C1–C20 table and its version/date/source. Verify each criterion against that source before filling the wording column. Only then begin independent criterion-level mapping and second-pass review.
+Review the proposed C1–C20 set for overlap, observability, neutrality, and fit with S01-A/S01-B. Version and freeze it before formal data collection. Then map each criterion independently to NIST AI RMF 1.0 and to ISO/IEC 42001:2023 only where public evidence supports a defensible statement.
