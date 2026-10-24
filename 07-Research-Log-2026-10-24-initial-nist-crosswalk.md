@@ -15,6 +15,7 @@
    - C10 checks whether approval identifies the specific change; C14 checks whether the implementation remains within approved bounds.
    - C17 concerns record origin; C18 concerns links among records; C19 concerns version/sequence integrity; C20 concerns calibration of the final conclusion.
 5. Added these distinctions to the criterion document and aligned the crosswalk names.
+6. Conducted an internal consistency read of the NIST table. C16 and C19 were retained as NE rather than I: system deactivation/change management and risk tracking do not establish a specific authorization amendment/revocation mechanism or an integrity-preserving authorization chronology.
 
 ## Preliminary mapping outcome
 
@@ -36,7 +37,7 @@ NIST describes AI RMF Core actions as outcomes/actions rather than a mandatory c
 
 - This mapping is an initial researcher pass, not an independent verification.
 - Criterion wording is still proposed draft v0.1 and is not frozen, validated, or preregistered.
-- The NIST mappings must be checked again against the exact PDF subcategories and rationale.
+- The NIST mappings have received an internal consistency read but still require independent verification against the exact PDF subcategories and rationale.
 - ISO clause-level mapping remains pending access to sufficient authorized final-edition text or official public evidence.
 - No human reviewer data exist; no result about reviewer performance is possible.
 - No BAES repository was changed and no private BAES Foundation wording was published.
