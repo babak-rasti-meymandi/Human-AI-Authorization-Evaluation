@@ -1,6 +1,6 @@
 # Evaluating Human Authorization and Semantic Deviation in AI-Assisted Engineering
 
-**Status:** Research design in progress  
+**Status:** Research design in progress; synthetic code pilot created  
 **Repository:** Public research record  
 **Research type:** Independent, scenario-based evaluation
 
@@ -12,7 +12,7 @@ The central question is:
 
 > When an AI system changes behavior beyond the scope explicitly authorized by a human, what evidence is sufficient to establish that the deviation was knowingly authorized?
 
-The project will examine authorization, semantic deviation, approval evidence, and traceability in bounded engineering scenarios. It will distinguish technical correctness from authorization and from evidence that authorization was granted.
+The project examines authorization, semantic deviation, approval evidence, and traceability in bounded engineering scenarios. It distinguishes technical correctness from authorization and from evidence that authorization was granted.
 
 ## Independence and relationship to BAES
 
@@ -23,16 +23,16 @@ This is an independent research project informed by the researcher's existing wo
 - The public protocol, evidence packet, and findings must be independently understandable without access to private BAES material.
 - Research findings do not automatically establish that BAES is valid, invalid, novel, or superior to another approach.
 - Any future comparison with external standards will use only sources that may lawfully be accessed and quoted.
-- The project will separate observations, interpretations, limitations, and conclusions.
+- The project separates observations, interpretations, limitations, and conclusions.
 - The project's confidentiality rules are defined in [Confidentiality and Publication Boundary](06-Confidentiality-and-Publication-Boundary.md).
 
 ## Initial scenario
 
-A regulated financial institution migrates a legacy deposit-interest module. The human explicitly instructs the AI-assisted engineering team to preserve existing behavior and not correct or improve the logic. During migration, the AI changes a rare compound-interest behavior that appears defective. Tests pass, and a human approves the pull request and deployment.
+The initial implementation is a **synthetic C99 function** that counts complete groups. Its baseline uses integer division. A proposed variant rounds up to count groups needed to accommodate all items, changing the documented meaning of the function. A small characterization test suite passes for both versions; a boundary test passes for the baseline and fails for the proposed variant.
 
-The evaluation asks whether technical success and ordinary pull-request approval, without further evidence, establish authorization for the behavioral deviation.
+This is a constructed research example, not a claim about a real organization, production incident, or output from a named AI model. It was written specifically for this repository and does not use the researcher's personal source code.
 
-This scenario is a research case, not a claim about a real institution or production incident. The public implementation will use real code only after the researcher has sanitized it and confirmed that it may be disclosed; otherwise, a synthetic reproduction will be used.
+The earlier financial-software migration is a conceptual motivation only. The current public code case uses the smaller, domain-neutral example described in [Synthetic C Case](06-Code-Sample/README.md).
 
 ## Research questions
 
@@ -44,12 +44,12 @@ This scenario is a research case, not a claim about a real institution or produc
 
 ## Planned method
 
-1. Freeze the scenario and the human instructions used as the baseline.
-2. Define evaluation criteria before scoring evidence.
+1. Stabilize the synthetic baseline, proposed change, tests, and scenario instruction.
+2. Define evaluation criteria before scoring reviewer evidence.
 3. Construct controlled scenario variants that differ only in the authorization evidence available.
 4. Record evidence separately from reviewer interpretations.
 5. Evaluate technical correctness, intent alignment, authorization, and evidence sufficiency as distinct dimensions.
-6. Compare a conventional engineering review with a structured evaluation using task-specific distinctions informed by BAES, applying the same scenario evidence to both.
+6. Compare a conventional engineering review with a structured evaluation using a public, task-specific recording sheet, applying the same underlying evidence to both.
 7. Document disagreement, ambiguity, limitations, and any protocol changes.
 
 ## Scope and exclusions
@@ -69,7 +69,12 @@ This project does not initially aim to:
 - [Research protocol](01-Research-Protocol.md)
 - [Baseline and comparison method](02-Baseline-and-Comparison.md)
 - [Scenario S01](03-Scenarios/S01-semantic-deviation.md)
-- [Evidence and results register](04-Evidence-and-Results/README.md)
+- [Synthetic C case and test runner](06-Code-Sample/README.md)
+- [Initial test results](06-Code-Sample/RESULTS.md)
+- [Evidence register](04-Evidence-and-Results/evidence-register.md)
+- [Reviewer recording sheet](04-Evidence-and-Results/reviewer-recording-sheet.md)
+- [Evidence and results overview](04-Evidence-and-Results/README.md)
+- [Research log](07-Research-Log/2026-10-24-synthetic-c-case.md)
 - [Final report template](05-Final-Report.md)
 - [Confidentiality and Publication Boundary](06-Confidentiality-and-Publication-Boundary.md)
 - [Task list](ToDo-List.md)
@@ -81,10 +86,10 @@ This project does not initially aim to:
 - Record missing evidence explicitly; do not fill gaps with assumptions.
 - Report negative, inconclusive, and mixed results.
 - Do not use a composite score unless a justified and pre-registered method is developed.
-- Label all illustrative or synthetic scenario material as such.
+- Label illustrative and synthetic scenario material as such.
 - Do not present a planned activity as a completed result.
 - Review every public artifact for confidentiality, licensing, privacy, and third-party rights before publication.
 
 ## Current status
 
-The repository and initial research documents are being established. No empirical evaluation results are claimed at this stage.
+The synthetic code and local test runner have been created, and the initial test behavior has been recorded. This is a reproducibility check, not a formal human-review evaluation. No comparison between review conditions and no empirical claim about reviewer performance is made yet.
