@@ -7,8 +7,10 @@
 
 ## Command
 
+Run from `06-Code-Sample/`:
+
 ```sh
-./run-tests.sh
+sh run-tests.sh
 ```
 
 ## Observed output
