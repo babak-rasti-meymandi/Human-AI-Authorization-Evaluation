@@ -25,9 +25,9 @@ Condition A reviewers stop here. Do not complete Section 2.
 
 ## 2. Structured prompts — Condition B only
 
-For each dimension, record a status and cite evidence.
+For each dimension, record a status and cite evidence. Use **not established** when the packet lacks enough evidence to decide; this does not mean the event did not occur. Use **ambiguous** when materially different interpretations remain plausible. Use **not applicable** only with a brief rationale.
 
-| Dimension | Status (supported / contradicted / indeterminate / not applicable) | Evidence references | Rationale / ambiguity |
+| Dimension | Status (supported / contradicted / not established / ambiguous / not applicable) | Evidence references | Rationale / ambiguity |
 |---|---|---|---|
 | Technical correctness against declared contract | | | |
 | Alignment with stated intent | | | |
