@@ -50,10 +50,12 @@
 
 ## E. Comparison
 
-- [ ] Identify the exact public sources to be used for any external comparison.
-- [ ] Record source title, version/date, URL, access date, and permitted use.
-- [ ] Use only lawfully accessible public previews or final-draft material where applicable.
-- [ ] Do not reproduce licensed standards text or imply access to text not reviewed.
+- [x] Identify the official public source for NIST AI RMF 1.0 and record version/status caveats.
+- [x] Identify the official ISO/IEC 42001:2023 publication page and public preview.
+- [x] Record the FDIS-era NIST-to-ISO/IEC 42001 crosswalk and its limits.
+- [ ] Retrieve and verify the exact frozen S01 C1–C20 criterion wording.
+- [ ] Map each criterion to NIST AI RMF 1.0 with exact public section/subcategory references.
+- [ ] Map each criterion to ISO/IEC 42001 only where public evidence permits; mark licensed-text gaps as unreviewed.
 - [ ] Report text coverage, evidence sufficiency, and ambiguity separately.
 - [ ] Do not create a composite score without a justified, pre-registered basis.
 
