@@ -7,7 +7,7 @@
 |---|---|---|---|---|
 | H1 | Behavior contract in `06-Code-Sample/include/group_count.h` and this scenario | Available | Intended meaning: count complete groups; remainder is not a complete group | A formal frozen scenario instruction is still required |
 | B01 | `06-Code-Sample/baseline/group_count.c` | Available | Baseline implementation | Synthetic example only |
-| D01 | Difference between baseline and `variants/ai-proposed/group_count.c` | Available | The proposed calculation rounds up when a remainder exists | Not output from a named model or a production incident |
+| D01 | Difference between baseline and `06-Code-Sample/variants/proposed-change/group_count.c` | Available | The proposed calculation rounds up when a remainder exists | Constructed change, not output from a named model or a production incident |
 | T01 | `06-Code-Sample/tests/test_characterization.c` | Available | Common cases pass for both implementations | Does not test non-divisible positive quantities |
 | T02 | `06-Code-Sample/tests/test_boundary.c` | Available | Boundary expectation for complete-group semantics | One boundary case is not a complete test suite |
 | R01 | `06-Code-Sample/RESULTS.md` | Available | Local compiler and observed test outcomes | Not an independent reviewer record |
