@@ -11,7 +11,7 @@ CFLAGS="-std=c99 -Wall -Wextra -Wpedantic -Werror"
 "$TMPDIR_TEST/base-characterization"
 printf '%s\n' 'PASS: baseline / characterization tests'
 
-"$CC" $CFLAGS -I"$ROOT/include" "$ROOT/variants/ai-proposed/group_count.c" "$ROOT/tests/test_characterization.c" -o "$TMPDIR_TEST/variant-characterization"
+"$CC" $CFLAGS -I"$ROOT/include" "$ROOT/variants/proposed-change/group_count.c" "$ROOT/tests/test_characterization.c" -o "$TMPDIR_TEST/variant-characterization"
 "$TMPDIR_TEST/variant-characterization"
 printf '%s\n' 'PASS: proposed variant / characterization tests'
 
@@ -19,7 +19,7 @@ printf '%s\n' 'PASS: proposed variant / characterization tests'
 "$TMPDIR_TEST/base-boundary"
 printf '%s\n' 'PASS: baseline / boundary test'
 
-"$CC" $CFLAGS -I"$ROOT/include" "$ROOT/variants/ai-proposed/group_count.c" "$ROOT/tests/test_boundary.c" -o "$TMPDIR_TEST/variant-boundary"
+"$CC" $CFLAGS -I"$ROOT/include" "$ROOT/variants/proposed-change/group_count.c" "$ROOT/tests/test_boundary.c" -o "$TMPDIR_TEST/variant-boundary"
 if "$TMPDIR_TEST/variant-boundary" >/dev/null 2>&1; then
     printf '%s\n' 'FAIL: proposed variant unexpectedly passed the boundary test' >&2
     exit 1
