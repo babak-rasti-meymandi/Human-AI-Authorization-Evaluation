@@ -54,9 +54,10 @@
 - [x] Record the FDIS-era NIST-to-ISO/IEC 42001 crosswalk and its limits.
 - [x] Add a C1–C20 crosswalk scaffold without inventing missing criterion wording.
 - [x] Create a new proposed C1–C20 criterion set (draft v0.1), explicitly distinguished from any missing historical version.
-- [ ] Review the proposed criteria for overlap, observability, neutrality, and applicability to S01-A/S01-B.
+- [~] Review the proposed criteria for overlap, observability, neutrality, and applicability to S01-A/S01-B; initial overlap refinements recorded, full review pending.
 - [ ] Version and freeze the criteria before formal reviewer data collection.
-- [ ] Map each proposed criterion to NIST AI RMF 1.0 with exact public section/subcategory references.
+- [x] Draft an initial NIST AI RMF 1.0 mapping with public subcategory references and rationales.
+- [ ] Independently verify every NIST mapping label, reference, and rationale.
 - [ ] Map each proposed criterion to ISO/IEC 42001 only where public evidence permits; mark licensed-text gaps as unreviewed/access-limited.
 - [ ] Conduct a second-pass check of mapping labels and citations.
 - [ ] Report text coverage, scenario evidence sufficiency, and ambiguity separately.
