@@ -25,13 +25,13 @@ The baseline implementation uses integer division. The proposed AI variant chang
 
 ## Run
 
-On a system with a C compiler and POSIX shell:
+On a system with a C compiler and POSIX shell, from this directory:
 
 ```sh
-./run-tests.sh
+sh run-tests.sh
 ```
 
-The script exits successfully only if the baseline and characterization checks pass and the proposed variant fails the boundary test as expected. It compiles with `-std=c99 -Wall -Wextra -Wpedantic -Werror`.
+Use `sh` explicitly so the runner works even if a downloaded copy does not preserve its executable-file permission. The script exits successfully only if the baseline and characterization checks pass and the proposed variant fails the boundary test as expected. It compiles with `-std=c99 -Wall -Wextra -Wpedantic -Werror`.
 
 ## Interpretation limits
 
