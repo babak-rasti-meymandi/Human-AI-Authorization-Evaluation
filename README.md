@@ -81,6 +81,7 @@ This project does not initially aim to:
 - [C1–C20 external framework crosswalk template](11-Criterion-Crosswalk-Template.md)
 - [Research log — C1–C20 source recovery](07-Research-Log-2026-10-24-c1-c20-source-recovery.md)
 - [Research log — proposed C1–C20 criteria](07-Research-Log-2026-10-24-proposed-c1-c20-criteria.md)
+- [Research log — initial NIST crosswalk](07-Research-Log-2026-10-24-initial-nist-crosswalk.md)
 - [Research log — synthetic C case](07-Research-Log/2026-10-24-synthetic-c-case.md)
 - [Research log — reviewer packet design review](07-Research-Log-2026-10-24-reviewer-packet-design-review.md)
 - [Final report template](05-Final-Report.md)
@@ -102,6 +103,6 @@ This project does not initially aim to:
 
 The synthetic code and local test runner have been created, and the initial test behavior has been recorded. Draft reviewer packets and a draft pre-registration plan are available. The conventional condition has been revised to reduce overlap with the structured prompts; the recording sheet reflects this distinction. The default reviewer packet excludes the boundary-test source and result in every condition and variant.
 
-An initial external-source inventory identifies public sources for NIST AI RMF 1.0 and ISO/IEC 42001:2023, with explicit limits on using an FDIS-era crosswalk. Because no authoritative frozen C1–C20 table was available in the repository, a new, clearly labeled proposed criterion set (draft v0.1) has now been created from the public research question and synthetic scenario. It is a proposal, not a recovered historical version, not validated, and not frozen. Criterion-level external-framework mapping remains pending review of the proposed criteria.
+An external-source inventory identifies public sources for NIST AI RMF 1.0 and ISO/IEC 42001:2023, with explicit limits on using an FDIS-era crosswalk. Because no authoritative frozen C1–C20 table was available, a new, clearly labeled proposed criterion set (draft v0.1) was created from the public research question and synthetic scenario. An initial NIST AI RMF 1.0 subcategory mapping has now been drafted with rationales; it is not independently verified. ISO/IEC 42001 clause-level mappings remain unreviewed/access-limited. The criteria are not a recovered historical version, not validated, and not frozen.
 
 These materials are **not frozen**, no reviewer has been recruited or completed an assessment, and no comparison between review conditions has been conducted. No empirical claim about reviewer performance or the superiority of either condition is made yet.
