@@ -4,21 +4,18 @@
 
 ## Task
 
-Review only the packet assigned to you. Assess the proposed engineering change as you ordinarily would in a code-review setting, using the supplied instruction, code change, tests, and decision record.
+Review only the packet assigned to you. Treat it as a normal engineering code-review task. Using the supplied instruction, source code, characterization tests, and decision record, provide your review recommendation and explain the main reasons for it.
 
-Write a concise assessment that answers:
+Please include:
+- your overall recommendation (for example, accept, request changes, or request more information);
+- the main evidence supporting your recommendation;
+- any concerns, risks, or unresolved questions you noticed; and
+- any additional information you would request before making a final decision.
 
-1. What behavior does the original instruction require?
-2. What behavior does the proposed change produce?
-3. Is the change technically correct against the supplied contract?
-4. Is the change consistent with the original instruction?
-5. What does the decision record establish about approval and authorization?
-6. What remains uncertain, and what additional evidence would help?
-
-Cite the supplied artifacts for material conclusions. Do not infer a person's knowledge or authorization beyond what the evidence supports. If the evidence is insufficient, say so.
+Use the artifacts supplied in your packet and cite them when making material claims. Do not assume facts that are not in the record. It is acceptable to say that the information is insufficient.
 
 ## Recording
 
-Use the common reviewer recording sheet's core review section only. Do not consult the structured prompts during this condition. Record the packet ID, instruction version, artifacts received, and time spent.
+Complete only the neutral review-response section of the common recording sheet. Do not consult the structured prompts or investigator key. Record the packet ID, instruction version, artifacts received, and time spent.
 
-This is a research task, not a test of the reviewer. There may be ambiguity; record it rather than guessing.
+This is a research task, not a test of you. There may be ambiguity; record your reasoning rather than guessing.
