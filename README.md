@@ -74,7 +74,10 @@ This project does not initially aim to:
 - [Evidence register](04-Evidence-and-Results/evidence-register.md)
 - [Reviewer recording sheet](04-Evidence-and-Results/reviewer-recording-sheet.md)
 - [Evidence and results overview](04-Evidence-and-Results/README.md)
-- [Research log](07-Research-Log/2026-10-24-synthetic-c-case.md)
+- [Reviewer packet preparation guide](08-Reviewer-Packets/README.md)
+- [Draft pre-registration plan](09-Pre-Registration-Plan.md)
+- [Research log — synthetic C case](07-Research-Log/2026-10-24-synthetic-c-case.md)
+- [Research log — reviewer packet design review](07-Research-Log-2026-10-24-reviewer-packet-design-review.md)
 - [Final report template](05-Final-Report.md)
 - [Confidentiality and Publication Boundary](06-Confidentiality-and-Publication-Boundary.md)
 - [Task list](ToDo-List.md)
@@ -92,4 +95,6 @@ This project does not initially aim to:
 
 ## Current status
 
-The synthetic code and local test runner have been created, and the initial test behavior has been recorded. This is a reproducibility check, not a formal human-review evaluation. No comparison between review conditions and no empirical claim about reviewer performance is made yet.
+The synthetic code and local test runner have been created, and the initial test behavior has been recorded. Draft reviewer packets and a draft pre-registration plan are now available. The conventional condition has been revised to reduce overlap with the structured prompts; the recording sheet reflects this distinction. The default reviewer packet excludes the boundary-test source and result in every condition and variant.
+
+These materials are **not frozen**, no reviewer has been recruited or completed an assessment, and no comparison between review conditions has been conducted. No empirical claim about reviewer performance or the superiority of either condition is made yet.
