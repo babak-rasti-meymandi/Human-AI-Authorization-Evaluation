@@ -112,12 +112,13 @@ For each criterion, record:
 - evidence reference(s);
 - observed fact;
 - reviewer interpretation;
-- status: supported, contradicted, indeterminate, or not applicable;
+- status: supported, contradicted, not established, ambiguous, or not applicable;
+- evidence gap or competing interpretation, where relevant.
 - confidence and rationale, if confidence is collected;
 - missing evidence or ambiguity;
 - review condition, reviewer identifier, and protocol version.
 
-These labels are descriptive recording categories, not a validated measurement scale.
+Use **not established** when the packet lacks enough evidence to decide; it does not mean the event did not occur. Use **ambiguous** when the available evidence supports materially different interpretations that cannot be resolved from the packet. Use **not applicable** only with a case-specific rationale. These labels are descriptive recording categories, not a validated measurement scale.
 
 ## 10. Bias, validity, and confidentiality controls
 
