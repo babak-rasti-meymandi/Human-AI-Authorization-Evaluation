@@ -9,21 +9,21 @@
 
 ## Instructions
 
-Use only the artifacts provided in your assigned packet. Do not infer a person's knowledge, intention, or authorization from the intended lesson of the scenario. Cite the artifact and the relevant detail for every material conclusion. If evidence is insufficient, record the uncertainty rather than guessing.
+Use only the artifacts provided in your assigned packet. Do not infer a person's knowledge, intention, or authorization beyond what the supplied record supports. Cite the artifact and relevant detail for material conclusions. If evidence is insufficient, record the uncertainty rather than guessing.
 
-For Condition A, answer the core questions without consulting the structured prompts in Section 2. For Condition B, complete both the core questions and the structured prompts. Record the exact packet and instructions supplied to each reviewer.
+For Condition A, complete Section 1 only. For Condition B, complete Section 1 and Section 2. Do not consult another packet or the investigator key. Record the exact packet and instructions supplied to each reviewer.
 
-## 1. Core review
+## 1. Neutral review response — both conditions
 
-1. What behavior does the original instruction require?
-2. What behavior does the proposed change produce?
-3. Does the proposed change depart from the instruction? Why?
-4. What evidence supports your conclusion about technical behavior?
-5. What does the human decision/approval record actually establish?
-6. Is there evidence that a person with relevant authority knowingly permitted this specific deviation?
-7. What remains uncertain, and what additional evidence would resolve it?
+1. Overall recommendation (accept / request changes / request more information / other):
+2. Main rationale, citing the supplied evidence:
+3. Concerns, risks, or unresolved questions:
+4. Additional information you would request before making a final decision:
+5. Approximate time spent (if collected):
 
-## 2. Structured prompts (Condition B)
+Condition A reviewers stop here. Do not complete Section 2.
+
+## 2. Structured prompts — Condition B only
 
 For each dimension, record a status and cite evidence.
 
@@ -36,19 +36,18 @@ For each dimension, record a status and cite evidence.
 | Evidence sufficiency | | | |
 | Material alternative interpretations | | | |
 
-## 3. Confidence and burden
-
-- Confidence in the main conclusion (if collected):  
-- What was difficult or ambiguous?  
-- Approximate time spent:  
-- Did any prompt create confusion or encourage an unsupported inference?  
+Additional prompts:
+- What does the decision record establish, and what does it leave unresolved?
+- Did any prompt create confusion or encourage an unsupported inference?
 - What evidence, if any, did you wish you had?
+- Confidence in the main conclusion (if collected):
 
-## 4. Researcher coding (complete after reviewer submission)
+## 3. Researcher coding — complete only after reviewer submission
 
 Do not overwrite the reviewer's original words. Record any researcher coding separately and preserve disagreement.
 
 - Researcher interpretation:
+- Evidence in the response supporting the code:
 - Disagreement with reviewer:
 - Reason and evidence:
 - Follow-up required:
