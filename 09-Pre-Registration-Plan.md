@@ -3,7 +3,8 @@
 **Status:** Draft for review; not registered or frozen  
 **Protocol basis:** Research Protocol 0.3-draft  
 **Study type:** Small, exploratory, scenario-based reviewer study  
-**No data collection has begun.**
+**No data collection has begun.**  
+**Integrity gate:** The current public S01 case is exploratory only; a held-out scenario is required for confirmatory data collection.
 
 ## 1. Purpose
 
@@ -36,12 +37,18 @@ These numbers are practical targets, not a statistical power calculation. The st
 
 ## 4. Materials and fairness controls
 
+**Scenario eligibility:** S01 and its boundary-test outcome are publicly described in the repository. They may be used to test packet clarity or delivery, but responses to this public case must not be represented as blinded confirmatory evidence. The confirmatory study must use a new, held-out scenario not published or shown to prospective reviewers. Keep its concealed test/outcome key and investigator coding in access-controlled storage outside this public repository. Do not store concealed materials in a public folder, even if labeled investigator-only.
+
 - Use the same instruction, baseline source, proposed source, declaration/contract, and characterization-test evidence in all four cells.
 - Change only the constructed decision record between S01-A and S01-B.
 - For the default study packet, do not include the boundary-test source or result in any cell. The reviewer may inspect the supplied code and identify the need for further testing.
 - Condition A receives a neutral, conventional review request. It must not be explicitly prompted with the study's authorization categories.
 - Condition B receives the same underlying evidence and neutral task, plus the public structured recording prompts.
 - Do not send the investigator key, alternate variant, task list, research log, or other investigator-facing material to reviewers.
+- Provide all operational instructions and scoring criteria required for a fair assessment; withhold only pre-specified investigator-only keys and concealed outcomes not included in the assigned evidence.
+- After submission, ask reviewers whether they had prior exposure to the scenario or related materials, saw another packet, or received unplanned information. Record responses without collecting unrelated personal information.
+- Apply a pre-specified exposure-handling rule before interpreting whether the substantive answer matches the expected distinction. Exposure does not automatically invalidate a response, and no reported exposure does not prove absence of contamination.
+- Keep pilot responses separate from confirmatory responses; never silently pool them.
 - Give each reviewer a packet ID and record the exact artifact versions, condition, variant, date, and any clarification provided.
 - Do not tell reviewers which answer is expected. Explain that this is a research task and that uncertainty is acceptable.
 
@@ -83,6 +90,8 @@ Record any clarification, missing file, changed prompt, packet mismatch, or othe
 
 ## 8. Confidentiality and publication
 
+The investigator-facing public repository is not a blinded packet. Public files may persist through history, forks, caches, or copies; deleting or renaming a file does not restore blinding. Follow the [Reviewer Blinding and Data Integrity Plan](14-Reviewer-Blinding-and-Data-Integrity-Plan.md). The plan is a safeguard, not proof that blinding has been achieved.
+
 Use only the public synthetic code and constructed decision records. Do not disclose private BAES materials, personal code, reviewer identities, or confidential correspondence. Obtain appropriate permission before publishing identifiable reviewer information or verbatim comments. Report reviewer roles at an appropriately broad level.
 
 ## 9. Freeze checklist
@@ -96,8 +105,11 @@ Before recruiting reviewers or collecting formal responses:
 - [ ] Confirm that technical evidence is identical across all four cells.
 - [ ] Confirm the boundary-test result is excluded from every reviewer packet.
 - [ ] Prepare one clean packet per cell and verify blinding materials.
+- [ ] Create and verify a genuinely held-out confirmatory scenario; confirm its concealed key is outside the public repository and access-controlled.
+- [ ] Freeze the prior-exposure question and response-handling rule before data collection.
+- [ ] Define which pilot outputs, if any, are retained for usability analysis and confirm that they are excluded from confirmatory analysis.
 - [ ] Decide the assignment procedure and record it.
 - [ ] Record the frozen commit SHA and freeze date.
 - [ ] Complete a confidentiality and licensing review.
 
-Until this checklist is complete and the version is explicitly frozen, this document remains a plan, not a pre-registered or completed study.
+Until this checklist is complete and the version is explicitly frozen, this document remains a plan, not a pre-registered or completed study. In particular, no confirmatory reviewer recruitment or data collection should begin while the only scenario is the publicly documented S01 case.
