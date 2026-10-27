@@ -96,7 +96,7 @@ Do not publish confidential BAES clauses or internal derivations as the basis fo
 
 1. Preserve the synthetic baseline, proposed variant, test files, and test results as versioned artifacts.
 2. Freeze the scenario instruction and public evaluation criteria before formal reviewer scoring.
-3. Prepare separate, versioned reviewer packets and record the exact materials supplied to each condition.
+3. Prepare separate, versioned reviewer packets and record the exact materials supplied to each condition. The existing public S01 case may be used for exploratory packet-usability work only; it must not be treated as a blinded confirmatory test because its boundary-test result is public.
 4. Publish or preserve the public criteria and reviewer recording template before scoring.
 5. Provide reviewers the same underlying evidence for a given condition.
 6. Ask reviewers to record observations and cite the evidence supporting each judgment.
@@ -134,7 +134,17 @@ Use **not established** when the packet lacks enough evidence to decide; it does
 - Ensure the public protocol and evidence packet are usable without access to private BAES material.
 - The researcher makes the final release decision; AI-assisted confidentiality review is not a guarantee.
 
-## 11. Reporting
+## 11. Blinding and data integrity
+
+The investigator-facing public repository is not itself a blinded reviewer packet. Public scenario details, test outcomes, repository history, forks, or copies may be discoverable by prospective reviewers. Removing or renaming a public file cannot be assumed to restore blinding.
+
+The existing public S01 case is a demonstration and may support an exploratory usability pilot, but responses to it must not be presented as blinded confirmatory evidence. A confirmatory evaluation requires a new held-out scenario that has not been published or shown to prospective reviewers. Keep its concealed test/outcome key, alternate variants, and investigator coding in access-controlled storage outside this public repository. Do not place such material in a public folder labeled investigator-only.
+
+Provide reviewers all operational instructions and scoring criteria needed to perform the task fairly. Withhold only pre-specified investigator-only keys, alternate packets, and concealed outcomes that are not part of the assigned evidence. Document any intentionally withheld evidence in advance and apply the rule consistently. Ask reviewers about prior exposure after they submit their responses; record reported exposure and packet deviations under a pre-specified handling rule. Do not infer contamination solely from an unexpected answer or assume that no contamination occurred merely because none was reported.
+
+Do not begin confirmatory data collection until the held-out scenario, controlled storage, packet versions, coding guide, exposure rule, and protocol are frozen. Keep pilot responses separate from confirmatory responses. See the [Reviewer Blinding and Data Integrity Plan](14-Reviewer-Blinding-and-Data-Integrity-Plan.md) for operational controls.
+
+## 12. Reporting
 
 Report:
 - scenario and protocol versions;
@@ -149,6 +159,6 @@ Report:
 
 Do not claim certification, legal compliance, universal validity, or superiority over other standards based on this scenario alone.
 
-## 12. Protocol status
+## 13. Protocol status
 
-This document remains a draft. The synthetic code test is not a formal human-review evaluation. The formal evaluation must not be represented as complete until the scenario, criteria, comparison instructions, and recording method are reviewed and the protocol version is explicitly frozen.
+This document remains a draft. The synthetic code test is not a formal human-review evaluation. The existing public S01 case is not eligible as a blinded confirmatory test. A new held-out scenario and controlled storage for concealed materials are outstanding prerequisites. The formal evaluation must not begin until the scenario, criteria, comparison instructions, recording method, blinding controls, and exposure-handling rule are reviewed and the protocol version is explicitly frozen.
