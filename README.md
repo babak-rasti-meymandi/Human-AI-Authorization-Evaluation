@@ -87,6 +87,7 @@ This project does not initially aim to:
 - [Research log — reviewer packet design review](07-Research-Log-2026-10-24-reviewer-packet-design-review.md)
 - [Final report template](05-Final-Report.md)
 - [Confidentiality and Publication Boundary](06-Confidentiality-and-Publication-Boundary.md)
+- [Reviewer Blinding and Data Integrity Plan](14-Reviewer-Blinding-and-Data-Integrity-Plan.md)
 - [Task list](ToDo-List.md)
 
 ## Evidence and reporting principles
