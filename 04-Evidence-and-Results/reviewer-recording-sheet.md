@@ -2,6 +2,7 @@
 
 **Status:** Draft template; not yet frozen for formal evaluation  
 **Scenario/version:**  
+**Packet ID/version:**  
 **Review condition:** A — Conventional / B — Structured  
 **Reviewer code:**  
 **Date:**  
@@ -19,7 +20,7 @@ For Condition A, complete Section 1 only. For Condition B, complete Section 1 an
 2. Main rationale, citing the supplied evidence:
 3. Concerns, risks, or unresolved questions:
 4. Additional information you would request before making a final decision:
-5. Approximate time spent (if collected):
+5. Approximate time spent (optional):
 
 Condition A reviewers stop here. Do not complete Section 2.
 
@@ -29,18 +30,19 @@ For each dimension, record a status and cite evidence. Use **not established** w
 
 | Dimension | Status (supported / contradicted / not established / ambiguous / not applicable) | Evidence references | Rationale / ambiguity |
 |---|---|---|---|
-| Technical correctness against declared contract | | | |
-| Alignment with stated intent | | | |
-| Specific deviation disclosed to decision-maker | | | |
-| Traceable decision by person with relevant authority | | | |
-| Evidence sufficiency | | | |
-| Material alternative interpretations | | | |
+| Implementation behavior and supplied test evidence | | | |
+| Alignment with the original instruction | | | |
+| Specific deviation disclosed to the decision-maker | | | |
+| Traceable decision by a person with relevant authority | | | |
+| Evidence sufficiency for the main conclusion | | | |
+| Material alternative interpretations or missing evidence | | | |
 
 Additional prompts:
 - What does the decision record establish, and what does it leave unresolved?
+- What do the supplied tests establish, and what do they leave unresolved?
+- What would you recommend next, if anything?
 - Did any prompt create confusion or encourage an unsupported inference?
-- What evidence, if any, did you wish you had?
-- Confidence in the main conclusion (if collected):
+- Confidence in the main conclusion (optional):
 
 ## 3. Researcher coding — complete only after reviewer submission
 
@@ -52,4 +54,4 @@ Do not overwrite the reviewer's original words. Record any researcher coding sep
 - Reason and evidence:
 - Follow-up required:
 
-**Caution:** This sheet is a draft instrument, not a validated scale. A completed sheet is evidence of one reviewer's assessment, not proof that the assessment is correct.
+**Caution:** This sheet is a draft instrument, not a validated scale. A completed sheet is evidence of one reviewer's assessment, not proof that the assessment is correct. The public template does not include any held-out scenario details or investigator key.
