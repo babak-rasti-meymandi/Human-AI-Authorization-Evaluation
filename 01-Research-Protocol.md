@@ -75,7 +75,7 @@ The planned held-out study uses HDA-01, a synthetic engineering scenario maintai
 | B-R1 | Structured review | Explicit, traceable decision record |
 | B-R2 | Structured review | Artifact approval record; specific informed authorization unresolved from the supplied record |
 
-The conventional condition receives the common evidence and a neutral review request. The structured condition receives the same underlying evidence plus a public task-specific recording sheet that separates implementation behavior and test evidence, alignment with stated intent, disclosure, traceable decision authority, evidence sufficiency, and alternative interpretations.
+The conventional condition receives the common evidence and a neutral review request. The structured condition receives the same underlying evidence and the same neutral response fields, plus the six task-specific recording prompts reproduced in its assigned packet. The public reviewer recording sheet documents these dimensions; do not attach it as a second response form when the structured prompts are already embedded in the packet, because that would duplicate the questions.
 
 The two variants must differ only in the pre-specified decision-record evidence. All other underlying scenario evidence must be equivalent. Each reviewer is assigned one packet only; they must not see other conditions or variants before submitting their response. Record the assignment method and any deviations. The design is exploratory and is not powered to establish population-wide effects.
 
