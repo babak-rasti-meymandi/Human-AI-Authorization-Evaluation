@@ -2,7 +2,7 @@
 
 **Status:** Working plan; not frozen or preregistered  
 **Applies to:** Public research materials, reviewer packets, pilot work, and any future confirmatory evaluation  
-**Current decision:** The existing public S01 case is not eligible to serve as a blinded confirmatory test.
+**Current decision:** Public S01 is not eligible to serve as a blinded confirmatory test. HDA-01 has been prepared privately but remains a draft.
 
 ## 1. Purpose
 
@@ -34,21 +34,20 @@ Therefore:
 - Preserve the existing record transparently; do not rewrite history to conceal that the test outcome was public.
 - If S01 is used to test instructions, packet delivery, or recording-sheet usability, label that work as a pilot and exclude those responses from the confirmatory analysis.
 
-## 4. Confirmatory evaluation requires a held-out scenario
+## 4. Held-out scenario and controlled storage
 
-Before recruiting reviewers for a confirmatory study, prepare a new scenario that has not been published or shown to prospective reviewers. It should test the same research question without merely changing names or superficial details in S01.
+A separate synthetic held-out scenario, HDA-01, has been prepared in the private research repository. It is independent of the public S01 demonstration and is not derived from private BAES material or a production system. However, HDA-01, its four packet templates, expected distinctions, and coding guide are still drafts; they have not been frozen or shown to reviewers.
 
-Keep the following in controlled, investigator-only storage until all assigned responses are submitted and preserved:
-1. the held-out scenario's concealed test or outcome key;
-2. any evidence intentionally withheld from reviewers;
-3. the mapping from scenario variants to investigator classifications;
-4. pre-scored examples and researcher coding decisions.
+Before recruitment:
+1. verify the private repository's collaborator list and effective access controls;
+2. confirm that prospective reviewers do not have access to the private repository or investigator materials;
+3. review the scenario and packet templates for technical plausibility, accidental answer cues, and consistency;
+4. freeze the scenario, packet versions, expected distinctions, coding guide, assignment procedure, and exposure-handling rule together with the public protocol;
+5. record the relevant commit identifiers and a checksum manifest.
 
-The public protocol may describe the scenario-generation procedure, the study design, the observable assessment dimensions, and the rules for interpreting evidence. It must not publish the held-out scenario, hidden test, answer key, or other details that would let a prospective reviewer reconstruct the concealed outcome before responding.
+Keep the scenario master, alternate decision records, investigator key, coding decisions, and any evidence intentionally withheld from reviewers in access-controlled storage. Do not publish those materials in this repository or assume that a folder named “investigator-only” provides access control.
 
-Use a private repository or other access-controlled storage for concealed materials. Do not put the answer key in this public repository, including in a supposedly “investigator-only” folder: a folder name is not an access control.
-
-If a suitable held-out scenario and controlled storage are not ready, do not begin confirmatory data collection. Report only the public demonstration or pilot stage.
+The public protocol may describe the study design, observable assessment dimensions, and rules for interpreting evidence. It must not publish substantive held-out scenario details or the concealed key while doing so could compromise the study.
 
 ## 5. Packet construction and assignment
 
@@ -86,19 +85,19 @@ Use a pre-specified rule: exposure does not automatically prove that a response 
 ## 8. Release and reporting gate
 
 Before formal recruitment, verify:
-- [ ] the confirmatory scenario is genuinely held out and not publicly discoverable through the project's own files;
-- [ ] concealed materials are stored outside the public repository with access restricted;
+- [ ] HDA-01 is independent of public S01 and is not publicly discoverable through the project's own files;
+- [ ] concealed materials are stored outside the public repository with access restricted and the collaborator list checked;
 - [ ] reviewer-facing criteria are complete and consistent with the protocol;
 - [ ] packet contents are equivalent across conditions except for pre-specified differences;
 - [ ] the exposure question and response-handling rule are fixed in advance;
 - [ ] pilot and confirmatory data are separated;
-- [ ] the protocol and pre-registration plan identify the scenario/version and are frozen before collection;
-- [ ] confidentiality, licensing, and privacy checks are complete.
+- [ ] the protocol and pre-registration plan identify the held-out scenario/version at a level that does not disclose its substance and are frozen before collection;
+- [ ] confidentiality, licensing, consent/permission, and privacy checks are complete.
 
 After responses are submitted and preserved, decide what can be released without compromising reviewer privacy, third-party rights, or any continuing study. Report the public S01 stage and held-out confirmatory stage separately. State limitations plainly.
 
 ## 9. Current status
 
-This plan does not mean a held-out scenario has already been created, that private storage has been configured, or that reviewer blinding has been tested. Those are outstanding prerequisites. No formal reviewer data collection has begun.
+HDA-01 and four draft reviewer packet templates exist in a separate private repository. This does not mean that the scenario or protocol is frozen, that repository access controls and collaborators have been independently verified, or that reviewer blinding has been tested. The public protocol, pre-registration plan, recording sheet, and this plan remain drafts. No reviewer recruitment or formal data collection has begun.
 
-The researcher remains responsible for the final integrity, confidentiality, and release decisions. This plan reduces identifiable risks but cannot guarantee that a reviewer has never encountered related information.
+Do not begin confirmatory collection until the scenario and materials are reviewed and frozen, the private repository's collaborator list and effective access controls are verified, and the pre-specified assignment and exposure rules are complete. The researcher remains responsible for final integrity, confidentiality, and release decisions. This plan reduces identifiable risks but cannot guarantee that a reviewer has never encountered related information.
