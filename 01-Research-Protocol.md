@@ -1,6 +1,6 @@
 # Research Protocol
 
-**Protocol version:** 0.4-draft  
+**Protocol version:** 0.4.1-draft  
 **Status:** Draft — not frozen or preregistered  
 **Research domain:** Human authorization and semantic deviation in AI-assisted engineering
 
@@ -151,6 +151,6 @@ Do not claim certification, legal compliance, universal validity, or superiority
 
 ## 12. Protocol status and prerequisites
 
-This document is version 0.4-draft and is not frozen or preregistered. The synthetic code test is not a formal human-review evaluation. Public S01 is not eligible as a blinded confirmatory test. HDA-01 and its packet templates exist in a separate private repository, but they remain drafts. The private repository's collaborator list and access controls have not yet been independently verified in the study record. No reviewer recruitment or formal data collection has begun.
+This document is version 0.4.1-draft and is not frozen or preregistered. The synthetic code test is not a formal human-review evaluation. Public S01 is not eligible as a blinded confirmatory test. HDA-01 and its packet templates exist in a separate private repository, but they remain drafts. The private repository's collaborator list and access controls have not yet been independently verified in the study record. No reviewer recruitment or formal data collection has begun.
 
 Before collection, the investigator must complete the scenario and packet review, verify private access controls, finalize the recording sheet and coding guide, define assignment and exposure handling, complete confidentiality/licensing/privacy checks, and freeze the exact materials with commit identifiers and a checksum manifest. Do not describe the study as preregistered or the blinding as verified until those steps are complete.
