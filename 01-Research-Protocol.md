@@ -1,7 +1,7 @@
 # Research Protocol
 
-**Protocol version:** 0.3-draft  
-**Status:** Draft — not yet frozen  
+**Protocol version:** 0.4-draft  
+**Status:** Draft — not frozen or preregistered  
 **Research domain:** Human authorization and semantic deviation in AI-assisted engineering
 
 ## 1. Research question
@@ -14,7 +14,7 @@ When an AI-assisted engineering change departs from a human's explicit instructi
 - What evidence shows that the responsible human was made aware of the specific deviation?
 - What distinguishes approval of an artifact from authorization of a disclosed change in behavior?
 - Which observations remain indeterminate because the available evidence is incomplete?
-- Does a structured review using task-specific distinctions informed by BAES produce different or more defensible findings than a conventional review of the same evidence?
+- Does a structured review using task-specific distinctions produce different or more defensible findings than a conventional review of the same evidence?
 
 ## 3. Unit of analysis
 
@@ -25,41 +25,33 @@ The unit of analysis is a bounded engineering change represented by:
 4. review or approval records, if any; and
 5. a defined decision point.
 
-The initial public implementation is a synthetic C99 example created specifically for this repository. It does not derive from the researcher's personal source code, a production system, or a named model's output. The function contract is to count complete groups; the proposed variant instead rounds up to count groups required to accommodate all items. The code and initial local test results are in [06-Code-Sample](06-Code-Sample/README.md).
+The public S01 C99 example remains a synthetic demonstration. It is not eligible as a blinded confirmatory scenario because its behavior and boundary-test result are already described publicly. It may be used for packet-usability or other exploratory work only; such responses must be kept separate from any confirmatory study.
 
-This synthetic example was selected to avoid unnecessary disclosure of private code and to make the behavior reproducible. It is a constructed demonstration, not an empirical observation of a real AI system or a human review. Any later use of external code requires a separate rights and confidentiality review.
+A separate synthetic held-out scenario, HDA-01, has been prepared in a private research repository for internal design work. Its scenario master, alternate decision records, expected distinctions, and investigator coding are not published here. This public protocol intentionally does not disclose the scenario's substantive details. HDA-01 remains a draft and has not been frozen or shown to reviewers. The existence of a private repository does not by itself verify its collaborator list or access controls; those checks remain a prerequisite to recruitment.
 
 ## 4. Assessment dimensions
 
 Reviewers must assess these dimensions separately.
 
-### 4.1 Technical correctness
+### 4.1 Implementation behavior and test evidence
 
-Does the implementation behave as intended by its declared contract, specification, tests, or other declared correctness criteria?
-
-Technical correctness alone does not establish that the change was authorized.
+What behavior is demonstrated by the supplied implementation and evidence? What do the supplied tests establish, and what do they leave untested or unresolved? Do not assume that unprovided test artifacts do not exist.
 
 ### 4.2 Alignment with stated intent
 
-Does the implementation preserve or depart from the human's explicit instruction and scope?
-
-A deviation may be beneficial, bug-fixing, or technically defensible while still departing from the authorized scope.
+Does the implementation preserve or depart from the human's explicit instruction and scope? A deviation may be beneficial, bug-fixing, or technically defensible while still departing from the authorized scope.
 
 ### 4.3 Authorization evidence
 
-Is there evidence that a person with relevant decision authority knowingly permitted the specific deviation?
+Is there evidence that a person with relevant decision authority knowingly permitted the specific deviation? Do not infer authorization merely from silence, successful tests, deployment, general trust in the AI, or approval of an artifact whose material deviation was not disclosed. If the record is incomplete, record the limits of the evidence; do not assert that authorization definitely did or did not occur unless the evidence supports that conclusion.
 
-Do not infer authorization merely from silence, successful tests, deployment, general trust in the AI, or approval of an artifact whose material deviation was not disclosed. If the record is incomplete, record the limits of the evidence; do not assert that authorization definitely did or did not occur unless the evidence supports that conclusion.
+### 4.4 Evidence sufficiency and epistemic restraint
 
-### 4.4 Evidence sufficiency
-
-Can a reviewer trace the conclusion to specific, available records? Record missing evidence and ambiguity rather than treating either as proof of authorization or proof of its absence.
+Can a reviewer trace the conclusion to specific, available records? Record missing evidence and ambiguity rather than treating either as proof of authorization or proof of its absence. Distinguish what the supplied record establishes from what remains unknown.
 
 ### 4.5 Confidentiality and reproducibility
 
-Can another reviewer understand and reproduce the public evaluation using only the published scenario packet and method, without access to private BAES material or restricted source code?
-
-A case that cannot be safely disclosed must be reduced or replaced with a synthetic public reproduction.
+Can another reviewer understand and reproduce the public evaluation using only the published scenario packet and method, without access to private BAES material or restricted source code? A case that cannot be safely disclosed must be reduced or replaced with a synthetic public reproduction.
 
 ## 5. Initial hypotheses to test
 
@@ -68,44 +60,42 @@ These are provisional research propositions, not findings.
 - **H1:** Passing tests does not by itself establish authorization for a semantic deviation.
 - **H2:** Approval of a pull request does not, without further evidence, establish that the approver knew about and authorized a specific deviation.
 - **H3:** Explicit disclosure of the deviation, followed by a traceable decision from an appropriately authorized human, provides stronger evidence of authorization than approval without such disclosure.
-- **H4:** A structured review that separates intent alignment, authorization evidence, and evidence sufficiency may make unsupported inferences easier to detect than a conventional review. This hypothesis must be tested, not presumed.
+- **H4:** A structured review that separates implementation evidence, intent alignment, authorization evidence, and evidence sufficiency may make unsupported inferences easier to detect than a conventional review. This hypothesis must be tested, not presumed.
 
 The evaluation must allow evidence to challenge these propositions. The protocol must not force a preferred conclusion.
 
-## 6. Scenario variants
+## 6. Scenario and comparison design
 
-- **S01 baseline:** The instruction requires preserving complete-group semantics. A proposed change rounds up for non-divisible quantities. The decision record leaves disclosure and authorization unresolved.
-- **S01-A explicit authorization:** The specific behavioral deviation is disclosed, and a responsible human makes a traceable decision to permit it or amends the instruction.
-- **S01-B artifact approval only:** A proposed change is approved, but the available record does not establish that the reviewer knew about the specific behavioral deviation.
-- **Optional control:** The implementation preserves the complete-group behavior and stays within the stated instruction.
+The planned held-out study uses HDA-01, a synthetic engineering scenario maintained separately from this public repository. It has two decision-record variants and two review conditions. Public materials identify the design but do not disclose the held-out scenario's substantive content or concealed investigator key.
 
-Variants must be checked for unintended differences. Use the smallest code and evidence packet that still demonstrates the target behavior. Public scenario wording must not expose confidential BAES text, internal definitions, or distinctive internal structures.
+| Condition | Review method | Scenario variant |
+|---|---|---|
+| A-R1 | Conventional review | Explicit, traceable decision record |
+| A-R2 | Conventional review | Artifact approval record; specific informed authorization unresolved from the supplied record |
+| B-R1 | Structured review | Explicit, traceable decision record |
+| B-R2 | Structured review | Artifact approval record; specific informed authorization unresolved from the supplied record |
 
-## 7. Comparison design
+The conventional condition receives the common evidence and a neutral review request. The structured condition receives the same underlying evidence plus a public task-specific recording sheet that separates implementation behavior and test evidence, alignment with stated intent, disclosure, traceable decision authority, evidence sufficiency, and alternative interpretations.
 
-Compare two review conditions using the same underlying scenario and the same available evidence:
+The two variants must differ only in the pre-specified decision-record evidence. All other underlying scenario evidence must be equivalent. Each reviewer is assigned one packet only; they must not see other conditions or variants before submitting their response. Record the assignment method and any deviations. The design is exploratory and is not powered to establish population-wide effects.
 
-- **Condition A — Conventional engineering review:** Reviewers receive the normal engineering artifacts for the case (instruction, relevant code change or diff, tests, and review record) and are asked to assess whether the change is acceptable and what the evidence establishes.
-- **Condition B — Structured review informed by BAES:** Reviewers receive the same artifacts, plus a public, task-specific recording sheet that separately asks about intent alignment, disclosure of the deviation, the human decision, evidence sufficiency, and unresolved ambiguity.
+Do not publish confidential BAES clauses or internal derivations as the basis for the structured condition. The public recording sheet must define all steps needed to apply it.
 
-The purpose is not to weaken Condition A or to make Condition B win by construction. Provide both conditions with the same underlying evidence and record the exact instructions given to reviewers. If the same reviewer sees both conditions, consider order and learning effects; where feasible, use separate reviewers or counterbalance the order. Report the actual design and its limitations.
+## 7. Procedure
 
-Do not publish confidential BAES clauses or internal derivations as the basis for Condition B. The public recording sheet must define all steps needed to apply it.
-
-## 8. Procedure
-
-1. Preserve the synthetic baseline, proposed variant, test files, and test results as versioned artifacts.
-2. Freeze the scenario instruction and public evaluation criteria before formal reviewer scoring.
-3. Prepare separate, versioned reviewer packets and record the exact materials supplied to each condition. The existing public S01 case may be used for exploratory packet-usability work only; it must not be treated as a blinded confirmatory test because its boundary-test result is public.
-4. Publish or preserve the public criteria and reviewer recording template before scoring.
-5. Provide reviewers the same underlying evidence for a given condition.
-6. Ask reviewers to record observations and cite the evidence supporting each judgment.
-7. Record each dimension separately: technical correctness, intent alignment, authorization evidence, evidence sufficiency, and ambiguity.
-8. Preserve disagreement between reviewers; do not silently average away material differences.
+1. Preserve the public S01 demonstration and label any S01 usability work as exploratory.
+2. Complete internal review of HDA-01, the four packet templates, expected distinctions, coding guide, and exposure-handling rule.
+3. Verify the private repository's access controls and collaborator list; keep investigator-only materials inaccessible to prospective reviewers.
+4. Finalize the public protocol, pre-registration plan, recording sheet, assignment method, and exposure rule before formal collection.
+5. Ensure packet versions provide equivalent common evidence and only the pre-specified differences.
+6. Assign each reviewer exactly one packet and preserve the exact materials and instructions delivered.
+7. Ask reviewers to cite evidence and distinguish supported conclusions from unresolved questions.
+8. Preserve raw responses unchanged. Code dimensions separately and retain disagreement and uncertainty.
 9. Record protocol deviations and explain whether they affect interpretation.
-10. Report results only after the review procedure is complete.
+10. Begin confirmatory data collection only after the protocol and materials are explicitly frozen and the integrity gate is passed.
+11. Report results only after the review procedure is complete.
 
-## 9. Recording categories
+## 8. Recording categories
 
 For each criterion, record:
 - criterion identifier and wording;
@@ -113,20 +103,20 @@ For each criterion, record:
 - observed fact;
 - reviewer interpretation;
 - status: supported, contradicted, not established, ambiguous, or not applicable;
-- evidence gap or competing interpretation, where relevant.
+- evidence gap or competing interpretation, where relevant;
 - confidence and rationale, if confidence is collected;
-- missing evidence or ambiguity;
-- review condition, reviewer identifier, and protocol version.
+- review condition, reviewer identifier, packet/scenario version, and protocol version.
 
 Use **not established** when the packet lacks enough evidence to decide; it does not mean the event did not occur. Use **ambiguous** when the available evidence supports materially different interpretations that cannot be resolved from the packet. Use **not applicable** only with a case-specific rationale. These labels are descriptive recording categories, not a validated measurement scale.
 
-## 10. Bias, validity, and confidentiality controls
+## 9. Bias, validity, and confidentiality controls
 
 - Define criteria before reviewing outcomes.
 - Do not treat the AI's explanation as independent evidence of authorization.
 - Do not infer the human's knowledge from technical correctness.
 - Do not assume that a test suite covers all relevant behavior.
 - Distinguish an absent record from evidence that an event did not occur.
+- Do not assume that unprovided test artifacts do not exist.
 - Avoid changing criteria after seeing results without logging the change.
 - If criteria change, identify which results need to be reassessed.
 - Seek independent review where feasible and clearly disclose if it was not obtained.
@@ -134,20 +124,20 @@ Use **not established** when the packet lacks enough evidence to decide; it does
 - Ensure the public protocol and evidence packet are usable without access to private BAES material.
 - The researcher makes the final release decision; AI-assisted confidentiality review is not a guarantee.
 
-## 11. Blinding and data integrity
+## 10. Blinding and data integrity
 
 The investigator-facing public repository is not itself a blinded reviewer packet. Public scenario details, test outcomes, repository history, forks, or copies may be discoverable by prospective reviewers. Removing or renaming a public file cannot be assumed to restore blinding.
 
-The existing public S01 case is a demonstration and may support an exploratory usability pilot, but responses to it must not be presented as blinded confirmatory evidence. A confirmatory evaluation requires a new held-out scenario that has not been published or shown to prospective reviewers. Keep its concealed test/outcome key, alternate variants, and investigator coding in access-controlled storage outside this public repository. Do not place such material in a public folder labeled investigator-only.
+The public S01 case is a demonstration and may support exploratory usability work only; responses to it must not be presented as blinded confirmatory evidence. HDA-01 has been prepared in a separate private repository, but it remains a draft, has not been frozen, and has not been shown to reviewers. The private repository's collaborator list and access controls must be independently checked before recruitment. Keep its concealed scenario master, alternate packets, expected distinctions, and investigator coding outside this public repository.
 
 Provide reviewers all operational instructions and scoring criteria needed to perform the task fairly. Withhold only pre-specified investigator-only keys, alternate packets, and concealed outcomes that are not part of the assigned evidence. Document any intentionally withheld evidence in advance and apply the rule consistently. Ask reviewers about prior exposure after they submit their responses; record reported exposure and packet deviations under a pre-specified handling rule. Do not infer contamination solely from an unexpected answer or assume that no contamination occurred merely because none was reported.
 
-Do not begin confirmatory data collection until the held-out scenario, controlled storage, packet versions, coding guide, exposure rule, and protocol are frozen. Keep pilot responses separate from confirmatory responses. See the [Reviewer Blinding and Data Integrity Plan](14-Reviewer-Blinding-and-Data-Integrity-Plan.md) for operational controls.
+Do not begin confirmatory data collection until the held-out scenario, controlled storage and access, packet versions, coding guide, exposure rule, and protocol are reviewed and frozen. Keep pilot responses separate from confirmatory responses. See the [Reviewer Blinding and Data Integrity Plan](14-Reviewer-Blinding-and-Data-Integrity-Plan.md) for operational controls.
 
-## 12. Reporting
+## 11. Reporting
 
 Report:
-- scenario and protocol versions;
+- scenario and protocol versions at an appropriate level of detail that does not prematurely disclose a continuing held-out scenario;
 - evidence made available to reviewers;
 - review condition and exact instructions;
 - results for each dimension separately;
@@ -159,6 +149,8 @@ Report:
 
 Do not claim certification, legal compliance, universal validity, or superiority over other standards based on this scenario alone.
 
-## 13. Protocol status
+## 12. Protocol status and prerequisites
 
-This document remains a draft. The synthetic code test is not a formal human-review evaluation. The existing public S01 case is not eligible as a blinded confirmatory test. A new held-out scenario and controlled storage for concealed materials are outstanding prerequisites. The formal evaluation must not begin until the scenario, criteria, comparison instructions, recording method, blinding controls, and exposure-handling rule are reviewed and the protocol version is explicitly frozen.
+This document is version 0.4-draft and is not frozen or preregistered. The synthetic code test is not a formal human-review evaluation. Public S01 is not eligible as a blinded confirmatory test. HDA-01 and its packet templates exist in a separate private repository, but they remain drafts. The private repository's collaborator list and access controls have not yet been independently verified in the study record. No reviewer recruitment or formal data collection has begun.
+
+Before collection, the investigator must complete the scenario and packet review, verify private access controls, finalize the recording sheet and coding guide, define assignment and exposure handling, complete confidentiality/licensing/privacy checks, and freeze the exact materials with commit identifiers and a checksum manifest. Do not describe the study as preregistered or the blinding as verified until those steps are complete.
