@@ -41,7 +41,7 @@ These numbers are practical targets, not a statistical power calculation. The st
 - The same underlying scenario instruction, implementation evidence, and test summary must be supplied in all four cells.
 - Change only the constructed decision-record evidence between R1 and R2.
 - Condition A receives a neutral conventional review request and must not be explicitly prompted with the structured study dimensions.
-- Condition B receives the same underlying evidence and neutral task, plus the public task-specific recording prompts.
+- Condition B receives the same underlying evidence and neutral response fields, plus the six task-specific recording prompts reproduced in its assigned packet. The public recording sheet is the reference for those dimensions; do not attach it as a second response form when the prompts are embedded in the packet.
 - Do not send the investigator key, alternate variant, task list, research log, or other investigator-facing material to reviewers.
 - Provide all operational instructions and scoring criteria required for a fair assessment; withhold only pre-specified investigator-only keys and concealed outcomes not included in the assigned evidence.
 - After submission, ask reviewers whether they had prior exposure to the scenario or related materials, saw another packet, or received unplanned information. Record responses without collecting unrelated personal information.
@@ -98,7 +98,7 @@ Before recruiting reviewers or collecting formal responses:
 
 - [ ] Review and approve this plan.
 - [ ] Update the protocol version and cross-reference this plan.
-- [ ] Finalize the neutral Condition A prompt and structured Condition B prompts.
+- [ ] Finalize the neutral response fields and the six structured prompts embedded in the Condition B packet templates; ensure they match the public recording-sheet dimensions without delivering duplicate forms.
 - [ ] Finalize the reviewer recording sheet and coding guide.
 - [ ] Confirm that technical evidence is identical across all four cells and only the intended decision-record and prompt differences remain.
 - [ ] Verify that HDA-01 is independent of public S01 and contains no private BAES material.
