@@ -59,7 +59,7 @@ For each reviewer:
 - ensure the same underlying evidence is supplied across conditions except for the pre-specified review prompts and the intended decision-record variation;
 - verify that filenames, metadata, comments, and packet instructions do not reveal the expected answer through irrelevant cues.
 
-The structured condition may expose its public task-specific recording prompts. The conventional condition should not be given those prompts if the preregistered design defines them as the treatment difference.
+The structured condition may receive the six public task-specific recording dimensions as prompts embedded in its assigned packet. The conventional condition must not receive those prompts if they define the preregistered treatment difference. If the prompts are embedded in the packet, do not attach the public recording sheet as a second response form.
 
 ## 6. Exposure and contamination log
 
