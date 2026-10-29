@@ -1,29 +1,29 @@
-# Pre-Registration Plan — S01 Reviewer Study
+# Pre-Registration Plan — HDA-01 Reviewer Study
 
 **Status:** Draft for review; not registered or frozen  
-**Protocol basis:** Research Protocol 0.3-draft  
+**Protocol basis:** Research Protocol 0.4-draft  
 **Study type:** Small, exploratory, scenario-based reviewer study  
-**No data collection has begun.**  
-**Integrity gate:** The current public S01 case is exploratory only; a held-out scenario is required for confirmatory data collection.
+**No reviewer recruitment or data collection has begun.**  
+**Integrity gate:** HDA-01 has been prepared privately but remains draft; access controls, protocol, and materials must be verified and frozen before collection.
 
 ## 1. Purpose
 
-Test whether a public structured recording aid changes how reviewers assess a synthetic engineering change that departs from an explicit behavior-preservation instruction. The study also checks whether reviewers distinguish a documented authorization decision from an approval record that does not establish informed authorization.
+Assess whether a public structured recording aid changes how reviewers evaluate a synthetic engineering change that may depart from an explicit human instruction. The study also examines whether reviewers distinguish evidence of informed authorization for a specific change from a generic artifact-approval record that leaves informed authorization unresolved.
 
 This plan is not a claim that the structured condition is better. It is not a validated instrument and does not establish the validity or superiority of BAES.
 
 ## 2. Design
 
-Use a small 2 × 2 between-reviewer design:
+Use a small 2 × 2 between-reviewer design based on the held-out synthetic scenario HDA-01. The public materials intentionally do not disclose its substantive details or investigator key.
 
 | Cell | Review condition | Decision-record variant |
 |---|---|---|
-| A-A | Conventional review | S01-A: explicit disclosure and authorization |
-| A-B | Conventional review | S01-B: PR approval; informed authorization unresolved |
-| B-A | Structured review | S01-A: explicit disclosure and authorization |
-| B-B | Structured review | S01-B: PR approval; informed authorization unresolved |
+| A-R1 | Conventional review | Explicit, traceable decision record |
+| A-R2 | Conventional review | Artifact approval record; specific informed authorization unresolved from the supplied record |
+| B-R1 | Structured review | Explicit, traceable decision record |
+| B-R2 | Structured review | Artifact approval record; specific informed authorization unresolved from the supplied record |
 
-Each reviewer receives **one** packet only. Do not let a reviewer see both decision-record variants or both review conditions before submitting their response. This reduces learning and cross-packet contamination.
+Each reviewer receives **one** packet only. Do not let a reviewer see another decision-record variant or review condition before submitting their response. This reduces learning and cross-packet contamination.
 
 Where practical, assign reviewers to cells randomly, using a recorded assignment method. If random assignment is not practical, record how assignments were made and treat the results as exploratory.
 
@@ -37,19 +37,17 @@ These numbers are practical targets, not a statistical power calculation. The st
 
 ## 4. Materials and fairness controls
 
-**Scenario eligibility:** S01 and its boundary-test outcome are publicly described in the repository. They may be used to test packet clarity or delivery, but responses to this public case must not be represented as blinded confirmatory evidence. The confirmatory study must use a new, held-out scenario not published or shown to prospective reviewers. Keep its concealed test/outcome key and investigator coding in access-controlled storage outside this public repository. Do not store concealed materials in a public folder, even if labeled investigator-only.
-
-- Use the same instruction, baseline source, proposed source, declaration/contract, and characterization-test evidence in all four cells.
-- Change only the constructed decision record between S01-A and S01-B.
-- For the default study packet, do not include the boundary-test source or result in any cell. The reviewer may inspect the supplied code and identify the need for further testing.
-- Condition A receives a neutral, conventional review request. It must not be explicitly prompted with the study's authorization categories.
-- Condition B receives the same underlying evidence and neutral task, plus the public structured recording prompts.
+- Use HDA-01, maintained in the separate private research repository. Do not publish its scenario master, substantive scenario details, alternate packet, expected distinctions, or investigator coding before the assigned responses are submitted and preserved.
+- The same underlying scenario instruction, implementation evidence, and test summary must be supplied in all four cells.
+- Change only the constructed decision-record evidence between R1 and R2.
+- Condition A receives a neutral conventional review request and must not be explicitly prompted with the structured study dimensions.
+- Condition B receives the same underlying evidence and neutral task, plus the public task-specific recording prompts.
 - Do not send the investigator key, alternate variant, task list, research log, or other investigator-facing material to reviewers.
 - Provide all operational instructions and scoring criteria required for a fair assessment; withhold only pre-specified investigator-only keys and concealed outcomes not included in the assigned evidence.
 - After submission, ask reviewers whether they had prior exposure to the scenario or related materials, saw another packet, or received unplanned information. Record responses without collecting unrelated personal information.
 - Apply a pre-specified exposure-handling rule before interpreting whether the substantive answer matches the expected distinction. Exposure does not automatically invalidate a response, and no reported exposure does not prove absence of contamination.
-- Keep pilot responses separate from confirmatory responses; never silently pool them.
-- Give each reviewer a packet ID and record the exact artifact versions, condition, variant, date, and any clarification provided.
+- Keep any S01 usability-pilot responses separate from HDA-01 responses; never silently pool them.
+- Give each reviewer a neutral packet ID and record the exact artifact versions, condition, variant, date, and any clarification provided.
 - Do not tell reviewers which answer is expected. Explain that this is a research task and that uncertainty is acceptable.
 
 ## 5. Questions and outcomes
@@ -60,11 +58,11 @@ For each response, code separately whether the reviewer:
 
 1. identifies the proposed behavioral difference accurately;
 2. identifies whether the change aligns with the original instruction;
-3. correctly characterizes the decision record as explicit authorization (S01-A) or unresolved from the supplied record (S01-B);
+3. appropriately characterizes what the assigned decision record establishes and leaves unresolved;
 4. cites evidence for material conclusions;
 5. records uncertainty rather than asserting unsupported facts.
 
-The expected distinctions above are coding criteria for the synthetic stimuli, not a claim that a reviewer must use particular wording. Preserve the reviewer's original response and record the evidence for each researcher-coded classification.
+The expected distinctions are coding criteria for the synthetic stimuli, not a claim that a reviewer must use particular wording. Preserve the reviewer's original response and record the evidence for each researcher-coded classification.
 
 ### Secondary exploratory observations
 
@@ -92,7 +90,7 @@ Record any clarification, missing file, changed prompt, packet mismatch, or othe
 
 The investigator-facing public repository is not a blinded packet. Public files may persist through history, forks, caches, or copies; deleting or renaming a file does not restore blinding. Follow the [Reviewer Blinding and Data Integrity Plan](14-Reviewer-Blinding-and-Data-Integrity-Plan.md). The plan is a safeguard, not proof that blinding has been achieved.
 
-Use only the public synthetic code and constructed decision records. Do not disclose private BAES materials, personal code, reviewer identities, or confidential correspondence. Obtain appropriate permission before publishing identifiable reviewer information or verbatim comments. Report reviewer roles at an appropriately broad level.
+Use only the public synthetic code and constructed decision records in public materials. Do not disclose private BAES materials, private HDA-01 scenario details or keys before release is appropriate, reviewer identities, or confidential correspondence. Obtain appropriate permission before publishing identifiable reviewer information or verbatim comments. Report reviewer roles at an appropriately broad level.
 
 ## 9. Freeze checklist
 
@@ -102,14 +100,15 @@ Before recruiting reviewers or collecting formal responses:
 - [ ] Update the protocol version and cross-reference this plan.
 - [ ] Finalize the neutral Condition A prompt and structured Condition B prompts.
 - [ ] Finalize the reviewer recording sheet and coding guide.
-- [ ] Confirm that technical evidence is identical across all four cells.
-- [ ] Confirm the boundary-test result is excluded from every reviewer packet.
-- [ ] Prepare one clean packet per cell and verify blinding materials.
-- [ ] Create and verify a genuinely held-out confirmatory scenario; confirm its concealed key is outside the public repository and access-controlled.
+- [ ] Confirm that technical evidence is identical across all four cells and only the intended decision-record and prompt differences remain.
+- [ ] Verify that HDA-01 is independent of public S01 and contains no private BAES material.
+- [ ] Verify the private repository's collaborator list and access controls; confirm that prospective reviewers have no access.
+- [ ] Prepare one clean packet per cell and verify that packet text, filenames, and metadata do not disclose the concealed key.
 - [ ] Freeze the prior-exposure question and response-handling rule before data collection.
 - [ ] Define which pilot outputs, if any, are retained for usability analysis and confirm that they are excluded from confirmatory analysis.
 - [ ] Decide the assignment procedure and record it.
-- [ ] Record the frozen commit SHA and freeze date.
-- [ ] Complete a confidentiality and licensing review.
+- [ ] Define data minimization, consent/permission, retention, and access arrangements appropriate to the recruitment plan.
+- [ ] Record the frozen commit SHAs and a checksum manifest for the materials.
+- [ ] Complete a confidentiality, licensing, and privacy review.
 
-Until this checklist is complete and the version is explicitly frozen, this document remains a plan, not a pre-registered or completed study. In particular, no confirmatory reviewer recruitment or data collection should begin while the only scenario is the publicly documented S01 case.
+Until this checklist is complete and the version is explicitly frozen, this document remains a plan, not a preregistered or completed study. No confirmatory reviewer recruitment or data collection should begin while these gates remain open.
