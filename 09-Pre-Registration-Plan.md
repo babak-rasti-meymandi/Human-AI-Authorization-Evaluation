@@ -1,7 +1,7 @@
 # Pre-Registration Plan — HDA-01 Reviewer Study
 
 **Status:** Draft for review; not registered or frozen  
-**Protocol basis:** Research Protocol 0.4-draft  
+**Protocol basis:** Research Protocol 0.4.1-draft  
 **Study type:** Small, exploratory, scenario-based reviewer study  
 **No reviewer recruitment or data collection has begun.**  
 **Integrity gate:** HDA-01 has been prepared privately but remains draft; access controls, protocol, and materials must be verified and frozen before collection.
