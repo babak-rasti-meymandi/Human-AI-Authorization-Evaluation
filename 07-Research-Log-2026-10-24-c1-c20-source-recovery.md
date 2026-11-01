@@ -24,3 +24,18 @@ No criterion-level NIST or ISO mapping was fabricated or claimed complete. No C1
 ## Confidentiality
 
 No private BAES Foundation wording or private source code was added. No BAES normative repository was changed.
+
+
+## Follow-up recovery — 2026-11-01
+
+The exact C1–C20 table has now been recovered from a historical hand-over document supplied by the researcher: *HAND OVER — BAES Pilot Evaluation*, section 4, “Evaluation Criteria C1–C20”. The recovered table is preserved verbatim in `12-Recovered-Criteria-C1-C20.md`.
+
+This changes the earlier recovery status. The 2026-10-24 inspection did not locate the historical table in the repository files inspected at that time; it did not establish that the table had never existed or that no copy existed in the researcher's conversation records.
+
+The recovered criteria are materially different from the later `12-Proposed-Criteria-C1-C20.md` draft v0.1. The latter remains a separate proposed set and must not be silently treated as a transcription, replacement, or validated revision of the recovered table. Existing crosswalks and worksheets require a criterion-set provenance check before further use.
+
+The hand-over also specifies three independent evaluation axes: framework text coverage (T0–T3), event evidence sufficiency (R0–R3), and residual ambiguity. These axes must remain separate; no composite score or framework ranking is authorized by the hand-over.
+
+**Provenance limitation:** The hand-over was supplied from the researcher's historical conversation logs. Its original date, version identifier, and original storage location have not yet been independently established. The recovered file therefore records the source and limits without claiming formal version freeze.
+
+**Next actions:** Normalize T0–T3 and R0–R3 operationally; build the master C1–C20 matrix using the recovered historical criteria; separately inspect the later proposed set and its crosswalk dependencies; then assess S01-A and S01-B against actual evidence. No BAES Foundation or protected repository changes are made.
