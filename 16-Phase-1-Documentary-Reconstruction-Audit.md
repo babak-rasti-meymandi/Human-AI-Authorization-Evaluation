@@ -457,3 +457,25 @@ This consistency review does not establish that BAES caused the difference, impr
 **Scope:** this cross-batch audit section and the corrected preliminary table only. The four detailed coding records, recovered criterion wording, blank historical worksheet, S01 packet artifacts, code/tests, BAES repositories, Proposed v0.1 worksheet/crosswalk, and private HDA-01 material were not changed.
 
 **Phase 1 coding status:** initial investigator-side coding of all historical C1–C20 is complete. Cross-batch consistency review is complete at this investigator pass. Any later second-coder or human reviewer assessment must be separately collected and must not be represented as already performed.
+
+
+## 19. Initial historical C1–C20 framework text coverage mapping (2026-11-02)
+
+**Status:** Initial investigator-side Axis A mapping recorded for NIST AI RMF 1.0. ISO/IEC 42001:2023 remains UL (unreviewed/access-limited) at clause level.
+
+The separate mapping record is `22-Historical-C1-C20-Framework-Text-Coverage-NIST-ISO.md`. It uses only the recovered historical C1–C20 set; the existing Proposed v0.1 crosswalk remains separate and unchanged.
+
+### Axis A findings
+
+- **NIST AI RMF 1.0:** initial ratings are T1/T2 for criteria with related text coverage, T0 for C7 (the proposed-versus-executed action distinction was not identified in the reviewed Core), and no T3 ratings. The mapping identifies relevant Core references but does not treat broad organizational/system-level outcomes as explicit task-level authorization requirements.
+- **ISO/IEC 42001:2023:** all C1–C20 remain UL. The examined official public records establish publication identity and organizational AIMS scope but do not provide sufficient final-edition clause text for criterion-level coding. UL is not T0 and is not evidence that the standard lacks the concepts.
+
+### Separation of axes
+
+Axis A text coverage is not converted into Axis B event-evidence sufficiency. The existing S01 documentary statuses are not automatically translated into R0–R3. Axis B requires a separate claim-by-claim assessment of the actual S01 evidence bundle. Axis C remains a separate qualitative ambiguity record. No composite score or ranking is produced.
+
+**Limitations:** This is an investigator-side first pass, not an independent second-coder review. The historical criterion source's original date/version remains unverified. No claim about implementation, conformity, effectiveness, BAES novelty, or superiority follows from this mapping.
+
+**Scope:** the new historical framework-text mapping and this audit section only. The Proposed v0.1 crosswalk, recovered historical criteria, historical coding records, S01 packet artifacts, BAES repositories, and private HDA-01 material were not changed.
+
+**Next:** conduct a separate Axis B R0–R3 evidence-sufficiency coding pass for S01-A and S01-B, retaining Axis C ambiguity separately; then perform a second-pass verification of the NIST mapping if an independent coder becomes available. ISO clause-level mapping remains blocked pending sufficient authorized source access.
