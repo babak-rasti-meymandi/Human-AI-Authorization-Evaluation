@@ -118,8 +118,8 @@ This is an initial investigator-side view using the **recovered historical wordi
 |---|---|---|---|---|
 | C1 | Original Human Intent | Supported | Supported | H1 identifies the instruction. |
 | C2 | Intent Boundary | Supported | Supported | H1 prohibits behavior change unless explicitly authorized. |
-| C3 | Delegated Authority | Supported, scenario-limited | Not established | AUTH-BASIS-01 stipulates the synthetic role authority for S01-A; no corresponding authority record is supplied for B. |
-| C4 | Authority Scope | Supported, scenario-limited | Not established | AUTH-BASIS-01 limits the authority to the named function-contract decision; B has no specific authorization record. |
+| C3 | Delegated Authority | Not established for an agent | Not established | S01-A stipulates bounded human decision authority, but neither packet establishes an AI agent or delegated authority to an agent. S01-B also lacks approver identity and authority basis. See Section 14. |
+| C4 | Authority Scope | Not established for an agent; human decision scope supported, scenario-limited | Not established | S01-A defines the scope of a human function-contract decision, not delegated agent authority; implementation/execution are expressly excluded. B has no approver authority/scope record. See Section 14. |
 | C5 | AI Observation | Not established | Not established | No attributable AI observation. |
 | C6 | AI Reasoning | Not established | Not established | No attributable AI reasoning. |
 | C7 | AI Proposed Action | Not established | Not established | Proposed code exists; AI authorship is not established. |
@@ -313,3 +313,28 @@ No criteria were merged, silently reworded, or deleted. No composite score was c
 **Scope:** the new historical worksheet and this audit update only. The historical criteria file, Proposed v0.1 criteria and worksheet, NIST crosswalk, S01 evidence packets, code/tests, BAES repositories, and private HDA-01 materials were not changed.
 
 **Phase 1 result:** F7 selection and worksheet separation are complete. Criterion-by-criterion coding and the remaining reconstruction/ambiguity work continue as Phase 1 investigator-side analysis; no human reviewer assessment or validation is implied.
+
+
+## 14. Historical C1–C5 documentary coding — initial batch (2026-11-02)
+
+**Status:** Investigator-side coding recorded for S01-A and S01-B; no reviewer or independent validation.
+
+The detailed criterion-by-criterion record is `18-Phase-1-Historical-C1-C5-Coding-S01.md`. It records the exact inspected artifact paths and Git blob SHAs, observed packet facts, status rationale, and unresolved evidence gaps.
+
+### Batch findings
+
+- **C1 — Original Human Intent:** Supported for both variants, limited to reconstructing the synthetic H1 instruction. This is not evidence of real-world human intent.
+- **C2 — Intent Boundary:** Supported for both variants within the supplied synthetic packet. H1 states the prohibition on behavior change absent explicit authorization. S01-A additionally supplies a narrowly scoped amendment; S01-B supplies no such amendment in its packet.
+- **C3 — Delegated Authority:** Not established for an agent in either variant. S01-A stipulates a synthetic human role and bounded human decision authority, but does not identify an AI agent or delegate authority to one. S01-B does not identify its PR approver or an authority basis.
+- **C4 — Authority Scope:** Not established for delegated agent authority in either variant. S01-A does support a scenario-limited scope for the human function-contract decision, while expressly excluding implementation and execution authority. S01-B supplies no approver authority/scope record.
+- **C5 — AI Observation:** Not established for either variant. No attributable AI observation record is supplied. A behavior-level disclosure to a synthetic human in DEC-K is not an AI observation record.
+
+C3 and C4 are deliberately distinguished from the earlier preliminary table's shorthand “Supported, scenario-limited” for S01-A. That earlier shorthand described the synthetic **human decision-authority** premise, but did not adequately preserve the historical criteria's reference to an **agent**. The detailed coding now separates these propositions rather than treating human authority as proof of agent delegation.
+
+### Evidence boundary and remaining gaps
+
+The coding is based on H1, the common technical-evidence description, DEC-K, AUTH-BASIS-01, H1-A1, DEC-M, and the two investigator manifests. All are constructed scenario artifacts. No AI observation, AI identity, agent delegation, real human identity, or external organizational authority is established. S01-B's missing approver details do not prove that separate authorization did not exist outside the packet.
+
+**Scope:** this audit addition and the separate C1–C5 coding record only. No packet artifact, criterion wording, code/test, BAES repository, Proposed v0.1 worksheet/crosswalk, or private HDA-01 material was changed.
+
+**Next:** continue investigator-side coding with historical C6–C10, retaining the same distinction between packet fact, interpretation, and missing evidence.
