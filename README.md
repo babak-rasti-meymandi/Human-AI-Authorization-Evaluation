@@ -1,8 +1,14 @@
 # Evaluating Human Authorization and Semantic Deviation in AI-Assisted Engineering
 
-**Status:** Research design in progress; synthetic code pilot created  
+**Status:** Phase 1 — evidence-record reconstructability and sufficiency (active; design / packet construction); Phase 2 — human reviewer interpretation (deferred)  
 **Repository:** Public research record  
 **Research type:** Independent, scenario-based evaluation
+
+## Current research phase
+
+The project follows two sequential phases. **Phase 1 is active:** assess the documentary sufficiency, traceability, and reconstructability of controlled evidence packets. **Phase 2 is the direct next phase but is deferred:** assess how human reviewers interpret those packets and distinguish artifact approval from informed authorization. No human reviewer has been recruited or provided assistance, and no human assessment has been conducted. See [Research Phases and Current Scope](15-Research-Phases-and-Current-Scope.md).
+
+Phase 1's investigator-side reconstruction audit is not human validation and must not be presented as evidence of reviewer performance. Phase 2 remains planned and is not cancelled.
 
 ## Purpose
 
@@ -66,6 +72,8 @@ This project does not initially aim to:
 
 ## Repository map
 
+- [Research Phases and Current Scope](15-Research-Phases-and-Current-Scope.md)
+
 - [Research protocol](01-Research-Protocol.md)
 - [Baseline and comparison method](02-Baseline-and-Comparison.md)
 - [Scenario S01](03-Scenarios/S01-semantic-deviation.md)
@@ -107,4 +115,4 @@ The synthetic code and local test runner have been created, and the initial test
 
 An external-source inventory identifies public sources for NIST AI RMF 1.0 and ISO/IEC 42001:2023, with explicit limits on using an FDIS-era crosswalk. A historical C1–C20 table has now been recovered from section 4 of a researcher-supplied BAES Pilot Evaluation hand-over and preserved separately in [Recovered Historical Evaluation Criteria C1–C20](12-Recovered-Criteria-C1-C20.md). Its original date/version has not yet been independently established. The later [Proposed Evaluation Criteria C1–C20, draft v0.1](12-Proposed-Criteria-C1-C20.md) is a materially different proposed set, not a transcription or validated replacement; existing crosswalks and worksheets must be checked for criterion-set provenance before further use. The hand-over specifies separate framework text coverage (T0–T3), event evidence sufficiency (R0–R3), and residual ambiguity axes, with no composite score or framework ranking. An initial NIST AI RMF 1.0 subcategory mapping exists for the later proposed set; independent verification remains pending. ISO/IEC 42001 clause-level mappings remain unreviewed/access-limited. No case results have been entered.
 
-These materials are **not frozen**, no reviewer has been recruited or completed an assessment, and no comparison between review conditions has been conducted. No empirical claim about reviewer performance or the superiority of either condition is made yet.
+These materials are **not frozen**. Phase 1 is limited to evidence-packet construction and investigator-side documentary reconstruction; no human reviewer has been recruited or provided assistance. Phase 2 is deferred and will require human participation and a separate integrity gate. No empirical claim about reviewer performance, reviewer consistency, or the superiority of either review condition is made.
