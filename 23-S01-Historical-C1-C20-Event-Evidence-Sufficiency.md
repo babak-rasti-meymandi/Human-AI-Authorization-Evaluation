@@ -45,7 +45,7 @@ This pass uses the records and distinctions already inventoried in the Phase 1 c
 | C15 | Intent Deviation | R3 | R3 | H1 and the common proposed implementation directly establish the semantic difference in both variants. This rating concerns identification/characterization of the deviation, not its acceptance or execution. |
 | C16 | Deviation Acceptance | R3 | R1 | A explicitly records acceptance after disclosure by the synthetic decision-maker under the stipulated authority premise. In B, inferring acceptance from PR approval would be an unsupported inferential step. |
 | C17 | Revocation / Amendment | R2 | R0 | A directly records H1-A1, but no execution time exists against which to reconstruct the effective authorization state; support is partial. B has no authorization amendment/revocation history or execution-time record in the packet. |
-| C18 | Traceability | R2 | R1 | A links disclosure, decision, and amendment in relative order, but lacks calendar timestamps and execution chain. B identifies artifacts and an approval statement, but a coherent event chain would require assumptions. |
+| C18 | Traceability | R2 | R2 | A links disclosure, decision, and amendment in relative order, but lacks calendar timestamps and execution chain. B has identifiable artifacts and an approval event, but the incomplete linkage and chronology leave material ambiguity. |
 | C19 | Actor Attribution | R2 | R0 | A attributes the synthetic human decision to ACT-HUM-01, but not AI or execution actions. B does not identify the PR approver or any AI/execution actor. |
 | C20 | Unambiguous Reconstruction | R2 | R2 | A permits partial reconstruction of the synthetic decision/amendment sequence, but AI provenance, execution, timestamps, and outcome remain unresolved. B contains some technical and approval records, but material ambiguity remains about approver, review, authorization, and execution. |
 
@@ -61,7 +61,7 @@ This pass uses the records and distinctions already inventoried in the Phase 1 c
 ## 5. Summary by variant
 
 - **S01-A:** R3 for the original instruction, intent boundary, human decision, decision scope, authorization change, deviation characterization, and deviation acceptance; R2 for proposed-action distinction, evidence, human review, execution-time authorization-state reconstruction, traceability, actor attribution, and overall reconstruction; R0 for agent delegation, delegation scope, AI observation, AI reasoning, AI execution provenance, and execution.
-- **S01-B:** R3 for original instruction, intent boundary, and deviation characterization; R2 for proposed-action distinction, evidence, human review, human decision, and overall reconstruction; R1 where PR approval would need to be interpreted as decision scope or deviation acceptance, and for incomplete traceability; R0 for agent delegation, delegation scope, AI observation/reasoning/execution provenance, authorization change, execution, execution-time authorization state, and actor attribution.
+- **S01-B:** R3 for original instruction, intent boundary, and deviation characterization; R2 for proposed-action distinction, evidence, human review, human decision, and overall reconstruction; R1 where PR approval would need to be interpreted as decision scope or deviation acceptance; R0 for agent delegation, delegation scope, AI observation/reasoning/execution provenance, authorization change, execution, execution-time authorization state, and actor attribution.
 
 These summaries are descriptive only. Do not total or average the R ratings.
 
