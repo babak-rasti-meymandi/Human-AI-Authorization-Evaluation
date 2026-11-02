@@ -122,10 +122,10 @@ This is an initial investigator-side view using the **recovered historical wordi
 | C4 | Authority Scope | Not established for an agent; human decision scope supported, scenario-limited | Not established | S01-A defines the scope of a human function-contract decision, not delegated agent authority; implementation/execution are expressly excluded. B has no approver authority/scope record. See Section 14. |
 | C5 | AI Observation | Not established | Not established | No attributable AI observation. |
 | C6 | AI Reasoning | Not established | Not established | No attributable AI reasoning. |
-| C7 | AI Proposed Action | Not established | Not established | Proposed code exists; AI authorship is not established. |
+| C7 | AI Proposed Action | Partial | Partial | Proposed code artifact is identifiable, but AI authorship and execution linkage are not established. See Section 15. |
 | C8 | AI Executed Action | Not established | Not established | No attributable AI execution record. |
 | C9 | Evidence | Partial | Partial | Technical artifacts exist; provenance/cross-links incomplete. |
-| C10 | Human Review | Partial | Partial | A describes presentation; B PR approval; neither has a detailed review record. |
+| C10 | Human Review | Partial | Not established (review content/scope) | A records behavior-level disclosure, not a review log; B records PR approval without identifying reviewed materials or findings. See Section 15. |
 | C11 | Human Decision | Supported, scenario-limited | Supported, limited | A identifies ACT-HUM-01 and the explicit decision; B describes PR approval only. No real actor or calendar time is asserted. |
 | C12 | Decision Scope | Supported, scenario-limited | Not established | DEC-K and H1-A1 bound the decision to the named function and specified semantic change; B has no specific authorization. |
 | C13 | Authorization Change | Supported, scenario-limited | Not established | H1-A1 records the S01-A amendment and links to DEC-K/AUTH-BASIS-01; B records none. |
@@ -338,3 +338,26 @@ The coding is based on H1, the common technical-evidence description, DEC-K, AUT
 **Scope:** this audit addition and the separate C1–C5 coding record only. No packet artifact, criterion wording, code/test, BAES repository, Proposed v0.1 worksheet/crosswalk, or private HDA-01 material was changed.
 
 **Next:** continue investigator-side coding with historical C6–C10, retaining the same distinction between packet fact, interpretation, and missing evidence.
+
+
+## 15. Historical C6–C10 documentary coding — second batch (2026-11-02)
+
+**Status:** Investigator-side coding recorded for S01-A and S01-B; no human reviewer assessment or independent validation.
+
+The detailed record is `19-Phase-1-Historical-C6-C10-Coding-S01.md`. It lists inspected artifact paths and Git blob SHAs, criterion-level findings, evidence gaps, and the rationale for each working status.
+
+### Batch findings
+
+- **C6 — AI Reasoning:** Not established in either variant. No attributable AI reasoning trace, model/session identity, or reasoning-to-proposal linkage is supplied. DEC-K's behavior-level disclosure to a synthetic human is not an AI reasoning record.
+- **C7 — AI Proposed Action:** Partial in both variants. D01, the proposed-change source artifact, is identifiable. Its AI authorship is not established, and no execution record is supplied; PR approval in B does not establish execution.
+- **C8 — AI Executed Action:** Not established in either variant. No attributable AI action/tool log, commit, merge, release, deployment, or running-version record is supplied.
+- **C9 — Evidence:** Partial in both variants. Artifact IDs, paths, blob SHAs, and some document-level links exist. These establish repository content identity, not authorship, AI provenance, or complete event-level linkage.
+- **C10 — Human Review:** Partial for S01-A only insofar as DEC-K records behavior-level disclosure to the synthetic decision-maker; no detailed inspection/review record establishes what materials were reviewed or what the review established. For S01-B, PR approval is recorded, but reviewer identity, reviewed materials, findings, and review scope are absent; therefore review content/scope is not established.
+
+### Interpretive safeguards
+
+The presence of proposed code is not proof of AI authorship. PR approval is not proof of merge, deployment, or execution. Disclosure is not equivalent to a documented review process. Git blob SHAs identify repository content, not the person or system that authored it or whether it was executed. RV-A and RV-B remain uncollected; investigator manifests are not reviewer-delivery records.
+
+**Scope:** this audit addition and the separate C6–C10 coding record only. No S01 packet, criterion wording, code/test, BAES repository, Proposed v0.1 worksheet/crosswalk, or private HDA-01 material was changed.
+
+**Next:** continue investigator-side coding with historical C11–C15. C11–C13 must preserve the distinction among a decision, its scope, and a formal authorization amendment; C14 must remain separate from approval and authorization.
