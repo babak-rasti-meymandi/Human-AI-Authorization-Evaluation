@@ -479,3 +479,27 @@ Axis A text coverage is not converted into Axis B event-evidence sufficiency. Th
 **Scope:** the new historical framework-text mapping and this audit section only. The Proposed v0.1 crosswalk, recovered historical criteria, historical coding records, S01 packet artifacts, BAES repositories, and private HDA-01 material were not changed.
 
 **Next:** conduct a separate Axis B R0–R3 evidence-sufficiency coding pass for S01-A and S01-B, retaining Axis C ambiguity separately; then perform a second-pass verification of the NIST mapping if an independent coder becomes available. ISO clause-level mapping remains blocked pending sufficient authorized source access.
+
+
+## 20. Initial S01 historical C1–C20 event evidence sufficiency coding — Axis B (2026-11-02)
+
+**Status:** Initial investigator-side R0–R3 coding recorded for S01-A and S01-B; independent verification pending.
+
+The separate record is `23-S01-Historical-C1-C20-Event-Evidence-Sufficiency.md`. It applies the recovered historical criteria and assesses the actual evidence in each examined synthetic packet. It does not derive R ratings mechanically from the Supported / Partial / Not established labels.
+
+### Axis B summary
+
+- **S01-A:** R3 for C1, C2, C11, C12, C13, C15, and C16; R2 for C7, C9, C10, C17, C18, C19, and C20; R0 for C3, C4, C5, C6, C8, and C14.
+- **S01-B:** R3 for C1, C2, and C15; R2 for C7, C9, C10, C11, and C20; R1 for C12, C16, and C18; R0 for C3, C4, C5, C6, C8, C13, C14, C17, and C19.
+
+### Key safeguards
+
+R3 is claim-specific: the original instruction and semantic deviation can be directly evidenced even while AI execution and deployment remain unestablished. S01-A's synthetic human decision authority is not AI-agent delegation. S01-B's PR approval is not silently treated as review content, decision scope, or acceptance of the deviation. R0 is limited to the examined packet and is not proof of non-occurrence outside it.
+
+Axis A (framework text coverage) and Axis C (residual ambiguity) remain separate. No R ratings are inferred from NIST/ISO text coverage, and no composite score or ranking is calculated.
+
+**Limitations:** Investigator-side first pass; no independent second coder or human reviewer has validated the R ratings. All S01 evidence is synthetic. The historical criterion source's original date/version remains unverified.
+
+**Scope:** the new Axis B coding record and this audit section only. The recovered historical criteria, four detailed criterion coding batches, Axis A mapping, Proposed v0.1 crosswalk, S01 packet artifacts, code/tests, BAES repositories, and private HDA-01 material were not changed.
+
+**Next:** conduct an Axis A/B/C alignment review at criterion level, checking that the R ratings, existing Supported/Partial/Not established findings, and ambiguity register describe the same evidence without collapsing the axes. Preserve UL for ISO/IEC 42001 until sufficient authorized final-edition text is available.
