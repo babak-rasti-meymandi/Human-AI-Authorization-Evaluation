@@ -116,8 +116,8 @@ This is an initial investigator-side view using the **recovered historical wordi
 
 | ID | Historical criterion | S01-A | S01-B | Basis / limitation |
 |---|---|---|---|---|
-| C1 | Original Human Intent | Supported | Supported | H1 identifies the instruction. |
-| C2 | Intent Boundary | Supported | Supported | H1 prohibits behavior change unless explicitly authorized. |
+| C1 | Original Human Intent | Supported, synthetic-packet limited | Supported, synthetic-packet limited | H1 reconstructs the instruction supplied within the constructed scenario, not real-world intent. |
+| C2 | Intent Boundary | Supported, synthetic-packet limited | Supported, synthetic-packet limited | H1 states the scenario's permitted/prohibited boundary; A also has a scoped amendment. |
 | C3 | Delegated Authority | Not established for an agent | Not established | S01-A stipulates bounded human decision authority, but neither packet establishes an AI agent or delegated authority to an agent. S01-B also lacks approver identity and authority basis. See Section 14. |
 | C4 | Authority Scope | Not established for an agent; human decision scope supported, scenario-limited | Not established | S01-A defines the scope of a human function-contract decision, not delegated agent authority; implementation/execution are expressly excluded. B has no approver authority/scope record. See Section 14. |
 | C5 | AI Observation | Not established | Not established | No attributable AI observation. |
@@ -127,9 +127,9 @@ This is an initial investigator-side view using the **recovered historical wordi
 | C9 | Evidence | Partial | Partial | Technical artifacts exist; provenance/cross-links incomplete. |
 | C10 | Human Review | Partial | Not established (review content/scope) | A records behavior-level disclosure, not a review log; B records PR approval without identifying reviewed materials or findings. See Section 15. |
 | C11 | Human Decision | Supported, scenario-limited | Partial | A identifies the synthetic actor and explicit decision; B records PR approval but does not identify the human approver. See Section 16. |
-| C12 | Decision Scope | Supported, scenario-limited | Not established | DEC-K and H1-A1 bound the decision to the named function and specified semantic change; B has no specific authorization. |
+| C12 | Decision Scope | Supported, scenario-limited | Not established | DEC-K/AUTH-BASIS-01 bound the human decision to the named function and semantic change; B does not identify the approver or decision scope. |
 | C13 | Authorization Change | Supported, scenario-limited | Not established | H1-A1 records the S01-A amendment and links to DEC-K/AUTH-BASIS-01; B records none. |
-| C14 | Execution | Not established | Not established | No merge, deployment, or running-version evidence. |
+| C14 | Execution | Not established | Not established | Neither packet establishes an execution event, timing, resulting artifact, merge, deployment, or runtime version. |
 | C15 | Intent Deviation | Supported, synthetic-packet limited | Supported, synthetic-packet limited | H1 and the common proposed source identify the semantic difference; the boundary test is not required for this criterion and remains investigator-only. See Section 16. |
 | C16 | Deviation Acceptance | Supported, synthetic-scenario limited | Not established | A records explicit, attributed acceptance under the stipulated role authority; B records PR approval only. See Section 17. |
 | C17 | Revocation / Amendment | Not established at execution time | Not established | A contains H1-A1, but neither variant establishes execution or execution time; authorization state at execution cannot be reconstructed. See Section 17. |
@@ -407,3 +407,53 @@ C16 (acceptance) does not establish execution. C17 specifically asks for the aut
 **Scope:** this audit addition and the separate C16–C20 coding record only. No scenario packet, criterion wording, code/test, BAES repository, Proposed v0.1 worksheet/crosswalk, or private HDA-01 material was changed.
 
 **Next:** conduct a cross-batch consistency review of C1–C20 and consolidate the ambiguity register, checking that each criterion's status, cited artifact, observed fact, and rationale agree. Preserve all distinctions and do not calculate a composite score.
+
+
+## 18. Cross-batch consistency review and consolidated ambiguity register (2026-11-02)
+
+**Status:** Investigator-side consistency review of the four historical coding batches (C1–C5, C6–C10, C11–C15, C16–C20). This is not an independent second-coder review or human validation.
+
+### 18.1 Cross-batch consistency checks
+
+The detailed coding records were compared against the recovered historical criterion wording, the inspected packet artifacts, and the preliminary C1–C20 table above.
+
+| Check | Result | Resolution / retained limitation |
+|---|---|---|
+| Historical criterion identity and order | Consistent | All four records use the recovered historical C1–C20 set; Proposed v0.1 remains separate. |
+| Synthetic versus real-world claims | Consistent after qualification | C1–C2 and S01-A authority/decision findings are expressly limited to the constructed scenario. |
+| Human authority versus AI-agent delegation | Consistent | C3–C4 do not treat S01-A's stipulated human decision authority as AI-agent delegation. |
+| AI observation/reasoning/proposal/execution | Consistent | C5–C8 do not infer AI provenance from the existence of proposed code or a behavior-level disclosure. C7 remains descriptive Partial; C8 remains Not established. |
+| Evidence identity versus provenance | Consistent | C9 recognizes paths/blob SHAs as content identity, not authorship or event provenance. |
+| Disclosure, review, decision, scope, and authorization | Consistent | C10–C13 and C16 remain distinct; a disclosure or PR approval is not silently upgraded into informed authorization. |
+| Deviation versus acceptance | Consistent | C15 identifies the semantic deviation in both variants; C16 records explicit acceptance only in S01-A. |
+| Authorization versus execution | Consistent | C14 is Not established in both variants. C17 is Not established at execution time because neither packet supplies an execution event/time. |
+| Traceability and actor attribution | Consistent | C18 is Partial in both; C19 is Partial in A and Not established in B. Neither has end-to-end AI/execution provenance. |
+| Independent reconstruction | Qualified | C20 is explicitly an investigator-side assessment. No independent reviewer has performed it. |
+
+The preliminary table was reconciled to the detailed records for C1, C2, C11, C12, C14, and C15–C20. In particular, C11 in S01-B is Partial rather than fully Supported because DEC-M records an approval event but does not identify the human approver; C17 in S01-A is Not established at execution time despite the existence of H1-A1; and C19 in S01-A is Partial because only the synthetic human decision is attributed, not AI or execution actions.
+
+### 18.2 Consolidated ambiguity and missing-evidence register
+
+| ID | Area | Affected criteria | S01-A | S01-B | Evidence needed to resolve |
+|---|---|---|---|---|---|
+| AMB-01 | AI system and provenance | C3–C9, C19–C20 | No AI identity, observation, reasoning, authorship, or action provenance | Same | Attributable system/session and event records linked to source artifacts and actions |
+| AMB-02 | Agent delegation | C3–C4 | Human decision authority is stipulated; AI-agent delegation is not established | Agent and delegation not established | Explicit agent identity, delegation instrument, scope, and applicable constraints |
+| AMB-03 | Human review | C10 | Disclosure is recorded; materials inspected and review findings are not | PR approval only; approver and review content are unidentified | Reviewer identity/role, materials actually inspected, review activity, findings, and rationale |
+| AMB-04 | Human decision identity/scope | C11–C12, C19 | Synthetic decision actor and bounded scope are identified | PR approval event recorded; approver identity and decision scope absent | Identified approver, role/authority basis, and explicit scope of decision |
+| AMB-05 | Authorization amendment/acceptance | C13, C16 | Explicit synthetic authorization and H1-A1 amendment; authority is a scenario premise | No amendment or explicit deviation acceptance in packet; outside-packet authorization unresolved | Authenticated authority basis and explicit, attributable authorization/acceptance record |
+| AMB-06 | Execution and resulting outcome | C7–C8, C14, C17–C20 | No implementation/execution, timestamp, deployed artifact, or runtime outcome | Same; PR approval does not establish execution | Linked commit/build/deployment/runtime evidence, event timestamps, and resulting artifact |
+| AMB-07 | Authorization state at execution | C17 | H1-A1 exists, but no execution event/time; no execution-time state can be determined | No amendment or execution event/time; external authorization remains unresolved | Execution time plus complete effective authorization/amendment/revocation history |
+| AMB-08 | Event chronology and end-to-end traceability | C9, C18–C20 | Relative disclosure-decision-amendment order only; no calendar timestamps or execution chain | Approval statement and artifact inventory only; no reliable event chain | Time-stamped, linked event records with actor, artifact/version, decision, and execution references |
+| AMB-09 | Historical criterion provenance | All C1–C20 | Historical hand-over supplied by researcher; original date/version/storage not independently verified | Same | Original hand-over file identity, date/version, and source location if recoverable |
+
+### 18.3 Overall Phase 1 interpretation
+
+The current S01 packets support a bounded reconstruction of the **synthetic authorization contrast**: S01-A records behavior-level disclosure, a named synthetic human decision-maker, explicit authorization, and an instruction amendment; S01-B records PR approval but does not identify the approver or establish specific authorization for the deviation.
+
+Across both variants, the packet does not establish AI provenance or execution. The semantic deviation is identifiable in both, but acceptance is explicitly recorded only in S01-A. The S01-A authorization chain is a constructed scenario premise, not independently authenticated organizational authority. Neither variant supports a complete end-to-end reconstruction of AI-assisted execution.
+
+This consistency review does not establish that BAES caused the difference, improves reviewer performance, or outperforms NIST AI RMF 1.0 or ISO/IEC 42001:2023. Those comparative claims require separate framework-text coding and, for reviewer-performance claims, Phase 2 human data. No composite score or ranking is produced.
+
+**Scope:** this cross-batch audit section and the corrected preliminary table only. The four detailed coding records, recovered criterion wording, blank historical worksheet, S01 packet artifacts, code/tests, BAES repositories, Proposed v0.1 worksheet/crosswalk, and private HDA-01 material were not changed.
+
+**Phase 1 coding status:** initial investigator-side coding of all historical C1–C20 is complete. Cross-batch consistency review is complete at this investigator pass. Any later second-coder or human reviewer assessment must be separately collected and must not be represented as already performed.
