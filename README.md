@@ -42,21 +42,42 @@ The earlier financial-software migration is a conceptual motivation only. The cu
 
 ## Research questions
 
-1. Can reviewers identify a semantic deviation from the documented human intent?
-2. What evidence distinguishes explicit authorization from an inference based on technical correctness, tests, or approval?
-3. Does a later approval establish that the approver knew about and authorized the specific deviation?
-4. How consistently can independent reviewers apply the evaluation criteria?
-5. What are the limits of the method, and which conclusions remain uncertain?
+### Phase 1 — active
+
+1. Does each controlled evidence packet contain traceable records for the original instruction, scope, semantic change, decision, authority basis, and execution linkage where applicable?
+2. Which C1–C20 criteria are supported, contradicted, not established, ambiguous, or not applicable by the records actually included?
+3. Can the relevant event and authorization chain be reconstructed from the packet without relying on assumptions?
+4. What material gaps and residual ambiguities remain?
+
+### Phase 2 — deferred
+
+1. How do human reviewers interpret the same evidence packets?
+2. Do reviewers distinguish artifact approval from informed authorization of a specific semantic deviation?
+3. What errors, disagreements, or unresolved interpretations occur?
+4. If separately justified, does a structured recording aid change reviewer responses compared with conventional review?
+
+Phase 2 questions are not being answered in Phase 1. No human-review data currently exists.
 
 ## Planned method
 
-1. Stabilize the synthetic baseline, proposed change, tests, and scenario instruction.
-2. Define evaluation criteria before scoring reviewer evidence.
-3. Construct controlled scenario variants that differ only in the authorization evidence available.
-4. Record evidence separately from reviewer interpretations.
-5. Evaluate technical correctness, intent alignment, authorization, and evidence sufficiency as distinct dimensions.
-6. Compare a conventional engineering review with a structured evaluation using a public, task-specific recording sheet, applying the same underlying evidence to both.
-7. Document disagreement, ambiguity, limitations, and any protocol changes.
+### Phase 1 — active
+
+1. Stabilize the public synthetic baseline, proposed change, and available tests.
+2. Construct controlled, explicitly synthetic evidence variants that differ only in the pre-specified authorization evidence.
+3. Create evidence indexes linking artifact identifiers, provenance, timestamps, actors/sources, versions, and supported claims.
+4. Map the available records to C1–C20 without filling evidence gaps by inference.
+5. Conduct an investigator-side traceability and reconstruction audit; record what can and cannot be reconstructed and why.
+6. Record residual ambiguity, alternative interpretations, and additional evidence required.
+
+### Phase 2 — deferred
+
+1. Prepare and protect a new held-out scenario and reviewer packets.
+2. Recruit human reviewers only after the materials, access controls, and study safeguards are ready.
+3. Collect and preserve reviewer responses without alteration.
+4. Assess reviewer interpretations and, if separately justified, compare conventional and structured review conditions.
+5. Report disagreements, uncertainty, limitations, and protocol deviations.
+
+The two phases and their claim boundaries are defined in [Research Phases and Current Scope](15-Research-Phases-and-Current-Scope.md).
 
 ## Scope and exclusions
 
