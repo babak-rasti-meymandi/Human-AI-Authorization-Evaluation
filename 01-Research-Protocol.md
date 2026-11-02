@@ -4,6 +4,12 @@
 **Status:** Draft — not frozen or preregistered  
 **Research domain:** Human authorization and semantic deviation in AI-assisted engineering
 
+## Current phase boundary
+
+This protocol currently governs **Phase 1 — evidence-record reconstructability and sufficiency**. Its active unit of assessment is the evidence packet and its documentary contents. The investigator may assess traceability, record linkage, evidence sufficiency, and residual ambiguity, but this is not a human-review study.
+
+Human reviewer interpretation, reviewer performance, and any conventional-versus-structured review comparison belong to **Phase 2**, the direct next phase, and are deferred until human participation and the required study-integrity controls are available. No reviewer has been recruited or provided assistance, and no human assessment has been conducted. See [Research Phases and Current Scope](15-Research-Phases-and-Current-Scope.md).
+
 ## 1. Research question
 
 When an AI-assisted engineering change departs from a human's explicit instruction, what evidence is sufficient to determine whether the deviation was knowingly authorized?
@@ -64,36 +70,31 @@ These are provisional research propositions, not findings.
 
 The evaluation must allow evidence to challenge these propositions. The protocol must not force a preferred conclusion.
 
-## 6. Scenario and comparison design
+## 6. Phase 1 evidence-packet design
 
-The planned held-out study uses HDA-01, a synthetic engineering scenario maintained separately from this public repository. It has two decision-record variants and two review conditions. Public materials identify the design but do not disclose the held-out scenario's substantive content or concealed investigator key.
+The active Phase 1 work uses the public synthetic C99 S01 case for documentary analysis and controlled evidence-packet design. The two planned authorization variants are: (A) explicit, traceable authorization and (B) artifact approval without authorization established by the examined packet. These are constructed research stimuli, not historical events. The common technical artifacts must remain identical; only the pre-specified authorization evidence may differ.
 
-| Condition | Review method | Scenario variant |
-|---|---|---|
-| A-R1 | Conventional review | Explicit, traceable decision record |
-| A-R2 | Conventional review | Artifact approval record; specific informed authorization unresolved from the supplied record |
-| B-R1 | Structured review | Explicit, traceable decision record |
-| B-R2 | Structured review | Artifact approval record; specific informed authorization unresolved from the supplied record |
+HDA-01 is a separate held-out scenario prepared privately for Phase 2. Its substantive details and investigator key must remain concealed. It is not required to complete the Phase 1 documentary audit.
 
-The conventional condition receives the common evidence and a neutral review request. The structured condition receives the same underlying evidence and the same neutral response fields, plus the six task-specific recording prompts reproduced in its assigned packet. The public reviewer recording sheet documents these dimensions; do not attach it as a second response form when the structured prompts are already embedded in the packet, because that would duplicate the questions.
+Phase 1 does not assign human reviewers to conventional or structured conditions. It constructs and audits the two documentary authorization variants. The investigator records whether each required link is present, what each record supports, and what remains unresolved. Do not score reviewer performance or compare review methods in this phase.
 
-The two variants must differ only in the pre-specified decision-record evidence. All other underlying scenario evidence must be equivalent. Each reviewer is assigned one packet only; they must not see other conditions or variants before submitting their response. Record the assignment method and any deviations. The design is exploratory and is not powered to establish population-wide effects.
+The two evidence variants must differ only in the pre-specified decision-record evidence. All common technical artifacts and other underlying scenario evidence must be equivalent. The explicit-authorization variant must contain a traceable decision, authority basis, scope, effective time, and linkage to the relevant change. The approval-only variant may contain an artifact approval record, but the examined packet must not establish that the approver knew of the specific semantic deviation and had authority to accept it. Do not convert that evidentiary limitation into a claim that no authorization existed elsewhere.
 
-Do not publish confidential BAES clauses or internal derivations as the basis for the structured condition. The public recording sheet must define all steps needed to apply it.
+Do not publish confidential BAES clauses or internal derivations. The public evidence packet and audit method must be understandable without access to private BAES material.
 
-## 7. Procedure
+## 7. Phase 1 procedure
 
-1. Preserve the public S01 demonstration and label any S01 usability work as exploratory.
-2. Complete internal review of HDA-01, the four packet templates, expected distinctions, coding guide, and exposure-handling rule.
-3. Verify the private repository's access controls and collaborator list; keep investigator-only materials inaccessible to prospective reviewers.
-4. Finalize the public protocol, pre-registration plan, recording sheet, assignment method, and exposure rule before formal collection.
-5. Ensure packet versions provide equivalent common evidence and only the pre-specified differences.
-6. Assign each reviewer exactly one packet and preserve the exact materials and instructions delivered.
-7. Ask reviewers to cite evidence and distinguish supported conclusions from unresolved questions.
-8. Preserve raw responses unchanged. Code dimensions separately and retain disagreement and uncertainty.
-9. Record protocol deviations and explain whether they affect interpretation.
-10. Begin confirmatory data collection only after the protocol and materials are explicitly frozen and the integrity gate is passed.
-11. Report results only after the review procedure is complete.
+1. Preserve the public S01 demonstration and do not imply that its synthetic artifacts are historical events.
+2. Stabilize the common H1 instruction, baseline and proposed code, semantic comparison, and available test evidence.
+3. Construct the explicit-authorization and approval-only evidence variants as synthetic records.
+4. Verify that common evidence is identical and that only the intended authorization records differ.
+5. Create an evidence index recording identifiers, provenance, timestamps, actors/sources, versions, and claim linkage.
+6. Map each criterion to the records actually available; use not established, ambiguous, and not applicable only with their stated meanings.
+7. Perform an investigator-side reconstruction audit and document every inference that would be required to connect the records.
+8. Record residual ambiguity, missing evidence, alternative explanations, and protocol deviations.
+9. Review the packet for confidentiality, licensing, privacy, and accidental disclosure before publication.
+
+No reviewer recruitment, human assessment, or confirmatory human data collection is part of Phase 1.
 
 ## 8. Recording categories
 
@@ -124,15 +125,15 @@ Use **not established** when the packet lacks enough evidence to decide; it does
 - Ensure the public protocol and evidence packet are usable without access to private BAES material.
 - The researcher makes the final release decision; AI-assisted confidentiality review is not a guarantee.
 
-## 10. Blinding and data integrity
+## 10. Phase 2 blinding and data integrity requirements
 
-The investigator-facing public repository is not itself a blinded reviewer packet. Public scenario details, test outcomes, repository history, forks, or copies may be discoverable by prospective reviewers. Removing or renaming a public file cannot be assumed to restore blinding.
+These requirements apply to the deferred Phase 2 human-review study, not to the Phase 1 investigator-side documentary audit. The investigator-facing public repository is not itself a blinded reviewer packet. Public scenario details, test outcomes, repository history, forks, or copies may be discoverable by prospective reviewers. Removing or renaming a public file cannot be assumed to restore blinding.
 
 The public S01 case is a demonstration and may support exploratory usability work only; responses to it must not be presented as blinded confirmatory evidence. HDA-01 has been prepared in a separate private repository, but it remains a draft, has not been frozen, and has not been shown to reviewers. The private repository's collaborator list and access controls must be independently checked before recruitment. Keep its concealed scenario master, alternate packets, expected distinctions, and investigator coding outside this public repository.
 
 Provide reviewers all operational instructions and scoring criteria needed to perform the task fairly. Withhold only pre-specified investigator-only keys, alternate packets, and concealed outcomes that are not part of the assigned evidence. Document any intentionally withheld evidence in advance and apply the rule consistently. Ask reviewers about prior exposure after they submit their responses; record reported exposure and packet deviations under a pre-specified handling rule. Do not infer contamination solely from an unexpected answer or assume that no contamination occurred merely because none was reported.
 
-Do not begin confirmatory data collection until the held-out scenario, controlled storage and access, packet versions, coding guide, exposure rule, and protocol are reviewed and frozen. Keep pilot responses separate from confirmatory responses. See the [Reviewer Blinding and Data Integrity Plan](14-Reviewer-Blinding-and-Data-Integrity-Plan.md) for operational controls.
+Do not begin Phase 2 human data collection until the held-out scenario, controlled storage and access, packet versions, coding guide, exposure rule, and protocol are reviewed and frozen. Keep pilot responses separate from confirmatory responses. See the [Reviewer Blinding and Data Integrity Plan](14-Reviewer-Blinding-and-Data-Integrity-Plan.md) for operational controls.
 
 ## 11. Reporting
 
@@ -151,6 +152,8 @@ Do not claim certification, legal compliance, universal validity, or superiority
 
 ## 12. Protocol status and prerequisites
 
-This document is version 0.4.1-draft and is not frozen or preregistered. The synthetic code test is not a formal human-review evaluation. Public S01 is not eligible as a blinded confirmatory test. HDA-01 and its packet templates exist in a separate private repository, but they remain drafts. The private repository's collaborator list and access controls have not yet been independently verified in the study record. No reviewer recruitment or formal data collection has begun.
+This document is version 0.4.1-draft and is not frozen or preregistered. Phase 1 is active and limited to synthetic evidence-packet construction, documentary sufficiency, traceability, and investigator-side reconstruction. No human reviewer has been recruited or provided assistance, and no human assessment or formal data collection has begun.
 
-Before collection, the investigator must complete the scenario and packet review, verify private access controls, finalize the recording sheet and coding guide, define assignment and exposure handling, complete confidentiality/licensing/privacy checks, and freeze the exact materials with commit identifiers and a checksum manifest. Do not describe the study as preregistered or the blinding as verified until those steps are complete.
+Public S01 is not eligible as a blinded confirmatory human-review scenario. HDA-01 and its packet templates exist in a separate private repository for the deferred Phase 2, but they remain drafts. The private repository's collaborator list and access controls have not yet been independently verified in the study record.
+
+Before completing Phase 1, stabilize and review the common artifacts, controlled evidence variants, evidence index, criterion mapping, and reconstruction audit; complete confidentiality/licensing/privacy checks. Before Phase 2 collection, additionally verify private access controls, finalize reviewer instructions and coding, define assignment and exposure handling, and freeze exact materials with commit identifiers and a checksum manifest. Do not describe Phase 2 as preregistered or blinding as verified until those steps are complete.
