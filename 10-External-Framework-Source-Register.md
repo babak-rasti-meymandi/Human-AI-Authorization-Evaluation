@@ -1,6 +1,6 @@
 # External Framework Source Register — Initial Scope and Limits
 
-**Status:** Source inventory draft; initial NIST criterion-level mapping drafted; independent verification and ISO clause-level review pending  
+**Status:** Source inventory draft; initial NIST mapping for Proposed v0.1 exists; separate initial NIST mapping for recovered historical C1–C20 recorded; independent verification and ISO clause-level review pending  
 **Access date:** 2026-10-24  
 **Purpose:** Establish traceable public sources before mapping scenario criteria. This register is not a finding that any framework does or does not address a criterion.
 
@@ -53,4 +53,4 @@
 
 ## Current status
 
-The public source inventory is established. A new proposed C1–C20 draft has been created because no authoritative frozen table was available, and an initial NIST AI RMF 1.0 mapping is now recorded in [the crosswalk file](11-Criterion-Crosswalk-Template.md). This mapping is a first pass and requires independent verification. ISO/IEC 42001:2023 clause-level mapping remains pending; the public preview and FDIS-era crosswalk are not treated as substitutes for complete authorized final-edition text. No comparative score or framework-superiority claim is made.
+The public source inventory is established. A new proposed C1–C20 draft has been created because no authoritative frozen table was available, and an initial NIST AI RMF 1.0 mapping for that Proposed v0.1 set is recorded in [the crosswalk file](11-Criterion-Crosswalk-Template.md). A separate initial Axis A mapping for the recovered historical C1–C20 set is recorded in [Historical Framework Text Coverage — NIST / ISO](22-Historical-C1-C20-Framework-Text-Coverage-NIST-ISO.md). This mapping is a first pass and requires independent verification. ISO/IEC 42001:2023 clause-level mapping remains UL (unreviewed/access-limited); the official public publication records establish edition and organizational AIMS scope but do not support criterion-level clause coding. The public preview and FDIS-era crosswalk are not treated as substitutes for sufficient authorized final-edition text. No comparative score or framework-superiority claim is made.
