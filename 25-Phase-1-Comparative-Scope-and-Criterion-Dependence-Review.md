@@ -124,7 +124,21 @@ T2 is therefore the better-calibrated rating: specific conceptual coverage exist
 - BAES T3 now applies to C3, C4, and C11.
 - BAES C18 is T2.
 - No other BAES T-level was changed in this challenge review.
-- NIST C7 remains T0 within the reviewed AI RMF 1.0 Core only; this does not imply absence across all NIST resources.
+- NIST C7 is T1 after subsequent challenge review: MAP 2.2 provides indirect coverage of AI output use/oversight and subsequent decisions/actions, but does not expressly distinguish proposed from executed action. This remains bounded to the reviewed AI RMF 1.0 Core.
 - No Axis B R-level, historical criterion wording, or Axis C ambiguity rating was changed.
 
 This correction is made because the criterion's temporal-ordering element was not expressly established in the examined text, not to strengthen or weaken any framework's comparative position.
+
+
+## 10. Subsequent challenge review of all BAES/NIST T1/T2 entries (2026-11-02)
+
+The full investigator-side challenge review is recorded in `26-Phase-1-Axis-A-T1-T2-Adversarial-Calibration-Review.md`.
+
+- All BAES T1/T2 judgments were retained with criterion-specific rationales and explicit limits.
+- All NIST T1/T2 judgments were retained with criterion-specific rationales and explicit limits.
+- One additional NIST correction was made: **C7 changed from T0 to T1**. MAP 2.2 addresses how AI output may be used and overseen by humans and the information needed for decisions and subsequent actions. This is relevant indirect coverage; it does not establish the specific proposed-versus-executed distinction.
+- No Axis B R-level, Axis C ambiguity rating, or historical criterion wording changed.
+- ISO remains UL at clause level.
+- The review is investigator-side, not independent second-coder verification.
+
+This later calibration supersedes the earlier note in this document that described NIST C7 as T0. The mapping remains restricted to the examined AI RMF 1.0 Core.
