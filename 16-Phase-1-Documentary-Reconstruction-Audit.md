@@ -605,3 +605,36 @@ The synthesis explicitly does not establish BAES novelty, implementation, empiri
 **Scope:** new interim synthesis, this audit section, and README index only. No BAES repository, BAES-SECRET, private HDA-01, S01 packet artifacts, code/tests, or historical criterion wording was modified.
 
 **Next validation gate:** independent second-coder review of historical C1–C20 and T/R ratings; sufficient authorized ISO final-edition access if clause-level mapping is pursued; and Phase 2 human-review safeguards before any reviewer recruitment or data collection.
+
+
+## 24. Comparative scope and criterion-dependence review (2026-11-02)
+
+**Status:** Initial investigator-side methodological review recorded; no ratings or criterion wording changed.
+
+The review is recorded in `25-Phase-1-Comparative-Scope-and-Criterion-Dependence-Review.md`. It makes explicit that the current Axis A comparison is criterion-conditioned and source-limited, not a comprehensive comparison of entire frameworks.
+
+### Key methodological finding
+
+Recovered Historical C1–C20 are evaluation questions focused on human intent, delegation, authority, AI activity, decisions, authorization, execution, traceability, and reconstruction. They are not normative requirements of BAES, NIST AI RMF 1.0, or ISO/IEC 42001:2023. Their original date/version and storage provenance remain unverified. The current mapping therefore cannot be treated as an independently established neutral or exhaustive sampling frame for all three frameworks.
+
+### Source boundaries retained
+
+- **BAES:** examined public repository text, principally the public introduction and supporting public context pages; no private BAES material was accessed.
+- **NIST:** examined NIST AI RMF 1.0 public Core; no inference is made about every NIST publication, Playbook resource, profile, or implementation guide.
+- **ISO/IEC 42001:2023:** insufficient authorized final-edition clause text is available for criterion-level coding; all C1–C20 remain UL, not T0.
+
+The review also records that BAES T3 for C3, C4, C11, and C18 means explicit public conceptual coverage closely corresponding to those criteria. It does not establish implementation, validation, operational completeness, novelty, added value, or superiority.
+
+### Researcher’s interim milestone
+
+The researcher characterized the current achievement as follows:
+
+> «به نظرم یک دستاورد مهم به دست آورده‌ایم: اکنون می‌توانیم با سند و ارجاع نشان دهیم که BAES در برخی مفاهیم، تعریف‌های عمومی صریحی دارد؛ NIST در زمینه‌های مدیریت ریسک و نظارت سازمانی پوشش مرتبطی دارد؛ و درباره ISO هنوز اطلاعات کافی برای قضاوت بندبه‌بند نداریم.»
+
+This is retained as a bounded interim milestone statement, not a final comparative conclusion.
+
+### Effect on existing findings
+
+No T-level, R-level, criterion wording, or Axis C ambiguity rating was changed. Axes A, B, and C remain distinct; no composite score or framework ranking is introduced.
+
+**Next:** prioritize independent second-coder verification; retain the current results as investigator-side exploratory findings if independent coding is unavailable. Pursue ISO clause-level mapping only after sufficient authorized final-edition access. Recover the historical criteria hand-over provenance if possible. Phase 2 remains deferred and requires a separate human-review integrity gate.
