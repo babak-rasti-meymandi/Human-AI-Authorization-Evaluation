@@ -131,11 +131,11 @@ This is an initial investigator-side view using the **recovered historical wordi
 | C13 | Authorization Change | Supported, scenario-limited | Not established | H1-A1 records the S01-A amendment and links to DEC-K/AUTH-BASIS-01; B records none. |
 | C14 | Execution | Not established | Not established | No merge, deployment, or running-version evidence. |
 | C15 | Intent Deviation | Supported, synthetic-packet limited | Supported, synthetic-packet limited | H1 and the common proposed source identify the semantic difference; the boundary test is not required for this criterion and remains investigator-only. See Section 16. |
-| C16 | Deviation Acceptance | Supported, scenario-limited | Not established | DEC-K records disclosure and explicit authorization under the stipulated role authority; B does not record specific authorization. |
-| C17 | Revocation / Amendment | Supported, scenario-limited | Not established | H1-A1 is a separately identified S01-A amendment; no revocation or later amendment is asserted. |
-| C18 | Traceability | Partial | Partial | A now links actor, role, authority basis, decision, and amendment; calendar timestamps and implementation/execution links remain absent. B retains limited approval traceability. |
-| C19 | Actor Attribution | Supported, scenario-limited | Not established | A uses synthetic actor and role identifiers; B's approver remains unidentified in the supplied record. |
-| C20 | Unambiguous Reconstruction | Not assessed | Not assessed | This is the Phase 1 audit question; final reconstruction remains open. |
+| C16 | Deviation Acceptance | Supported, synthetic-scenario limited | Not established | A records explicit, attributed acceptance under the stipulated role authority; B records PR approval only. See Section 17. |
+| C17 | Revocation / Amendment | Not established at execution time | Not established | A contains H1-A1, but neither variant establishes execution or execution time; authorization state at execution cannot be reconstructed. See Section 17. |
+| C18 | Traceability | Partial | Partial | A links disclosure, decision and amendment in relative order but lacks end-to-end execution links; B identifies artifacts and an approval statement only. See Section 17. |
+| C19 | Actor Attribution | Partial | Not established | A attributes the synthetic decision to ACT-HUM-01 but not AI or execution actions; B's approver is unidentified. See Section 17. |
+| C20 | Unambiguous Reconstruction | Partial (investigator-side) | Not established (investigator-side) | A's decision/amendment sequence is reconstructable but AI/execution/outcome remain unresolved; B retains material ambiguity. No independent reviewer has performed this assessment. See Section 17. |
 
 “Not established” describes the supplied packet only; it does not prove an event did not occur elsewhere. C11 in B records an approval event but does not identify the human approver. C15 is grounded in the original instruction and proposed source-code difference; it does not establish acceptance or authorization of the deviation. C20 must be revisited after corrective work.
 
@@ -383,4 +383,27 @@ C11, C12, and C13 are distinct: recording a decision does not by itself establis
 
 **Scope:** this audit addition and the separate C11–C15 coding record only. No scenario packet, criterion wording, code/test, BAES repository, Proposed v0.1 worksheet/crosswalk, or private HDA-01 material was changed.
 
-**Next:** continue investigator-side coding with historical C16–C20, preserving the separation among deviation acceptance, authorization state at execution, traceability, actor attribution, and independent reconstruction.
+**Next:** complete a cross-batch consistency review of historical C1–C20, check all criterion statuses and evidence references against the detailed records, and consolidate the ambiguity register without creating a composite score.
+
+
+## 17. Historical C16–C20 documentary coding — fourth batch (2026-11-02)
+
+**Status:** Investigator-side coding recorded for S01-A and S01-B; no independent reviewer reconstruction or validation.
+
+The detailed record is `21-Phase-1-Historical-C16-C20-Coding-S01.md`. It records artifact paths and Git blob SHAs, criterion-level findings, and unresolved evidence gaps.
+
+### Batch findings
+
+- **C16 — Deviation Acceptance:** Supported for S01-A within the synthetic scenario: DEC-K records explicit acceptance by ACT-HUM-01 after disclosure, under the stipulated authority basis, and H1-A1 records the amendment. Not established for S01-B; DEC-M records PR approval only.
+- **C17 — Revocation / Amendment:** Not established at execution time for either variant. S01-A has a recorded amendment, but neither packet establishes an execution event or time. The authorization state at execution therefore cannot be reconstructed.
+- **C18 — Traceability:** Partial for both variants. S01-A links disclosure, decision, and amendment in relative order, but lacks AI provenance and implementation/execution links. S01-B identifies common artifacts and an approval statement but lacks approver identity, event timing, authorization linkage, and execution chain.
+- **C19 — Actor Attribution:** Partial for S01-A: the synthetic human decision is attributed to ACT-HUM-01, but AI and execution actors are not identified. Not established for S01-B because the approver is unidentified.
+- **C20 — Unambiguous Reconstruction:** Partial for S01-A and not established for S01-B, as investigator-side assessments only. A's synthetic decision/amendment sequence can be reconstructed, but AI provenance, execution, timestamps, and outcome remain unresolved. B leaves approver identity, review scope, authorization, and execution unresolved. No independent reviewer has performed C20.
+
+### Interpretive safeguards
+
+C16 (acceptance) does not establish execution. C17 specifically asks for the authorization state at execution time; a scenario amendment without an execution event/time does not satisfy that requirement. C18 and C19 must not be inferred from document existence alone. C20 is not a human reviewer result: it records the investigator's assessment of the packet's reconstructability.
+
+**Scope:** this audit addition and the separate C16–C20 coding record only. No scenario packet, criterion wording, code/test, BAES repository, Proposed v0.1 worksheet/crosswalk, or private HDA-01 material was changed.
+
+**Next:** conduct a cross-batch consistency review of C1–C20 and consolidate the ambiguity register, checking that each criterion's status, cited artifact, observed fact, and rationale agree. Preserve all distinctions and do not calculate a composite score.
