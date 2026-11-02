@@ -39,3 +39,10 @@ The hand-over also specifies three independent evaluation axes: framework text c
 **Provenance limitation:** The hand-over was supplied from the researcher's historical conversation logs. Its original date, version identifier, and original storage location have not yet been independently established. The recovered file therefore records the source and limits without claiming formal version freeze.
 
 **Next actions:** Normalize T0–T3 and R0–R3 operationally; build the master C1–C20 matrix using the recovered historical criteria; separately inspect the later proposed set and its crosswalk dependencies; then assess S01-A and S01-B against actual evidence. No BAES Foundation or protected repository changes are made.
+
+
+## Research-phase decision — 2026-11-02
+
+The researcher confirmed Phase 1 as the immediate objective: documentary assessment of evidence-packet sufficiency, traceability, reconstruction, and residual ambiguity. This is an investigator-led audit, not a human-review study. No human reviewer has been recruited or provided assistance, and no human assessment has been conducted.
+
+Phase 2, human reviewer interpretation and performance, is retained as the direct next phase but deferred until human participation and study-integrity arrangements are available. The Phase 2 plan may examine whether reviewers distinguish artifact approval from informed authorization and, if separately justified, compare conventional and structured review. This decision does not freeze the protocol, validate the criteria, complete the evidence packets, or authorize recruitment. See [Research Phases and Current Scope](15-Research-Phases-and-Current-Scope.md).
