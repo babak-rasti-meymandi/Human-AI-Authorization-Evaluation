@@ -1,5 +1,7 @@
 # Reviewer Blinding and Data Integrity Plan
 
+> **Phase boundary (2026-11-02):** This plan governs the deferred Phase 2 human-review study. Phase 1 does not involve human reviewers and does not claim reviewer blinding. The safeguards below remain prerequisites before Phase 2 recruitment or data collection. See [Research Phases and Current Scope](15-Research-Phases-and-Current-Scope.md).
+
 **Status:** Working plan; not frozen or preregistered  
 **Applies to:** Public research materials, reviewer packets, pilot work, and any future confirmatory evaluation  
 **Current decision:** Public S01 is not eligible to serve as a blinded confirmatory test. HDA-01 has been prepared privately but remains a draft.
