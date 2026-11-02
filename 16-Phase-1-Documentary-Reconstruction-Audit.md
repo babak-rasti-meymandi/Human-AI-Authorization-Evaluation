@@ -14,7 +14,7 @@ The S01-A and S01-B decision records and common technical materials already exis
 - **S01-B:** a pull request was approved, but the supplied record does not document behavior-level disclosure or specific authorization. It correctly leaves open whether the approver noticed the change elsewhere or whether separate authorization existed.
 - The technical artifacts are intended to be common to both variants. The investigator-side boundary-test source and result are excluded from the default reviewer packet.
 
-The design is coherent as a constructed contrast. The S01-A authority and amendment chain has now been made explicit through synthetic actor/role identifiers, a bounded scenario authority premise, an exact H1 amendment, and a relative event sequence. This improves documentary reconstruction within S01-A but does not authenticate a real delegation or provide calendar timestamps, immutable implementation identifiers, or execution history. S01-B remains intentionally limited to its recorded PR approval. The common code header filename correction is separately documented in Section 9. The packet manifests remain uncompleted templates.
+The design is coherent as a constructed contrast. The S01-A authority and amendment chain has now been made explicit through synthetic actor/role identifiers, a bounded scenario authority premise, an exact H1 amendment, and a relative event sequence. This improves documentary reconstruction within S01-A but does not authenticate a real delegation or provide calendar timestamps, immutable implementation identifiers, or execution history. S01-B remains intentionally limited to its recorded PR approval. The common code header filename correction is separately documented in Section 9. Two investigator-side A/B inventories have now been created in Section 11. The blank packet manifest remains a per-reviewer-delivery template and is intentionally unfilled.
 
 **Conclusion:** retain and correct the existing artifacts; do not recreate S01-A or S01-B.
 
@@ -28,8 +28,11 @@ The design is coherent as a constructed contrast. The S01-A authority and amendm
 - `08-Reviewer-Packets/common/technical-evidence.md`
 - `08-Reviewer-Packets/investigator-key.md`
 - `08-Reviewer-Packets/packet-manifest.md`
+- `08-Reviewer-Packets/investigator-manifest-S01-A.md`
+- `08-Reviewer-Packets/investigator-manifest-S01-B.md`
 - `08-Reviewer-Packets/common/code/baseline/group_count.c`
-- `08-Reviewer-Packets/common/code/include/group_count.c`
+- `08-Reviewer-Packets/common/code/proposed-change/group_count.c`
+- `08-Reviewer-Packets/common/code/include/group_count.h`
 - `08-Reviewer-Packets/common/code/tests/test_characterization.c`
 - `06-Code-Sample/RESULTS.md` and canonical C source/test files
 - `04-Evidence-and-Results/evidence-register.md`
@@ -62,11 +65,13 @@ This is repository-content inspection, not verification of external events or id
 
 **Status: corrected.** The pre-correction packet path `08-Reviewer-Packets/common/code/include/group_count.c` contained a C header. It was replaced with `group_count.h`, the obsolete path was removed, and packet-local compilation/characterization checks passed for both implementations. See Section 9 for commit identifiers and verification limits. No program behavior was changed.
 
-### F4 — Packet manifest is only a template
+### F4 — Reviewer-delivery template and investigator inventories
 
-`packet-manifest.md` has blank packet/version and supplied-artifact fields. It does not establish the exact contents of a controlled Phase 1 packet.
+**Status: investigator-side inventory requirement completed; reviewer-delivery template intentionally remains blank.** The files `investigator-manifest-S01-A.md` and `investigator-manifest-S01-B.md` now record exact repository paths, Git blob SHAs, and inclusion/exclusion status for each synthetic variant. The common technical artifacts have identical paths and blob SHAs in both inventories; the variant-specific decision evidence differs as intended.
 
-**Required:** create investigator-side A/B inventories with exact paths, immutable versions/identifiers, and inclusion/exclusion status. Do not claim reviewer delivery or invent reviewer assignments.
+`packet-manifest.md` remains a blank per-reviewer-assignment template. Its assignment, delivery, date, and return fields cannot be completed because no reviewer has been recruited or assigned. This is not an outstanding Phase 1 inventory defect and must not be represented as a reviewer-delivery record.
+
+**Residual limitation:** the manifests snapshot repository contents on 2026-11-02; they do not prove reviewer delivery, human assessment, or a frozen confirmatory packet. Re-check blob SHAs before any future transfer or freeze.
 
 ### F5 — Test results are outside the packet
 
@@ -129,7 +134,7 @@ This is an initial investigator-side view using the **recovered historical wordi
 | P1 | Define synthetic actor/role and authority evidence for A | Completed: AUTH-BASIS-01 and linked DEC-K | Synthetic identities and stipulated authority only |
 | P1 | Define exact A instruction amendment and link to authorized change | Completed: H1-A1 linked to DEC-K and AUTH-BASIS-01 | Preserve original common H1 |
 | P1 | Add B PR/approval identifiers and chronology only as scenario-defined | Traceable approval record | Do not imply authorization or its absence outside packet |
-| P1 | Create investigator-side A/B packet inventories | Two completed manifests | No claim of reviewer delivery |
+| P1 | Create investigator-side A/B packet inventories | Completed: `investigator-manifest-S01-A.md` and `investigator-manifest-S01-B.md`; see Section 11 | No claim of reviewer delivery; blank assignment template remains reserved for Phase 2 |
 | P2 | Link test results to exact source versions | Reproducibility record | Same common evidence in A and B |
 | P2 | Select criterion set for Phase 1 | Recorded criterion-set decision | Do not merge sets |
 | P2 | Complete investigator C1–C20 mapping and ambiguity register | Referenced reconstruction audit | No composite score or human-performance claim |
@@ -155,6 +160,8 @@ No human recruitment, reviewer assignment, reviewer response, or performance ana
 | common/H1-instruction.md | f0f00d90709cd37d3504bb32cbfe406f7d3866f1 |
 | common/technical-evidence.md | 8aacd89af259b528470acc3db8968ab03350acc9 |
 | packet-manifest.md | 43f6cddb8f60968c4dfd10da565081ad50c442e5 |
+| investigator-manifest-S01-A.md | c9e8878783b44f081c0ef7473f985059c7bfd66e |
+| investigator-manifest-S01-B.md | 7c169ef3ab9865441eb12aa22596d9c51d2b7d92 |
 | investigator-key.md | 1c62fd0d849c7520da8bbf24e7ac0c4937d67825 |
 | evidence-register.md | b12893f7e2dcc745efd5b0098e6edf1d0e42ea46 |
 | 06-Code-Sample/RESULTS.md | c39ac60189c148b58a3b962c8dbbaf6bdae12e95 |
@@ -222,7 +229,29 @@ The investigator key and evidence register were updated to reference these artif
 - The sequence is relative, not calendar-timestamped. No real date/time is asserted.
 - No implementation commit, PR approval, merge, release, deployment, or execution is established by these new records.
 - No AI provenance or AI participation is established.
-- This correction does not complete packet manifests, establish reviewer delivery, or constitute human validation.
+- At the time of this S01-A correction, investigator-side manifests had not yet been created; they are now recorded separately in Section 11. This does not establish reviewer delivery or constitute human validation.
 - S01-B remains unchanged; its missing authorization evidence is a property of the supplied synthetic packet, not proof that authorization did not exist elsewhere.
 
 **Scope:** S01-A decision/authority documentation, investigator key, evidence register, and this audit only. The common H1 instruction, S01-B decision record, technical implementation, tests, BAES repositories, and private HDA-01 materials were not changed.
+
+
+## 11. Investigator-side A/B inventories — F4 correction (2026-11-02)
+
+**Finding F4 status: investigator-side inventory completed; reviewer-delivery template intentionally remains unfilled.**
+
+The following manifests were created:
+
+- `08-Reviewer-Packets/investigator-manifest-S01-A.md` — Git blob SHA `c9e8878783b44f081c0ef7473f985059c7bfd66e`.
+- `08-Reviewer-Packets/investigator-manifest-S01-B.md` — Git blob SHA `7c169ef3ab9865441eb12aa22596d9c51d2b7d92`.
+
+Each manifest records exact repository paths, Git blob SHAs, and inclusion/exclusion status. The six common technical artifacts have matching paths and blob SHAs in both variants. S01-A includes DEC-K, AUTH-BASIS-01, and H1-A1; S01-B includes only its DEC-M decision record as variant-specific decision evidence.
+
+The investigator-only key, boundary-test source, local RESULTS record, draft Phase 2 condition instructions, and hypothetical reviewer assignment/response data are explicitly excluded. The exclusion of RESULTS.md is deliberate pending F5 source/result linkage.
+
+**S01-B record limitation preserved:** the supplied DEC-M records PR approval only. It supplies no stable PR identifier, approver identity, or timestamp. No such details were invented. PR approval is not treated as specific authorization for the semantic change; equally, the packet does not establish that separate authorization was absent outside it. This is a documentary limitation, not a claim about events beyond the supplied scenario record.
+
+The existing `08-Reviewer-Packets/packet-manifest.md` remains a blank per-reviewer-assignment template. It is not a Phase 1 investigator inventory and must remain unfilled until an actual reviewer assignment and delivery occur. No reviewer delivery, human review, or human validation is claimed.
+
+**Verification:** both new manifest files and this audit update were fetched again from the repository after commit; their blob SHAs are recorded above. The underlying common code, tests, S01-A/S01-B decision records, investigator key, and evidence register were not changed in this F4 operation.
+
+**Phase 1 result:** F4's investigator-side inventory requirement is complete. F5 remains open.
