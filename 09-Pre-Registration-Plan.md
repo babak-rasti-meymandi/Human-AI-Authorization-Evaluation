@@ -1,5 +1,7 @@
 # Pre-Registration Plan — HDA-01 Reviewer Study
 
+> **Scope decision (2026-11-02): Deferred to Phase 2.** This document is retained as a draft plan for the future human-review phase. It is not the active Phase 1 protocol, is not registered or frozen, and must not be used to imply that human recruitment or data collection has begun. Phase 1 is limited to evidence-record reconstructability and sufficiency. See [Research Phases and Current Scope](15-Research-Phases-and-Current-Scope.md).
+
 **Status:** Draft for review; not registered or frozen  
 **Protocol basis:** Research Protocol 0.4.1-draft  
 **Study type:** Small, exploratory, scenario-based reviewer study  
