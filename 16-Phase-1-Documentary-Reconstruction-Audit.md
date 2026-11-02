@@ -161,3 +161,36 @@ The snapshot supports traceability to repository contents inspected on the audit
 ---
 
 **Audit status:** Initial findings recorded; corrective work remains open. No BAES normative repository or private HDA-01 material was changed.
+
+
+## 9. Post-audit correction — P1 common header filename (2026-11-02)
+
+**Finding F3 status: corrected in the repository.**
+
+The common packet copy was corrected by creating
+`08-Reviewer-Packets/common/code/include/group_count.h` with the exact
+contents of the previously misnamed header, verifying the new path and
+content, and then deleting
+`08-Reviewer-Packets/common/code/include/group_count.c`.
+
+- Correction commit (new header): `b74c377b04768375ea4a103f7655acd861ac66fc`
+- Removal commit (old path): `8404ea0e661223319644d0b4ae2a724ee9e572b4`
+- Header blob SHA remained unchanged: `be240c0d3013103648038d6e1f56f0e02be8980f`
+- The canonical `06-Code-Sample/include/group_count.h` and all implementation
+  files were not changed.
+- The C source files and characterization test include `group_count.h`;
+  no C source file used the old `group_count.c` header path.
+- The audit's earlier reference to the old path in Sections 2 and 3 is retained
+  as a historical description of the inspected pre-correction state.
+
+**Packet-local compile check:** using the exact header, baseline implementation,
+proposed-change implementation, and characterization test contents retrieved
+from the repository, both variants compiled with
+`-std=c99 -Wall -Wextra -Wpedantic -Werror` and passed the characterization
+test. This was a local reproduction of the packet build, not a GitHub Actions
+run or independent third-party verification.
+
+**Scope of correction:** filename/path only. No function declaration,
+implementation logic, test logic, scenario decision record, authorization
+content, or canonical source artifact was modified. The investigator-only
+boundary test remains outside the default common reviewer packet.
