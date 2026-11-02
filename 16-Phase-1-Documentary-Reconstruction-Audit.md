@@ -126,18 +126,18 @@ This is an initial investigator-side view using the **recovered historical wordi
 | C8 | AI Executed Action | Not established | Not established | No attributable AI execution record. |
 | C9 | Evidence | Partial | Partial | Technical artifacts exist; provenance/cross-links incomplete. |
 | C10 | Human Review | Partial | Not established (review content/scope) | A records behavior-level disclosure, not a review log; B records PR approval without identifying reviewed materials or findings. See Section 15. |
-| C11 | Human Decision | Supported, scenario-limited | Supported, limited | A identifies ACT-HUM-01 and the explicit decision; B describes PR approval only. No real actor or calendar time is asserted. |
+| C11 | Human Decision | Supported, scenario-limited | Partial | A identifies the synthetic actor and explicit decision; B records PR approval but does not identify the human approver. See Section 16. |
 | C12 | Decision Scope | Supported, scenario-limited | Not established | DEC-K and H1-A1 bound the decision to the named function and specified semantic change; B has no specific authorization. |
 | C13 | Authorization Change | Supported, scenario-limited | Not established | H1-A1 records the S01-A amendment and links to DEC-K/AUTH-BASIS-01; B records none. |
 | C14 | Execution | Not established | Not established | No merge, deployment, or running-version evidence. |
-| C15 | Intent Deviation | Supported | Supported | Code and investigator boundary test show 2 versus 3. |
+| C15 | Intent Deviation | Supported, synthetic-packet limited | Supported, synthetic-packet limited | H1 and the common proposed source identify the semantic difference; the boundary test is not required for this criterion and remains investigator-only. See Section 16. |
 | C16 | Deviation Acceptance | Supported, scenario-limited | Not established | DEC-K records disclosure and explicit authorization under the stipulated role authority; B does not record specific authorization. |
 | C17 | Revocation / Amendment | Supported, scenario-limited | Not established | H1-A1 is a separately identified S01-A amendment; no revocation or later amendment is asserted. |
 | C18 | Traceability | Partial | Partial | A now links actor, role, authority basis, decision, and amendment; calendar timestamps and implementation/execution links remain absent. B retains limited approval traceability. |
 | C19 | Actor Attribution | Supported, scenario-limited | Not established | A uses synthetic actor and role identifiers; B's approver remains unidentified in the supplied record. |
 | C20 | Unambiguous Reconstruction | Not assessed | Not assessed | This is the Phase 1 audit question; final reconstruction remains open. |
 
-“Not established” describes the supplied packet only; it does not prove an event did not occur elsewhere. C11 in B means only that the constructed record describes PR approval, not authorization of the semantic deviation. C15 relies on the investigator-side boundary result, which remains excluded from the default reviewer packet. C20 must be revisited after corrective work.
+“Not established” describes the supplied packet only; it does not prove an event did not occur elsewhere. C11 in B records an approval event but does not identify the human approver. C15 is grounded in the original instruction and proposed source-code difference; it does not establish acceptance or authorization of the deviation. C20 must be revisited after corrective work.
 
 ## 5. Corrective work sequence
 
@@ -361,3 +361,26 @@ The presence of proposed code is not proof of AI authorship. PR approval is not 
 **Scope:** this audit addition and the separate C6–C10 coding record only. No S01 packet, criterion wording, code/test, BAES repository, Proposed v0.1 worksheet/crosswalk, or private HDA-01 material was changed.
 
 **Next:** continue investigator-side coding with historical C11–C15. C11–C13 must preserve the distinction among a decision, its scope, and a formal authorization amendment; C14 must remain separate from approval and authorization.
+
+
+## 16. Historical C11–C15 documentary coding — third batch (2026-11-02)
+
+**Status:** Investigator-side coding recorded for S01-A and S01-B; no human reviewer assessment or independent validation.
+
+The detailed record is `20-Phase-1-Historical-C11-C15-Coding-S01.md`. It records the inspected artifact paths and Git blob SHAs, criterion-level findings, and evidence gaps.
+
+### Batch findings
+
+- **C11 — Human Decision:** Supported for S01-A within the synthetic scenario: DEC-K identifies ACT-HUM-01 and records an explicit decision. Partial for S01-B: DEC-M records PR approval, but does not identify the human approver.
+- **C12 — Decision Scope:** Supported for S01-A within the synthetic scenario; not established for S01-B because DEC-M does not identify the approver or scope of the approval.
+- **C13 — Authorization Change:** Supported for S01-A within the stipulated synthetic authority premise: DEC-K records the decision and H1-A1 records the corresponding amendment. Not established for S01-B; no authorization amendment is supplied.
+- **C14 — Execution:** Not established in either variant. Neither packet establishes a timestamped execution event, resulting artifact, merge, deployment, or runtime version.
+- **C15 — Intent Deviation:** Supported for both variants within the synthetic packet. H1 defines the original complete-groups behavior; the common proposed source rounds up when a remainder exists. This identifies the semantic deviation independently of whether it was authorized. The investigator-only boundary test is not required to establish this criterion and remains excluded from the default reviewer packet.
+
+### Interpretive safeguards
+
+C11, C12, and C13 are distinct: recording a decision does not by itself establish its scope or a valid authorization amendment. C14 is separate from approval and authorization. C15 identifies the technical deviation; it does not establish acceptance or authorization, which are assessed separately under C16. S01-A's authority basis is stipulated scenario evidence, not independently authenticated real-world authority. S01-B's PR approval does not prove that separate authorization was absent outside the packet.
+
+**Scope:** this audit addition and the separate C11–C15 coding record only. No scenario packet, criterion wording, code/test, BAES repository, Proposed v0.1 worksheet/crosswalk, or private HDA-01 material was changed.
+
+**Next:** continue investigator-side coding with historical C16–C20, preserving the separation among deviation acceptance, authorization state at execution, traceability, actor attribution, and independent reconstruction.
