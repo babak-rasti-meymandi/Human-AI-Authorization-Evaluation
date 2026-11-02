@@ -154,7 +154,7 @@ No human recruitment, reviewer assignment, reviewer response, or performance ana
 | 06-Code-Sample/RESULTS.md | c39ac60189c148b58a3b962c8dbbaf6bdae12e95 |
 | 12-Recovered-Criteria-C1-C20.md | b52ead49e23f9099d97551636fadc90394d1e29e |
 | 12-Proposed-Criteria-C1-C20.md | 7c36340224664f2240480e901f43bbf6521cf7b8 |
-| 13-Criterion-Coding-Worksheet.md | f97171ef6f10e987e28e6e654f10e6e7e |
+| 13-Criterion-Coding-Worksheet.md | f97171ef6f10e987e28e6e654e7a3c598b4c6aac |
 
 The snapshot supports traceability to repository contents inspected on the audit date; it is not an attestation of external events.
 
