@@ -14,9 +14,13 @@
 
 ## B. Protocol
 
+- [x] Separate the active evidence-record reconstruction phase from the deferred human-review phase.
+- [ ] Complete and review the Phase 1 evidence-packet reconstruction audit.
+- [ ] Keep the HDA-01 human-review plan deferred until appropriate human participation and integrity controls are available.
+
 - [x] Draft the research protocol.
 - [x] Define the separation between technical correctness, intent alignment, authorization evidence, and evidence sufficiency.
-- [x] Define the initial comparison between conventional engineering review and structured review informed by BAES.
+- [~] Preserve the conventional-versus-structured human-review comparison as a Phase 2 question; it is not part of the active Phase 1 assessment.
 - [x] Choose a synthetic reproduction rather than requesting or publishing the researcher's personal code.
 - [~] Align and freeze the initial scenario wording and baseline instruction.
 - [x] Draft a repeatable reviewer recording sheet.
@@ -41,10 +45,13 @@
 - [x] Create an initial evidence register and provenance fields.
 - [x] Create a blank investigator-side C1–C20 coding worksheet; no case results have been entered.
 - [x] Draft the reviewer recording template for both review conditions.
-- [ ] Conduct a packet-consistency check across all four condition/variant cells.
-- [ ] Run a pilot review and log misunderstandings before any formal evaluation.
-- [ ] Recruit/confirm reviewers and record assignment method.
-- [ ] Record each criterion result with a specific evidence reference.
+- [ ] Conduct a Phase 1 consistency check across the common evidence and the two authorization variants.
+- [ ] Conduct a Phase 2 packet-consistency check across the four human-review condition/variant cells, after Phase 2 is activated.
+- [ ] Complete an investigator-side documentary reconstruction audit for Phase 1.
+- [ ] When Phase 2 becomes active, run a human packet-usability pilot and log misunderstandings before formal evaluation.
+- [ ] Phase 2 only: recruit/confirm reviewers and record assignment method; no reviewer recruitment has begun.
+- [ ] Record Phase 1 criterion assessments with specific evidence references, distinguishing packet absence from proof of non-occurrence.
+- [ ] Phase 2 only: code human responses and record reviewer disagreement without altering raw responses.
 - [ ] Record missing evidence and disagreements without resolving them by assumption.
 - [ ] Separate pilot observations from final findings.
 - [ ] Record false positives, missed deviations, unresolved cases, and reviewer burden where measurable.
@@ -78,6 +85,10 @@
 - [ ] Verify funding and intellectual-property terms before accepting any award or making deliverable commitments.
 - [ ] Distinguish pre-existing BAES material from project-specific research outputs.
 - [ ] Do not promise open-sourcing or transfer of pre-existing material without reviewing the applicable terms.
+
+## Phase boundary
+
+Phase 1 is the active task sequence. Phase 2 is the direct planned successor and remains deferred until human participation and the required integrity controls are available. No human-review data or reviewer-performance findings currently exist.
 
 ## Completion rule
 
