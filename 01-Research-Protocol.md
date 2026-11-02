@@ -31,13 +31,13 @@ The unit of analysis is a bounded engineering change represented by:
 4. review or approval records, if any; and
 5. a defined decision point.
 
-The public S01 C99 example remains a synthetic demonstration. It is not eligible as a blinded confirmatory scenario because its behavior and boundary-test result are already described publicly. It may be used for packet-usability or other exploratory work only; such responses must be kept separate from any confirmatory study.
+The public S01 C99 example remains a synthetic demonstration. It is not eligible as a blinded confirmatory human-review scenario because its behavior and boundary-test result are already described publicly. In Phase 1, it may be used for documentary analysis and controlled evidence-packet design. Any Phase 2 usability responses based on S01 must be labelled exploratory and kept separate from confirmatory data.
 
 A separate synthetic held-out scenario, HDA-01, has been prepared in a private research repository for internal design work. Its scenario master, alternate decision records, expected distinctions, and investigator coding are not published here. This public protocol intentionally does not disclose the scenario's substantive details. HDA-01 remains a draft and has not been frozen or shown to reviewers. The existence of a private repository does not by itself verify its collaborator list or access controls; those checks remain a prerequisite to recruitment.
 
 ## 4. Assessment dimensions
 
-Reviewers must assess these dimensions separately.
+These dimensions define the documentary distinctions used in Phase 1 and the reviewer-facing assessment planned for Phase 2. In Phase 1, the investigator applies them to the records in the packet; no reviewer responses are collected. In Phase 2, reviewers must assess these dimensions separately.
 
 ### 4.1 Implementation behavior and test evidence
 
@@ -98,7 +98,9 @@ No reviewer recruitment, human assessment, or confirmatory human data collection
 
 ## 8. Recording categories
 
-For each criterion, record:
+For the Phase 1 investigator-side audit, record the criterion, evidence references, observed record facts, support status, evidence gaps, and residual ambiguity. Do not enter reviewer interpretations or reviewer identifiers where no reviewer exists.
+
+For Phase 2 human responses, record:
 - criterion identifier and wording;
 - evidence reference(s);
 - observed fact;
@@ -137,7 +139,9 @@ Do not begin Phase 2 human data collection until the held-out scenario, controll
 
 ## 11. Reporting
 
-Report:
+For Phase 1, report the examined packet versions, evidence made available to the investigator, criterion-level documentary assessments, reconstruction links, evidence gaps, residual ambiguity, and limitations. Do not report reviewer performance or reviewer disagreement when no human assessment has occurred.
+
+For Phase 2, report:
 - scenario and protocol versions at an appropriate level of detail that does not prematurely disclose a continuing held-out scenario;
 - evidence made available to reviewers;
 - review condition and exact instructions;
