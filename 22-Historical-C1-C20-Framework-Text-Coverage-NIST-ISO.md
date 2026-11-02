@@ -74,7 +74,52 @@ A T rating describes text coverage only. It is not a quality score, implementati
 - T0 is used only for C7, where the reviewed Core does not establish the proposed-versus-executed action distinction. T0 is bounded to the reviewed Core, not the entire NIST ecosystem, Playbook, or all NIST publications.
 - The NIST AI RMF is a risk-management framework. Its Core explicitly describes outcomes and actions, and says those actions are not a checklist or necessarily ordered steps. The mapping must not recast it as a task-level authorization ledger.
 
-## 4. ISO/IEC 42001:2023 status — public-source boundary
+
+## 4. Initial BAES public-text mapping
+
+**Public source boundary:** This mapping uses only the public BAES repository. It does not inspect or expose BAES-SECRET, private research material, or internal Foundation records.
+
+### BAES sources examined
+
+- `BAES-Public/01_BAES_Introduction.md`, Git blob SHA `85906cfc261104bc50457cf0d1fd994580f7af15`. Primary public formulation: concept definitions, boundaries, minimum distinguishing conditions, counterexamples, structural architecture, and worked examples.
+- `BAES-Public/02_BAES_Academic_Research_Context.md`, Git blob SHA `42b1d417bff28d5cebd89e4f64e00213e1cea289`. Supporting research-context text; describes the proposed distinctions as open to examination, testing, criticism, comparison, and refinement.
+- `BAES-Public/03_BAES_AI_Technology_Context.md`, Git blob SHA `859f39dad2201622a4fb442a6adeae3811f13e85`. Supporting technology-context text; illustrates proposed/executed action, authorization, and traceability distinctions.
+- `BAES-Public/04_BAES_Large_Enterprise_Context.md`, Git blob SHA `90f2ffa7ba8a86818e3d17513df17e452ccd2970`. Supporting enterprise-context text; describes multi-actor/multi-system authority, execution, revocation/supersession, and traceability concerns.
+
+The introduction is the primary basis for the table. Audience-specific pages are used only as corroborating public context, not as independent normative layers or separate requirements.
+
+| ID | Historical criterion | BAES public references | Axis A | Text-grounded rationale and boundary |
+|---|---|---|---|---|
+| C1 | Original Human Intent | Introduction §2.1 (Human Intent), §3 | T2 | Human intent is explicitly defined as a human-established objective, purpose, or desired outcome, with an identifiable human-originated objective as the minimum condition. The public text does not prescribe a complete task-level capture/reconstruction record for every engineering change. |
+| C2 | Intent Boundary | Introduction §2.1 (Human Intent, Delegation), §2.2 | T2 | Boundaries are defined for human intent and delegation, and the minimum-boundary principle explains why collapsing distinctions loses relevant information. It does not prescribe a task-specific permitted/prohibited change-control form. |
+| C3 | Delegated Authority | Introduction §2.1 (Delegation) | T3 | Delegation is explicitly defined as transfer of defined authority or activity from a human authority holder to an AI actor/system; the minimum condition requires an intentionally assigned, defined scope. This is direct conceptual coverage of identifiable agent delegation, not proof that any real delegation record exists. |
+| C4 | Authority Scope | Introduction §2.1 (Delegation, Authorized Execution); §2.3 | T3 | Delegation is limited by scope, conditions, duration, and revocation/supersession; authorized execution is limited to applicable authority and conditions. The text explicitly distinguishes authority scope from capability or access. |
+| C5 | AI Observation | Introduction §2.1 (AI Investigation / Reasoning, Evidence); §8 | T2 | AI investigation/reasoning is described as producing observations and hypotheses; evidence is distinguished from assumptions and from the reasoning that interprets it. The text does not prescribe an event-level observation log or a specific observation-to-change provenance record. |
+| C6 | AI Reasoning | Introduction §2.1 (AI Investigation / Reasoning), §2.2, §8 | T2 | AI reasoning activity is defined and bounded from human intent, evidence, decision, and execution authority. The minimum condition requires identifiable AI-generated investigative/reasoning activity, but a detailed reasoning trace format or retention mechanism is not prescribed. |
+| C7 | AI Proposed Action | Introduction §2.1 (Recommendation / Challenge, Human Decision); §2.2 | T2 | An AI-generated proposed course of action is explicitly distinguished from a binding decision, delegation, or execution authority. The public text does not fully specify a separate record comparing proposed action with the action actually executed. |
+| C8 | AI Executed Action | Introduction §2.1 (Authorized Execution, Result, Traceability); §2.2; §8 | T2 | Authorized execution is explicitly defined as performance of an action within established authority, producing an observable result, and distinguished from capability/recommendation/access. A concrete action-provenance or tool-execution logging mechanism is not specified. |
+| C9 | Evidence | Introduction §2.1 (Evidence, Traceability); §2.2; §2.3 | T2 | Evidence is explicitly defined as identifiable information/observations used to support, challenge, or qualify a proposition; traceability links evidence to other relevant elements. The text does not fully prescribe attribution metadata and claim-to-artifact linkage fields. |
+| C10 | Human Review | Introduction §§2.1, 3, 7; Academic Context §§4–6 | T1 | Reviewability and human decision are identified as concerns and evaluation dimensions, and evidence/recommendation are separated. The public text does not define what a reviewer must inspect, record, or establish in a particular review. |
+| C11 | Human Decision | Introduction §2.1 (Human Decision), §2.2, §2.3 | T3 | Human Decision is explicitly defined as a decision by an authorized human; its minimum distinguishing condition is an identifiable human decision as the source of the outcome. The text does not prescribe a specific decision-record schema. |
+| C12 | Decision Scope | Introduction §2.1 (Human Decision, Authorized Execution); §3 | T2 | The decision may determine whether, how, or under what conditions to proceed, while execution remains limited by applicable authority and conditions. A required record of the precise scope of every individual decision is not prescribed. |
+| C13 | Authorization Change | Introduction §2.1 (Human Decision, Delegation, Authorized Execution); §2.3 | T2 | Human decisions may modify or defer action; delegation may be revoked or superseded; execution must remain within applicable authority. The public text does not set out a complete authorization-amendment procedure or authenticated change record. |
+| C14 | Execution | Introduction §2.1 (Authorized Execution, Result, Traceability); §8 | T2 | Execution and resulting observable outcome are explicitly distinguished from intent, reasoning, recommendation, and decision. The text does not prescribe timestamps, commit/deployment identifiers, or an event-level execution record. |
+| C15 | Intent Deviation | Introduction §§2.1–2.3, §3, §8 | T2 | The text distinguishes human intent from AI reasoning/recommendation and authorized execution, and gives counterexamples of execution outside authority. It does not prescribe a formal semantic-diff method for characterizing a particular deviation from an original instruction. |
+| C16 | Deviation Acceptance | Introduction §2.1 (Human Decision, Authorized Execution); §2.3 | T2 | An authorized human may accept, reject, modify, or defer a proposed course, and execution must be within explicitly established authority. The public text does not expressly define a full informed-acceptance record tied to a disclosed, specific semantic deviation. |
+| C17 | Revocation / Amendment | Introduction §2.1 (Delegation, Authorized Execution); §2.3; Enterprise Context §3 | T2 | Revocation/supersession and authority applicable at execution time are expressly named conceptual boundaries. A versioned authorization history proving which state applied at a particular execution timestamp is not prescribed. |
+| C18 | Traceability | Introduction §2.1 (Traceability), §2.2, §2.3; §8 | T3 | Traceability is explicitly defined as relating intent, authority, activity, evidence, decisions, execution, and results to an inspectable record; the minimum condition is sufficient linkage to reconstruct the relationship examined. This directly addresses the criterion conceptually, though it does not specify a technical record format. |
+| C19 | Actor Attribution | Introduction §2.1 (Delegation, Human Decision, Authorized Execution); Enterprise Context §§2–4 | T2 | The public formulation distinguishes the human authority holder, AI actor/system, human decision-maker, and executing system/actor. It does not prescribe a complete event-level actor-identity and attribution schema. |
+| C20 | Unambiguous Reconstruction | Introduction §2.1 (Traceability), §2.2, §2.3; Academic Context §§4–6 | T2 | Traceability is expressly directed toward making relationships inspectable and reconstructable; reviewability is a proposed evaluation dimension. The public text does not explicitly require an independent reviewer to reconstruct every relevant event without material ambiguity, nor report a validated result. |
+
+### BAES mapping interpretation
+
+- The public BAES introduction contains unusually direct conceptual definitions for delegation, authority scope, human decision, authorized execution, and traceability. These are text-coverage observations, not evidence that the concepts are operationally implemented or empirically validated.
+- T3 is limited to C3, C4, C11, and C18, where the public text states an explicit definition/minimum distinguishing condition closely matching the criterion's central concept. It does not mean BAES specifies a complete operational record or that S01 proves implementation.
+- Most other rows are T2 because BAES explicitly distinguishes the related concepts but does not prescribe the event-level evidence artifact, schema, or procedure asked by the criterion.
+- C10 is T1 because reviewability is a proposed evaluation dimension and review is discussed, but no specific human-review record requirements are defined.
+- The public BAES text expressly describes its proposed evaluation dimensions as unvalidated and the standard as under development. This status must be carried into every comparison; conceptual coverage is not validation.
+
+## 5. ISO/IEC 42001:2023 status — public-source boundary
 
 | ID | Historical criterion | ISO/IEC 42001:2023 Axis A | Reason |
 |---|---|---|---|
@@ -82,13 +127,13 @@ A T rating describes text coverage only. It is not a quality score, implementati
 
 This is **not** a finding that ISO/IEC 42001 lacks these concepts. It is a statement about the material actually and lawfully examined for this pass. The ISO mapping must remain UL until authorized final-edition text or sufficient official public clause material can be examined under applicable access and use conditions.
 
-## 5. Axis B and Axis C are not assigned by this document
+## 6. Axis B and Axis C are not assigned by this document
 
 - **Axis B — Event Evidence Sufficiency (R0–R3)** concerns the specific S01 evidence bundle and claim, not the framework text. Existing C1–C20 statuses are not automatically converted into R ratings. A separate evidence-focused pass must justify each R rating against the bundle actually examined.
 - **Axis C — Residual Ambiguity** remains a separate qualitative register: unknowns, plausible alternative interpretations, decision impact, and evidence required to resolve them. The consolidated ambiguity register in the Phase 1 audit is the current baseline and may be extended where source mapping reveals a new ambiguity.
 - No composite score, weighted total, or framework ranking is calculated.
 
-## 6. Limitations and verification required
+## 7. Limitations and verification required
 
 1. This is an investigator-side initial mapping, not an independent expert review.
 2. The recovered historical criterion source has unresolved original date/version provenance.
@@ -98,11 +143,11 @@ This is **not** a finding that ISO/IEC 42001 lacks these concepts. It is a state
 6. The mapping does not determine organizational implementation, conformity, certification, or the effectiveness of either framework.
 7. The mapping does not establish BAES novelty, added value, or superiority.
 
-## 7. Primary references
+## 8. Primary references
 
 1. NIST, *Artificial Intelligence Risk Management Framework (AI RMF 1.0)*, NIST AI 100-1 (2023), §§5.1–5.4: https://doi.org/10.6028/NIST.AI.100-1
 2. NIST AI RMF Core (official AIRC excerpt of AI RMF 1.0): https://airc.nist.gov/airmf-resources/airmf/5-sec-core/
 3. ISO/IEC 42001:2023 official publication record: https://www.iso.org/standard/42001
 4. IEC ISO/IEC 42001:2023 publication record: https://webstore.iec.ch/en/publication/90574
 
-**Current conclusion:** NIST AI RMF 1.0 shows meaningful related coverage across intent/context, scope, roles, oversight, documentation, evaluation, and risk/change management, but the reviewed Core does not expressly establish the full task-level authorization and event-provenance mechanisms asked by these historical criteria. ISO/IEC 42001 remains unassessed at clause level under the present public-source boundary. No overall winner can be inferred.
+**Current conclusion:** BAES public text, NIST AI RMF 1.0, and ISO/IEC 42001:2023 are not interchangeable instruments. The public BAES formulation states several human–AI boundary concepts directly, especially delegation, authority scope, human decision, and traceability; NIST AI RMF 1.0 provides broader organizational and AI-system risk-management coverage with related content; ISO/IEC 42001 remains unassessed at clause level under the present public-source boundary. These are text-coverage observations only. They do not establish BAES validity, implementation, added value, or superiority. No overall winner can be inferred.
