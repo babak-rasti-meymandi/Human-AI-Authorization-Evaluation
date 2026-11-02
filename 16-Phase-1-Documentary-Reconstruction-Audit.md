@@ -554,3 +554,29 @@ No composite score, weighted total, or framework ranking is produced.
 **Scope:** this alignment review and the documented S01-B C18 R-level refinement only. No BAES repository, S01 packet artifact, code/test, historical criterion wording, Proposed v0.1 crosswalk, or private HDA-01 material was changed.
 
 **Next:** independent second-coder verification is the highest-value validation step before making a formal comparative claim. If no independent coder is available, retain the results explicitly as investigator-side exploratory findings and proceed only with clearly bounded reporting.
+
+
+## 22. BAES public-text coverage added to the historical framework mapping (2026-11-02)
+
+**Status:** Initial investigator-side Axis A mapping now includes the public BAES formulation alongside NIST AI RMF 1.0. ISO/IEC 42001:2023 remains UL at clause level.
+
+The expanded comparison is recorded in `22-Historical-C1-C20-Framework-Text-Coverage-NIST-ISO.md`. The BAES portion uses only public files from `babak-rasti-meymandi/BAES-Public`, principally `01_BAES_Introduction.md`, with supporting context from the public academic, technology, and enterprise pages. No BAES-SECRET or private research material was accessed or reproduced.
+
+### BAES public-text findings
+
+- T3 was assigned to C3 (Delegated Authority), C4 (Authority Scope), C11 (Human Decision), and C18 (Traceability), because the public introduction provides explicit definitions and minimum distinguishing conditions closely matching the central concept of each criterion.
+- T2 was assigned to most remaining criteria where the public text defines related concepts and boundaries but does not prescribe the full event-level record, metadata, or operational procedure asked by the criterion.
+- C10 (Human Review) received T1 because reviewability is a proposed evaluation dimension and human review is discussed, but a specific review-record requirement is not defined.
+- These T-levels describe public-text coverage only. They do not establish that BAES concepts are implemented, validated, empirically effective, or sufficient in a real system.
+
+### Three-source status
+
+- **BAES:** public-text mapping completed as an initial investigator pass.
+- **NIST AI RMF 1.0:** public Core mapping completed as an initial investigator pass.
+- **ISO/IEC 42001:2023:** clause-level mapping remains UL; the public bibliographic record does not justify inferred clause ratings.
+
+The public BAES text itself states that BAES is under development and that its proposed evaluation dimensions are not validated results. This qualification is retained; no claim of BAES superiority or added value follows from the T ratings.
+
+**Scope:** the BAES public-text mapping in the existing Axis A document and this audit section only. No BAES repository was modified. BAES-SECRET, private HDA-01, S01 packet artifacts, and criterion wording were not accessed or changed.
+
+**Next:** review the BAES T-level judgments against the exact public clauses and keep the source-specific mapping visible. ISO remains access-limited. Then prepare a report-ready three-source comparison that clearly distinguishes text coverage, S01 event evidence, residual ambiguity, and what has not been validated.
