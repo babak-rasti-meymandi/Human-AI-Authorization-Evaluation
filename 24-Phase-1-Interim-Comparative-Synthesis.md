@@ -41,7 +41,7 @@ S01-A and S01-B are constructed research stimuli, not historical or production e
 | Framework | Initial coverage pattern | Main direct areas | Main limits |
 |---|---|---|---|
 | BAES public formulation | T3: C3, C4, C11; T2: most other criteria including C18; T1: C10 | Explicit conceptual definitions for delegation, authority scope, and human decision; specific but incomplete traceability coverage | Does not prescribe complete event-level record schemas, implementation procedures, or validated performance |
-| NIST AI RMF 1.0 Core | T2 for several related governance, scope, oversight, documentation, decision, and evaluation topics; T1 for indirect topics; T0 for C7; no T3 | Organizational roles, human-AI oversight, system context/scope, decision-support documentation, evaluation, monitoring, and risk/change management | The reviewed Core does not expressly establish the complete task-level authorization and provenance chain in the historical criteria |
+| NIST AI RMF 1.0 Core | T2 for several related governance, scope, oversight, documentation, decision, and evaluation topics; T1 for indirect topics including C7; no T3 or T0 | Organizational roles, human-AI oversight, system context/scope, decision-support documentation, evaluation, monitoring, and risk/change management | The reviewed Core does not expressly establish the complete task-level authorization and provenance chain in the historical criteria |
 | ISO/IEC 42001:2023 | UL for C1–C20 | Officially established organizational AIMS scope | Clause-level coverage not assessed from sufficient authorized final-edition text |
 
 ### Interpretation
@@ -50,7 +50,7 @@ The public BAES text is directly aligned in subject matter with several historic
 
 T3 for BAES means that the examined public text expressly establishes the specific mechanism or requirement asked by the criterion. It does not mean BAES supplies a validated implementation mechanism or proves that a real system complies with the concept. C18 is T2 because the public definition of traceability does not expressly establish the time-ordered chain required by that criterion.
 
-NIST T0 for C7 is bounded to the reviewed AI RMF 1.0 Core. It is not a finding that no NIST publication, Playbook suggestion, or other NIST resource addresses related activity distinctions.
+NIST C7 is T1 after challenge review: MAP 2.2 indirectly addresses AI output use/oversight and subsequent decisions/actions, but does not expressly distinguish proposed from executed action. The rating is bounded to the reviewed AI RMF 1.0 Core; no inference is made about all NIST publications or Playbook resources.
 
 ISO UL is an access/status limitation, not a negative coverage result.
 
@@ -130,3 +130,8 @@ The current evidence supports a limited statement: **the public BAES formulation
 The S01 packets demonstrate a synthetic contrast in the documentation of human authorization, not a real AI execution event and not a comparative test of framework effectiveness. The findings do not establish BAES added value or superiority. Negative, mixed, and unresolved outcomes remain valid possible conclusions as the research proceeds.
 
 No composite score or ranking is produced.
+
+
+### Subsequent Axis A calibration — NIST C7
+
+The initial NIST C7 rating was revised from T0 to T1 after an adversarial review of all BAES and NIST T1/T2 entries. MAP 2.2 provides indirect coverage of AI output use/oversight and subsequent decisions/actions, although it does not expressly establish the proposed-versus-executed distinction. All other BAES and NIST T1/T2 ratings were retained. See [Phase 1 Axis A T1/T2 Adversarial Calibration Review](26-Phase-1-Axis-A-T1-T2-Adversarial-Calibration-Review.md).
