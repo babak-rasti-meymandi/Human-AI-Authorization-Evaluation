@@ -56,7 +56,7 @@ This asymmetry is a known limitation, not a reason to fill gaps by inference. In
 
 The current evidence supports this bounded interpretation:
 
-- The examined public BAES formulation contains explicit definitions and conceptual boundaries that closely correspond to several of the recovered criteria, especially delegated authority, authority scope, human decision, and traceability.
+- The examined public BAES formulation contains explicit definitions and conceptual boundaries that closely correspond to several of the recovered criteria, especially delegated authority, authority scope, and human decision; traceability is specifically addressed but the time-ordered chain in C18 is not expressly required.
 - The reviewed NIST AI RMF 1.0 Core contains related organizational risk-management, governance, human-oversight, documentation, evaluation, and lifecycle concepts, but is not being treated as a task-level authorization ledger.
 - The current public-source boundary does not support criterion-by-criterion conclusions about ISO/IEC 42001:2023.
 - The synthetic S01-A/S01-B evidence comparison is a separate Axis B exercise. It does not establish implementation or effectiveness of any framework.
@@ -93,4 +93,38 @@ The current Phase 1 milestone is meaningful because the examined public BAES tex
 
 This conclusion is intentionally narrower than a framework ranking. It preserves the possibility of positive, negative, mixed, or inconclusive findings after independent coding and any properly authorized source expansion.
 
-No T-level, R-level, criterion wording, or Axis C ambiguity rating is changed by this review.
+The follow-up calibration in Section 9 changes one Axis A judgment only: BAES C18 is revised from T3 to T2. No R-level, criterion wording, or Axis C ambiguity rating is changed.
+
+
+## 9. Adversarial calibration of BAES T3 judgments (2026-11-02)
+
+**Status:** Investigator-side challenge review completed against the exact public BAES introduction and the T0–T3 scale. This is not independent second-coder verification.
+
+### T3 judgments retained
+
+- **C3 — Delegated Authority (T3):** the public definition expressly describes delegation as transfer of defined authority or activity from a human authority holder to an AI actor/system. Its boundary and minimum distinguishing condition require an intentionally assigned, defined scope. This directly addresses the criterion's specific subject: identifiable agent delegation.
+- **C4 — Authority Scope (T3):** the public text expressly limits delegation by scope, conditions, duration, and revocation/supersession, and limits authorized execution to authority established for that execution. This directly addresses whether the delegated authority can cover a specific action, while not prescribing an event-record schema.
+- **C11 — Human Decision (T3):** the public text defines a human decision as a decision by an authorized human and states that an identifiable human decision must be the source of the relevant outcome. This directly matches the criterion's distinction between an identifiable decision and an inferred one.
+
+These are conceptual mechanisms/requirements in the public formulation, not evidence that a real organization has implemented them or that a particular S01 event complied with them.
+
+### C18 judgment revised
+
+**Previous rating:** T3.  
+**Revised rating:** T2.
+
+The public text explicitly defines traceability as relating intent, authority, activity, evidence, decisions, execution, and results to an inspectable record. It also states a minimum condition of linking relevant elements sufficiently to reconstruct the relationship being examined.
+
+However, historical C18 asks whether records can be linked into a **coherent, time-ordered chain**. The examined BAES text does not expressly require time ordering, event timestamps, or a temporal chain. Treating the general traceability definition as satisfying that additional criterion-specific requirement would exceed the text.
+
+T2 is therefore the better-calibrated rating: specific conceptual coverage exists, but the exact temporal-ordering requirement is not expressly established.
+
+### Calibration outcome
+
+- BAES T3 now applies to C3, C4, and C11.
+- BAES C18 is T2.
+- No other BAES T-level was changed in this challenge review.
+- NIST C7 remains T0 within the reviewed AI RMF 1.0 Core only; this does not imply absence across all NIST resources.
+- No Axis B R-level, historical criterion wording, or Axis C ambiguity rating was changed.
+
+This correction is made because the criterion's temporal-ordering element was not expressly established in the examined text, not to strengthen or weaken any framework's comparative position.
