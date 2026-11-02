@@ -114,7 +114,8 @@ The introduction is the primary basis for the table. Audience-specific pages are
 ### BAES mapping interpretation
 
 - The public BAES introduction contains unusually direct conceptual definitions for delegation, authority scope, human decision, authorized execution, and traceability. These are text-coverage observations, not evidence that the concepts are operationally implemented or empirically validated.
-- T3 is limited to C3, C4, C11, and C18, where the public text states an explicit definition/minimum distinguishing condition closely matching the criterion's central concept. It does not mean BAES specifies a complete operational record or that S01 proves implementation.
+- T3 is limited to C3, C4, and C11, where the public text expressly establishes the specific mechanism or requirement asked by the criterion. It does not mean BAES specifies a complete operational record or that S01 proves implementation.
+- C18 is T2: the public text defines traceability and record linkage, but does not expressly require the coherent time-ordered chain asked by the historical criterion.
 - Most other rows are T2 because BAES explicitly distinguishes the related concepts but does not prescribe the event-level evidence artifact, schema, or procedure asked by the criterion.
 - C10 is T1 because reviewability is a proposed evaluation dimension and review is discussed, but no specific human-review record requirements are defined.
 - The public BAES text expressly describes its proposed evaluation dimensions as unvalidated and the standard as under development. This status must be carried into every comparison; conceptual coverage is not validation.
