@@ -60,9 +60,7 @@ This is repository-content inspection, not verification of external events or id
 
 ### F3 — Common packet code filename mismatch
 
-`08-Reviewer-Packets/common/code/include/group_count.c` contains a C header (include guard and function declaration). The canonical source stores it as `group_count.h`, and implementations include `group_count.h`.
-
-**Required:** rename the packet copy to `group_count.h` or otherwise make the include path consistent, then verify compilation from the packet directory. Do not change program behavior.
+**Status: corrected.** The pre-correction packet path `08-Reviewer-Packets/common/code/include/group_count.c` contained a C header. It was replaced with `group_count.h`, the obsolete path was removed, and packet-local compilation/characterization checks passed for both implementations. See Section 9 for commit identifiers and verification limits. No program behavior was changed.
 
 ### F4 — Packet manifest is only a template
 
@@ -127,7 +125,7 @@ This is an initial investigator-side view using the **recovered historical wordi
 
 | Priority | Work | Output | Constraint |
 |---|---|---|---|
-| P1 | Fix common header filename and verify packet-local compilation | Reproducible common code tree | No behavior change |
+| P1 | Fix common header filename and verify packet-local compilation | Completed; see Section 9 | No behavior change |
 | P1 | Define synthetic actor/role and authority evidence for A | Completed: AUTH-BASIS-01 and linked DEC-K | Synthetic identities and stipulated authority only |
 | P1 | Define exact A instruction amendment and link to authorized change | Completed: H1-A1 linked to DEC-K and AUTH-BASIS-01 | Preserve original common H1 |
 | P1 | Add B PR/approval identifiers and chronology only as scenario-defined | Traceable approval record | Do not imply authorization or its absence outside packet |
@@ -151,6 +149,8 @@ No human recruitment, reviewer assignment, reviewer response, or performance ana
 | File | Git blob SHA |
 |---|---|
 | S01-A/decision-record.md | 84cde52cb54661abf5a0fc8a869de71ffb6af1d6 |
+| S01-A/authority-basis.md | e3e4ba39f05a18e75b2845f9628e56214196aa48 |
+| S01-A/H1-amendment.md | ae73df75de925730fd209e5e57179b557f386944 |
 | S01-B/decision-record.md | 85c7ae7fdb05f7e4acfc29d449a35ade7f0065e7 |
 | common/H1-instruction.md | f0f00d90709cd37d3504bb32cbfe406f7d3866f1 |
 | common/technical-evidence.md | 8aacd89af259b528470acc3db8968ab03350acc9 |
