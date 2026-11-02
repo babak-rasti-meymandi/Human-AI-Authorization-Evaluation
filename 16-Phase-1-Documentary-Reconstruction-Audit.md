@@ -14,13 +14,15 @@ The S01-A and S01-B decision records and common technical materials already exis
 - **S01-B:** a pull request was approved, but the supplied record does not document behavior-level disclosure or specific authorization. It correctly leaves open whether the approver noticed the change elsewhere or whether separate authorization existed.
 - The technical artifacts are intended to be common to both variants. The investigator-side boundary-test source and result are excluded from the default reviewer packet.
 
-The design is coherent as a constructed contrast, but the current records do not yet support complete, traceable reconstruction. Decision-maker/approver identifiers, authority-basis references, timestamps, immutable change identifiers, and completed packet inventories are missing. The copied common code tree also has a header filename/extension mismatch.
+The design is coherent as a constructed contrast. The S01-A authority and amendment chain has now been made explicit through synthetic actor/role identifiers, a bounded scenario authority premise, an exact H1 amendment, and a relative event sequence. This improves documentary reconstruction within S01-A but does not authenticate a real delegation or provide calendar timestamps, immutable implementation identifiers, or execution history. S01-B remains intentionally limited to its recorded PR approval. The common code header filename correction is separately documented in Section 9. The packet manifests remain uncompleted templates.
 
 **Conclusion:** retain and correct the existing artifacts; do not recreate S01-A or S01-B.
 
 ## 2. Materials inspected
 
 - `08-Reviewer-Packets/S01-A/decision-record.md`
+- `08-Reviewer-Packets/S01-A/authority-basis.md`
+- `08-Reviewer-Packets/S01-A/H1-amendment.md`
 - `08-Reviewer-Packets/S01-B/decision-record.md`
 - `08-Reviewer-Packets/common/H1-instruction.md`
 - `08-Reviewer-Packets/common/technical-evidence.md`
@@ -40,17 +42,21 @@ This is repository-content inspection, not verification of external events or id
 
 ## 3. Findings
 
-### F1 — Actor identity and authority basis are underspecified
+### F1 — Actor identity and authority basis
 
-Neither decision record supplies a stable actor identifier or links the actor to a role/delegation record. A states that authorization occurred but does not establish why the actor had authority to amend H1 or accept the deviation. B does not identify the approver or the authority represented by PR approval.
+**S01-A: corrected within the constructed scenario; externally unverified by design.** AUTH-BASIS-01 now assigns synthetic actor `ACT-HUM-01` to `ROLE-FUNCTION-OWNER` and stipulates the bounded authority premise `CHARTER-S01-01`. DEC-K links the decision to that basis. This makes the scenario's internal authority chain explicit, but does not establish a real person's identity, a real organizational delegation, or legal sufficiency.
 
-**Required:** if this evidence is to be part of the constructed scenario, add synthetic actor/role identifiers and a separately identified authority-basis record. Do not use real identities. Do not add an authorization record to B merely for symmetry.
+**S01-B: intentionally unresolved.** DEC-M continues to record PR approval only. It does not infer the approver's authority to authorize the semantic deviation and does not claim that separate authorization was absent elsewhere.
 
-### F2 — Decision and change chronology are incomplete
+**Residual limitation:** the synthetic role charter is a scenario premise, not independent evidence of an actual delegation.
 
-Neither record provides decision time, effective time, H1 amendment version/time, commit/change identifier, merge event, or deployment event. A gives a logical sequence but not a timestamped chain. B's PR approval lacks an identifier, timestamp, and immutable version reference.
+### F2 — Decision and amendment chronology
 
-**Required:** add a synthetic event sequence only for events deliberately included in the scenario. If merge, deployment, or execution is outside scope, leave it unestablished rather than inventing it.
+**S01-A: relative chronology recorded; calendar chronology intentionally absent.** DEC-K now identifies ordered synthetic events K-E01 (behavior-level disclosure), K-E02 (explicit decision), and K-E03 (H1-A1 amendment). H1-A1 identifies the amended contract and its scope. This supports reconstruction of the scenario's logical sequence without inventing calendar timestamps.
+
+**S01-B: approval chronology remains incomplete.** DEC-M still does not provide a stable PR identifier or timestamp. No additional event details have been invented.
+
+**Residual limitation:** neither variant establishes commit, merge, release, deployment, or execution. These remain outside the constructed evidence currently supplied.
 
 ### F3 — Common packet code filename mismatch
 
@@ -96,23 +102,23 @@ This is an initial investigator-side view using the **recovered historical wordi
 |---|---|---|---|---|
 | C1 | Original Human Intent | Supported | Supported | H1 identifies the instruction. |
 | C2 | Intent Boundary | Supported | Supported | H1 prohibits behavior change unless explicitly authorized. |
-| C3 | Delegated Authority | Not established | Not established | No delegation/role-authority record. |
-| C4 | Authority Scope | Not established | Not established | No link from actor authority to this action. |
+| C3 | Delegated Authority | Supported, scenario-limited | Not established | AUTH-BASIS-01 stipulates the synthetic role authority for S01-A; no corresponding authority record is supplied for B. |
+| C4 | Authority Scope | Supported, scenario-limited | Not established | AUTH-BASIS-01 limits the authority to the named function-contract decision; B has no specific authorization record. |
 | C5 | AI Observation | Not established | Not established | No attributable AI observation. |
 | C6 | AI Reasoning | Not established | Not established | No attributable AI reasoning. |
 | C7 | AI Proposed Action | Not established | Not established | Proposed code exists; AI authorship is not established. |
 | C8 | AI Executed Action | Not established | Not established | No attributable AI execution record. |
 | C9 | Evidence | Partial | Partial | Technical artifacts exist; provenance/cross-links incomplete. |
 | C10 | Human Review | Partial | Partial | A describes presentation; B PR approval; neither has a detailed review record. |
-| C11 | Human Decision | Supported, limited | Supported, limited | A describes authorization; B describes PR approval only. Actor/time absent. |
-| C12 | Decision Scope | Partial | Not established | A lacks precise version/scope links; B has no specific authorization. |
-| C13 | Authorization Change | Partial | Not established | A mentions H1 amendment without version/authority link; B records none. |
+| C11 | Human Decision | Supported, scenario-limited | Supported, limited | A identifies ACT-HUM-01 and the explicit decision; B describes PR approval only. No real actor or calendar time is asserted. |
+| C12 | Decision Scope | Supported, scenario-limited | Not established | DEC-K and H1-A1 bound the decision to the named function and specified semantic change; B has no specific authorization. |
+| C13 | Authorization Change | Supported, scenario-limited | Not established | H1-A1 records the S01-A amendment and links to DEC-K/AUTH-BASIS-01; B records none. |
 | C14 | Execution | Not established | Not established | No merge, deployment, or running-version evidence. |
 | C15 | Intent Deviation | Supported | Supported | Code and investigator boundary test show 2 versus 3. |
-| C16 | Deviation Acceptance | Supported, limited | Not established | A states acceptance after disclosure; authority/change linkage incomplete. |
-| C17 | Revocation / Amendment | Partial | Not established | A mentions amendment without version history; B supplies none. |
-| C18 | Traceability | Partial | Partial | Actor, time, version, and event links incomplete. |
-| C19 | Actor Attribution | Not established | Not established | No stable actor identifier or role link. |
+| C16 | Deviation Acceptance | Supported, scenario-limited | Not established | DEC-K records disclosure and explicit authorization under the stipulated role authority; B does not record specific authorization. |
+| C17 | Revocation / Amendment | Supported, scenario-limited | Not established | H1-A1 is a separately identified S01-A amendment; no revocation or later amendment is asserted. |
+| C18 | Traceability | Partial | Partial | A now links actor, role, authority basis, decision, and amendment; calendar timestamps and implementation/execution links remain absent. B retains limited approval traceability. |
+| C19 | Actor Attribution | Supported, scenario-limited | Not established | A uses synthetic actor and role identifiers; B's approver remains unidentified in the supplied record. |
 | C20 | Unambiguous Reconstruction | Not assessed | Not assessed | This is the Phase 1 audit question; final reconstruction remains open. |
 
 “Not established” describes the supplied packet only; it does not prove an event did not occur elsewhere. C11 in B means only that the constructed record describes PR approval, not authorization of the semantic deviation. C15 relies on the investigator-side boundary result, which remains excluded from the default reviewer packet. C20 must be revisited after corrective work.
@@ -122,8 +128,8 @@ This is an initial investigator-side view using the **recovered historical wordi
 | Priority | Work | Output | Constraint |
 |---|---|---|---|
 | P1 | Fix common header filename and verify packet-local compilation | Reproducible common code tree | No behavior change |
-| P1 | Define synthetic actor/role and authority evidence for A | Versioned authority/decision record | Synthetic identities only |
-| P1 | Define exact A instruction amendment and link to authorized change | Versioned amendment | Preserve original H1 |
+| P1 | Define synthetic actor/role and authority evidence for A | Completed: AUTH-BASIS-01 and linked DEC-K | Synthetic identities and stipulated authority only |
+| P1 | Define exact A instruction amendment and link to authorized change | Completed: H1-A1 linked to DEC-K and AUTH-BASIS-01 | Preserve original common H1 |
 | P1 | Add B PR/approval identifiers and chronology only as scenario-defined | Traceable approval record | Do not imply authorization or its absence outside packet |
 | P1 | Create investigator-side A/B packet inventories | Two completed manifests | No claim of reviewer delivery |
 | P2 | Link test results to exact source versions | Reproducibility record | Same common evidence in A and B |
@@ -144,13 +150,13 @@ No human recruitment, reviewer assignment, reviewer response, or performance ana
 
 | File | Git blob SHA |
 |---|---|
-| S01-A/decision-record.md | ca89892e0744858ba036f2ace0a27f49fb2785ba |
+| S01-A/decision-record.md | 84cde52cb54661abf5a0fc8a869de71ffb6af1d6 |
 | S01-B/decision-record.md | 85c7ae7fdb05f7e4acfc29d449a35ade7f0065e7 |
 | common/H1-instruction.md | f0f00d90709cd37d3504bb32cbfe406f7d3866f1 |
 | common/technical-evidence.md | 8aacd89af259b528470acc3db8968ab03350acc9 |
 | packet-manifest.md | 43f6cddb8f60968c4dfd10da565081ad50c442e5 |
-| investigator-key.md | 28952effa2d6501b5bffbf809ca8d1d47b511e30 |
-| evidence-register.md | b79cafddf41ea22c5b39bd843b18bcbd8519f6a7 |
+| investigator-key.md | 1c62fd0d849c7520da8bbf24e7ac0c4937d67825 |
+| evidence-register.md | b12893f7e2dcc745efd5b0098e6edf1d0e42ea46 |
 | 06-Code-Sample/RESULTS.md | c39ac60189c148b58a3b962c8dbbaf6bdae12e95 |
 | 12-Recovered-Criteria-C1-C20.md | b52ead49e23f9099d97551636fadc90394d1e29e |
 | 12-Proposed-Criteria-C1-C20.md | 7c36340224664f2240480e901f43bbf6521cf7b8 |
@@ -194,3 +200,29 @@ run or independent third-party verification.
 implementation logic, test logic, scenario decision record, authorization
 content, or canonical source artifact was modified. The investigator-only
 boundary test remains outside the default common reviewer packet.
+
+
+## 10. S01-A authority and amendment reconstruction — P1 correction (2026-11-02)
+
+**Findings F1 and the S01-A portion of F2: corrected within the synthetic scenario, with explicit residual limits.**
+
+The following investigator-side artifacts were added:
+
+- `08-Reviewer-Packets/S01-A/authority-basis.md` — AUTH-BASIS-01 defines synthetic actor `ACT-HUM-01`, role `ROLE-FUNCTION-OWNER`, and the stipulated bounded authority premise `CHARTER-S01-01`.
+- `08-Reviewer-Packets/S01-A/H1-amendment.md` — H1-A1 records the exact S01-A-only behavior-contract amendment. The original common H1 remains unchanged.
+- `08-Reviewer-Packets/S01-A/decision-record.md` — DEC-K now links the behavior-level disclosure, explicit decision, authority basis, and amendment in ordered synthetic events K-E01 through K-E03.
+
+The investigator key and evidence register were updated to reference these artifacts and to preserve the distinction between S01-A's constructed authorization evidence and S01-B's PR-approval-only record.
+
+**Reconstruction result for S01-A:** within the stipulated scenario, the packet now supports a traceable chain from a bounded role-authority premise, through behavior-level disclosure and explicit human decision, to a separately versioned instruction amendment.
+
+**Residual limits:**
+
+- The actor, role charter, delegation, decision, and amendment are all constructed scenario elements; none is a real or independently authenticated organizational record.
+- The sequence is relative, not calendar-timestamped. No real date/time is asserted.
+- No implementation commit, PR approval, merge, release, deployment, or execution is established by these new records.
+- No AI provenance or AI participation is established.
+- This correction does not complete packet manifests, establish reviewer delivery, or constitute human validation.
+- S01-B remains unchanged; its missing authorization evidence is a property of the supplied synthetic packet, not proof that authorization did not exist elsewhere.
+
+**Scope:** S01-A decision/authority documentation, investigator key, evidence register, and this audit only. The common H1 instruction, S01-B decision record, technical implementation, tests, BAES repositories, and private HDA-01 materials were not changed.
