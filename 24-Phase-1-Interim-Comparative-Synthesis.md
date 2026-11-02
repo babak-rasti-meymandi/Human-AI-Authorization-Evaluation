@@ -40,7 +40,7 @@ S01-A and S01-B are constructed research stimuli, not historical or production e
 
 | Framework | Initial coverage pattern | Main direct areas | Main limits |
 |---|---|---|---|
-| BAES public formulation | T3: C3, C4, C11, C18; T2: most other criteria; T1: C10 | Explicit conceptual definitions for delegation, authority scope, human decision, and traceability | Does not prescribe complete event-level record schemas, implementation procedures, or validated performance |
+| BAES public formulation | T3: C3, C4, C11; T2: most other criteria including C18; T1: C10 | Explicit conceptual definitions for delegation, authority scope, and human decision; specific but incomplete traceability coverage | Does not prescribe complete event-level record schemas, implementation procedures, or validated performance |
 | NIST AI RMF 1.0 Core | T2 for several related governance, scope, oversight, documentation, decision, and evaluation topics; T1 for indirect topics; T0 for C7; no T3 | Organizational roles, human-AI oversight, system context/scope, decision-support documentation, evaluation, monitoring, and risk/change management | The reviewed Core does not expressly establish the complete task-level authorization and provenance chain in the historical criteria |
 | ISO/IEC 42001:2023 | UL for C1–C20 | Officially established organizational AIMS scope | Clause-level coverage not assessed from sufficient authorized final-edition text |
 
@@ -48,7 +48,7 @@ S01-A and S01-B are constructed research stimuli, not historical or production e
 
 The public BAES text is directly aligned in subject matter with several historical criteria concerning delegation, authority scope, human decision, and traceability. NIST AI RMF 1.0 addresses important adjacent organizational and AI-system risk-management topics. These sources have different scopes and purposes; a greater number of direct conceptual matches in this particular criterion set is not, by itself, evidence of better overall quality or superiority.
 
-T3 for BAES means that a public definition/minimum distinguishing condition closely matches the criterion's central concept. It does not mean BAES supplies a validated implementation mechanism or proves that a real system complies with the concept.
+T3 for BAES means that the examined public text expressly establishes the specific mechanism or requirement asked by the criterion. It does not mean BAES supplies a validated implementation mechanism or proves that a real system complies with the concept. C18 is T2 because the public definition of traceability does not expressly establish the time-ordered chain required by that criterion.
 
 NIST T0 for C7 is bounded to the reviewed AI RMF 1.0 Core. It is not a finding that no NIST publication, Playbook suggestion, or other NIST resource addresses related activity distinctions.
 
@@ -125,7 +125,7 @@ If independent second-coder participation is unavailable, report the present wor
 
 ## 8. Overall interim conclusion
 
-The current evidence supports a limited statement: **the public BAES formulation explicitly defines several conceptual distinctions that are central to the recovered historical criteria, while NIST AI RMF 1.0 addresses related organizational and AI-system risk-management outcomes.** The current public-source boundary does not permit a criterion-level conclusion about ISO/IEC 42001:2023.
+The current evidence supports a limited statement: **the public BAES formulation explicitly defines several conceptual distinctions that are central to the recovered historical criteria, while providing specific but incomplete coverage for time-ordered traceability; NIST AI RMF 1.0 addresses related organizational and AI-system risk-management outcomes.** The current public-source boundary does not permit a criterion-level conclusion about ISO/IEC 42001:2023.
 
 The S01 packets demonstrate a synthetic contrast in the documentation of human authorization, not a real AI execution event and not a comparative test of framework effectiveness. The findings do not establish BAES added value or superiority. Negative, mixed, and unresolved outcomes remain valid possible conclusions as the research proceeds.
 
