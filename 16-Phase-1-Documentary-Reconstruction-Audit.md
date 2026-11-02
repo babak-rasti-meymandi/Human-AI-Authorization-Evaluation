@@ -638,3 +638,39 @@ This is retained as a bounded interim milestone statement, not a final comparati
 No T-level, R-level, criterion wording, or Axis C ambiguity rating was changed. Axes A, B, and C remain distinct; no composite score or framework ranking is introduced.
 
 **Next:** prioritize independent second-coder verification; retain the current results as investigator-side exploratory findings if independent coding is unavailable. Pursue ISO clause-level mapping only after sufficient authorized final-edition access. Recover the historical criteria hand-over provenance if possible. Phase 2 remains deferred and requires a separate human-review integrity gate.
+
+
+## 25. Adversarial calibration of BAES Axis A T3 judgments (2026-11-02)
+
+**Status:** Investigator-side challenge review completed against the exact public BAES introduction and the stated T0–T3 scale; not independent second-coder verification.
+
+The exact public source examined was `BAES-Public/01_BAES_Introduction.md`, blob SHA `85906cfc261104bc50457cf0d1fd994580f7af15`, especially §2.1 (Core Concept Definitions and Boundaries), §§2.2–2.3, and the related execution/traceability discussion.
+
+### T3 judgments retained
+
+- **C3 — Delegated Authority (T3):** the public definition expressly describes delegation as transfer of defined authority or activity from a human authority holder to an AI actor/system. Its boundary and minimum distinguishing condition require an intentionally assigned, defined scope. This directly addresses identifiable agent delegation.
+- **C4 — Authority Scope (T3):** delegation is expressly limited by scope, conditions, duration, and revocation/supersession; authorized execution is limited to authority established for that execution. This directly addresses whether delegated authority can cover a specific action, while not prescribing an event-record schema.
+- **C11 — Human Decision (T3):** the public text defines a human decision as a decision by an authorized human and states that an identifiable human decision must be the source of the relevant outcome. This directly matches the distinction between an identifiable decision and an inferred one.
+
+These are conceptual mechanisms/requirements in the public formulation. They do not prove implementation or S01 compliance.
+
+### C18 revised from T3 to T2
+
+The public BAES text explicitly defines traceability as relating intent, authority, activity, evidence, decisions, execution, and results to an inspectable record. It also states a minimum condition of linking relevant elements sufficiently to reconstruct the relationship being examined.
+
+However, recovered historical C18 asks whether records can be linked into a **coherent, time-ordered chain**. The examined public text does not expressly require time ordering, event timestamps, or a temporal chain. The general traceability definition therefore does not establish the criterion's full temporal-ordering requirement.
+
+**Revised Axis A rating: BAES C18 = T2.** Specific conceptual coverage exists, but the exact time-ordered chain is not expressly established.
+
+### Calibration result and scope
+
+- BAES T3 now applies to C3, C4, and C11.
+- BAES C18 is T2.
+- No other BAES T-level was changed in this challenge review.
+- NIST C7 remains T0 within the reviewed AI RMF 1.0 Core only; no claim is made about all NIST resources.
+- No Axis B R-level, historical criterion wording, or Axis C ambiguity rating was changed.
+- The Axis A source mapping and interim synthesis were updated; the detailed coding of S01 event evidence was not changed.
+
+This correction is made because the temporal-ordering element in C18 was not expressly established in the examined BAES text, not to strengthen or weaken any framework's comparative position.
+
+**Next:** subject the revised T-levels and rationales to an independent second coder. Until then, they remain investigator-side exploratory judgments.
