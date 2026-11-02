@@ -261,7 +261,7 @@ The existing `08-Reviewer-Packets/packet-manifest.md` remains a blank per-review
 
 **Verification:** both new manifest files and this audit update were fetched again from the repository after commit; their blob SHAs are recorded above. The underlying common code, tests, S01-A/S01-B decision records, investigator key, and evidence register were not changed in this F4 operation.
 
-**Phase 1 result:** F4's investigator-side inventory requirement is complete. F5 remains open.
+**Phase 1 result:** F4's investigator-side inventory requirement is complete. F5 was subsequently completed for the current packet-local investigator reproduction; see Section 12. The historical 2026-10-24 canonical result retains its separate source-version limitation.
 
 
 ## 12. Packet-local test reproducibility — F5 correction (2026-11-02)
