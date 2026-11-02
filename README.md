@@ -95,7 +95,7 @@ This project does not initially aim to:
 
 - [Research Phases and Current Scope](15-Research-Phases-and-Current-Scope.md)
 - [Phase 1 Documentary Reconstruction Audit](16-Phase-1-Documentary-Reconstruction-Audit.md)
-- [Historical C1–C20 Framework Text Coverage — NIST / ISO](22-Historical-C1-C20-Framework-Text-Coverage-NIST-ISO.md)
+- [Historical C1–C20 Framework Text Coverage — BAES / NIST / ISO](22-Historical-C1-C20-Framework-Text-Coverage-NIST-ISO.md)
 - [S01 Historical C1–C20 Event Evidence Sufficiency — Axis B](23-S01-Historical-C1-C20-Event-Evidence-Sufficiency.md)
 - [Phase 1 Interim Comparative Synthesis](24-Phase-1-Interim-Comparative-Synthesis.md)
 - [Phase 1 Comparative Scope and Criterion-Dependence Review](25-Phase-1-Comparative-Scope-and-Criterion-Dependence-Review.md)
