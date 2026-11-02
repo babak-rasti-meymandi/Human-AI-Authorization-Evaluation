@@ -94,9 +94,15 @@ The proposed code is a constructed stimulus, not attributed to a named AI model.
 
 ### F7 — Criterion-set ambiguity
 
-Recovered historical C1–C20 and proposed C1–C20 v0.1 have materially different wording/order. The existing coding worksheet explicitly uses proposed v0.1.
+**Status: criterion-set decision recorded for Phase 1; separate worksheets preserved.**
 
-**Required:** select and version the criterion set for Phase 1. Do not merge the sets. If historical criteria are selected, prepare a separate worksheet mapped to their exact wording; leave the v0.1 worksheet unchanged absent a separate decision.
+Phase 1 investigator-side documentary reconstruction uses **Recovered Historical C1–C20**, preserving the recovered criterion names, sequence, and principal questions exactly as recorded in `12-Recovered-Criteria-C1-C20.md`. The dedicated worksheet is `13-Historical-Criterion-Coding-Worksheet.md`.
+
+The later **Proposed C1–C20 v0.1** remains a separate, non-frozen proposed set. Its existing worksheet, `13-Criterion-Coding-Worksheet.md`, remains unchanged and continues to reference Proposed v0.1. The NIST crosswalk, `11-Criterion-Crosswalk-Template.md`, also remains explicitly tied to Proposed v0.1 and must not be treated as a crosswalk for the historical set.
+
+The historical source is recovered from a researcher-supplied hand-over; its original date/version and original storage location have not been independently established. The Phase 1 selection is a documented project-protocol decision, not a claim that the recovered source was formally frozen or independently authenticated.
+
+The historical criteria do not define a complete coding-status taxonomy. The new historical worksheet records working operational labels and explicitly identifies them as coding conventions, not amendments to the historical wording. No cross-set merger, silent rewording, or composite score is permitted.
 
 ### F8 — Public investigator materials are not blinded
 
@@ -143,7 +149,7 @@ This is an initial investigator-side view using the **recovered historical wordi
 | P1 | Add B PR/approval identifiers and chronology only as scenario-defined | Traceable approval record | Do not imply authorization or its absence outside packet |
 | P1 | Create investigator-side A/B packet inventories | Completed: `investigator-manifest-S01-A.md` and `investigator-manifest-S01-B.md`; see Section 11 | No claim of reviewer delivery; blank assignment template remains reserved for Phase 2 |
 | P1 | Link test results to exact source versions | Completed for packet-local investigator run; see Sections 12 and `17-Phase-1-Test-Reproducibility-Record.md` | Same common evidence in A and B; boundary test remains investigator-only |
-| P2 | Select criterion set for Phase 1 | Recorded criterion-set decision | Do not merge sets |
+| P2 | Select criterion set for Phase 1 | Completed: recovered historical C1–C20 selected; separate historical worksheet created; Proposed v0.1 worksheet and crosswalk retained unchanged | Do not merge sets; preserve provenance limitation |
 | P2 | Complete investigator C1–C20 mapping and ambiguity register | Referenced reconstruction audit | No composite score or human-performance claim |
 
 ## 6. Claims this audit does not support
@@ -288,3 +294,22 @@ The investigator-only boundary test, blob SHA `8ad1213cf07ea50abc960b4ef5bfb2e27
 **Residual limits:** this is a local investigator reproduction, not CI or independent third-party verification. It does not establish reviewer performance, AI provenance, authorization, merge, deployment, or production execution. No source, header, or test artifact was modified to perform the run.
 
 **Phase 1 result:** F5 is complete for the current packet-local investigator reproduction. The historical canonical run remains a separate record with incomplete source-version linkage.
+
+## 13. F7 criterion-set decision and worksheet separation (2026-11-02)
+
+**Finding F7 status: Phase 1 criterion-set selection completed and documented.**
+
+The Phase 1 investigator-side documentary reconstruction uses **Recovered Historical C1–C20** from `12-Recovered-Criteria-C1-C20.md`. The selection preserves the recovered criterion names, order, and principal questions. It is a protocol decision for this phase; it does not elevate the historical hand-over into a formally frozen or independently authenticated source.
+
+A separate investigator worksheet, `13-Historical-Criterion-Coding-Worksheet.md`, was created using the historical criterion wording. Because the historical source does not define a complete coding-status taxonomy, the worksheet identifies its working status labels as operational recording conventions rather than additions to the historical criteria.
+
+The later Proposed C1–C20 v0.1 remains separate and unchanged:
+- `12-Proposed-Criteria-C1-C20.md` remains a non-frozen proposed criterion set.
+- `13-Criterion-Coding-Worksheet.md` remains its associated worksheet.
+- `11-Criterion-Crosswalk-Template.md` remains explicitly based on Proposed v0.1 and is not a historical-criteria crosswalk.
+
+No criteria were merged, silently reworded, or deleted. No composite score was created. The historical source's original date/version and original storage location remain unverified.
+
+**Scope:** the new historical worksheet and this audit update only. The historical criteria file, Proposed v0.1 criteria and worksheet, NIST crosswalk, S01 evidence packets, code/tests, BAES repositories, and private HDA-01 materials were not changed.
+
+**Phase 1 result:** F7 selection and worksheet separation are complete. Criterion-by-criterion coding and the remaining reconstruction/ambiguity work continue as Phase 1 investigator-side analysis; no human reviewer assessment or validation is implied.
