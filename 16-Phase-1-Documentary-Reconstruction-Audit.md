@@ -580,3 +580,28 @@ The public BAES text itself states that BAES is under development and that its p
 **Scope:** the BAES public-text mapping in the existing Axis A document and this audit section only. No BAES repository was modified. BAES-SECRET, private HDA-01, S01 packet artifacts, and criterion wording were not accessed or changed.
 
 **Next:** review the BAES T-level judgments against the exact public clauses and keep the source-specific mapping visible. ISO remains access-limited. Then prepare a report-ready three-source comparison that clearly distinguishes text coverage, S01 event evidence, residual ambiguity, and what has not been validated.
+
+
+## 23. Phase 1 interim comparative synthesis recorded (2026-11-02)
+
+**Status:** Interim investigator synthesis created; not frozen and not a final comparative finding.
+
+The report is `24-Phase-1-Interim-Comparative-Synthesis.md`. It consolidates the current Axis A public-text mappings, Axis B S01 evidence ratings, and Axis C ambiguity register without merging them.
+
+### Three-source position
+
+- **BAES:** public text contains explicit conceptual definitions/minimum distinguishing conditions mapped T3 for C3, C4, C11, and C18; most other criteria are T2 and C10 is T1. This is text coverage, not implementation or validation.
+- **NIST AI RMF 1.0:** the reviewed Core has related governance, scope, oversight, documentation, evaluation, and lifecycle coverage; no T3 was assigned, and C7 is T0 within the reviewed Core only.
+- **ISO/IEC 42001:2023:** all historical criteria remain UL at clause level; no negative coverage conclusion is drawn.
+
+### S01 position
+
+S01-A contains a bounded synthetic human authorization/amendment record; S01-B contains PR approval without specific deviation authorization established by the packet. Neither packet establishes AI provenance or execution. The semantic deviation is identifiable in both. These are synthetic documentary findings, not a framework effectiveness test.
+
+### Claim boundary
+
+The synthesis explicitly does not establish BAES novelty, implementation, empirical validity, added value, reviewer performance, or superiority over NIST/ISO. No human reviewer or independent second coder has participated. Negative, mixed, and unresolved conclusions remain open.
+
+**Scope:** new interim synthesis, this audit section, and README index only. No BAES repository, BAES-SECRET, private HDA-01, S01 packet artifacts, code/tests, or historical criterion wording was modified.
+
+**Next validation gate:** independent second-coder review of historical C1–C20 and T/R ratings; sufficient authorized ISO final-edition access if clause-level mapping is pursued; and Phase 2 human-review safeguards before any reviewer recruitment or data collection.
