@@ -490,7 +490,7 @@ The separate record is `23-S01-Historical-C1-C20-Event-Evidence-Sufficiency.md`.
 ### Axis B summary
 
 - **S01-A:** R3 for C1, C2, C11, C12, C13, C15, and C16; R2 for C7, C9, C10, C17, C18, C19, and C20; R0 for C3, C4, C5, C6, C8, and C14.
-- **S01-B:** R3 for C1, C2, and C15; R2 for C7, C9, C10, C11, and C20; R1 for C12, C16, and C18; R0 for C3, C4, C5, C6, C8, C13, C14, C17, and C19.
+- **S01-B:** R3 for C1, C2, and C15; R2 for C7, C9, C10, C11, and C20; R1 for C12 and C16; R0 for C3, C4, C5, C6, C8, C13, C14, C17, and C19.
 
 ### Key safeguards
 
@@ -503,3 +503,54 @@ Axis A (framework text coverage) and Axis C (residual ambiguity) remain separate
 **Scope:** the new Axis B coding record and this audit section only. The recovered historical criteria, four detailed criterion coding batches, Axis A mapping, Proposed v0.1 crosswalk, S01 packet artifacts, code/tests, BAES repositories, and private HDA-01 material were not changed.
 
 **Next:** conduct an Axis A/B/C alignment review at criterion level, checking that the R ratings, existing Supported/Partial/Not established findings, and ambiguity register describe the same evidence without collapsing the axes. Preserve UL for ISO/IEC 42001 until sufficient authorized final-edition text is available.
+
+
+## 21. Axis A / B / C alignment review — initial investigator pass (2026-11-02)
+
+**Status:** Initial cross-axis consistency check completed; independent second-coder verification remains outstanding.
+
+### 21.1 Alignment rule
+
+The three axes answer different questions and must not be collapsed:
+
+- **Axis A (T0–T3 / UL):** what the examined framework text addresses.
+- **Axis B (R0–R3):** what the examined S01 evidence bundle supports for a particular historical criterion.
+- **Axis C:** what remains unknown or open to materially different interpretations, why that matters, and what evidence would resolve it.
+
+A high T rating does not raise an R rating. A low T rating does not lower an R rating. A direct S01 record does not prove that a framework requires such a record. The status labels in the detailed criterion coding records are also not mechanically interchangeable with R-levels.
+
+### 21.2 Cross-axis checks
+
+1. **C1, C2, C15:** NIST has relevant intent/scope/goal text coverage; S01 directly evidences the original instruction, boundary, and semantic deviation in both synthetic variants. This does not establish a framework requirement for a specific task-level record.
+2. **C3–C4:** NIST addresses organizational roles and differentiated human-AI oversight. S01-A's synthetic human decision authority is not evidence of AI-agent delegation. R0 is therefore retained for agent delegation and its scope in both variants.
+3. **C5–C8:** NIST addresses model explanation, system output, monitoring, and lifecycle controls at related levels. The S01 packets contain no attributable AI observation/reasoning/execution provenance. The proposed code artifact partially supports C7 only; it is not evidence of AI authorship or execution.
+4. **C9–C10:** NIST has specific documentation, decision-support, oversight, and assessment coverage. S01 artifact identifiers and decision/disclosure records provide only partial evidence for the full historical evidence and human-review questions.
+5. **C11–C13 and C16:** NIST addresses organizational decision responsibility and risk acceptance, but not the full task-specific authorization claim. S01-A's explicit decision/amendment is synthetic scenario evidence; S01-B's PR approval does not establish authorization.
+6. **C14 and C17:** NIST's production monitoring and change-management concepts are not a substitute for a timestamped S01 execution event or proof of the effective authorization state at execution. Both variants remain R0 for C14; C17 remains R2 in A (amendment exists, execution-time state unresolved) and R0 in B.
+7. **C18–C20:** NIST's documentation and independent-assessment outcomes are related to traceability/reviewability. Neither S01 variant contains complete end-to-end event provenance. C20 remains an investigator-side packet assessment, not observed independent reviewer performance.
+
+### 21.3 Axis B refinement
+
+During the cross-axis review, S01-B C18 (Traceability) was refined from R1 to **R2**. The packet does contain identifiable artifacts and an approval event, which directly support parts of the traceability claim; however, the missing approver identity, timestamps, authorization linkage, and execution chain leave material ambiguity. This is partial support, not a wholly inferential claim. The separate Axis B record and its summary were updated accordingly.
+
+No other rating was changed in this pass. All changes are explicit and recorded; no status was adjusted to make BAES or any comparator appear stronger.
+
+### 21.4 Residual ambiguity register status
+
+The consolidated AMB-01–AMB-09 register in Section 18 remains the current Axis C record. It continues to capture AI provenance, delegation, review content, decision identity/scope, authorization, execution, execution-time authorization state, end-to-end chronology, and historical criterion provenance. The cross-axis review did not justify removing or downgrading any of these unresolved items.
+
+### 21.5 Overall status and limits
+
+- Historical C1–C20 investigator-side coding: complete.
+- Axis A: initial NIST AI RMF 1.0 mapping recorded; ISO/IEC 42001:2023 remains UL at clause level.
+- Axis B: initial S01-A/S01-B R0–R3 coding recorded.
+- Axis C: consolidated ambiguity register retained.
+- Independent second-coder review: not performed.
+- Human reviewer study / Phase 2: not performed and remains deferred.
+- Comparative outcome or BAES added-value finding: not established.
+
+No composite score, weighted total, or framework ranking is produced.
+
+**Scope:** this alignment review and the documented S01-B C18 R-level refinement only. No BAES repository, S01 packet artifact, code/test, historical criterion wording, Proposed v0.1 crosswalk, or private HDA-01 material was changed.
+
+**Next:** independent second-coder verification is the highest-value validation step before making a formal comparative claim. If no independent coder is available, retain the results explicitly as investigator-side exploratory findings and proceed only with clearly bounded reporting.
