@@ -1,4 +1,4 @@
-# Historical C1–C20 Framework Text Coverage — NIST AI RMF 1.0 and ISO/IEC 42001:2023
+# Historical C1–C20 Framework Text Coverage — BAES, NIST AI RMF 1.0, and ISO/IEC 42001:2023
 
 **Date:** 2026-11-02  
 **Status:** Initial source-grounded investigator mapping; analytical draft; independent verification pending.  
