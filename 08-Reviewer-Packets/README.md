@@ -1,5 +1,7 @@
 # Reviewer Packets — Preparation Guide
 
+> **Phase boundary (2026-11-02):** This directory's human-facing reviewer packet plan belongs to deferred Phase 2. Phase 1 uses evidence packets for documentary construction and investigator-side reconstruction only; no human reviewer has been recruited or provided assistance. Do not treat these draft materials as delivered reviewer packets or completed assessments. See [Research Phases and Current Scope](../15-Research-Phases-and-Current-Scope.md).
+
 **Status:** Draft materials; not frozen for formal evaluation.
 
 These are constructed research stimuli, not historical records of a real human review or AI incident. The proposed code change was written for this study and is not claimed to be output from a named AI model.
