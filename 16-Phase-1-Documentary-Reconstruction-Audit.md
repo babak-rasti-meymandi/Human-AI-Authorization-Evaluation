@@ -35,6 +35,7 @@ The design is coherent as a constructed contrast. The S01-A authority and amendm
 - `08-Reviewer-Packets/common/code/include/group_count.h`
 - `08-Reviewer-Packets/common/code/tests/test_characterization.c`
 - `06-Code-Sample/RESULTS.md` and canonical C source/test files
+- `17-Phase-1-Test-Reproducibility-Record.md`
 - `04-Evidence-and-Results/evidence-register.md`
 - `12-Recovered-Criteria-C1-C20.md`
 - `12-Proposed-Criteria-C1-C20.md`
@@ -73,11 +74,17 @@ This is repository-content inspection, not verification of external events or id
 
 **Residual limitation:** the manifests snapshot repository contents on 2026-11-02; they do not prove reviewer delivery, human assessment, or a frozen confirmatory packet. Re-check blob SHAs before any future transfer or freeze.
 
-### F5 — Test results are outside the packet
+### F5 — Test results and exact source-version linkage
 
-`06-Code-Sample/RESULTS.md` records a local C99 compiler, flags, command, and outcomes. The common packet description says characterization tests pass but does not link a packet-local run record to exact source versions.
+**Status: investigator-side packet-local reproducibility record completed; historical canonical run remains separately limited.**
 
-**Required:** link exact result/source versions or create a concise packet-local reproducibility record. Keep the investigator-only boundary test excluded from both default variants. The local run is not independent verification.
+A new investigator-side record, `17-Phase-1-Test-Reproducibility-Record.md`, links the 2026-11-02 local run to the exact Git blob SHAs of the baseline implementation, proposed implementation, header, and characterization test used from `08-Reviewer-Packets/common/code/`. It also records the investigator-only boundary-test SHA and its separate outcomes.
+
+Both packet-local implementations passed characterization. The baseline passed the boundary test; the proposed implementation produced the expected non-zero boundary-test result. The boundary test remains excluded from both default reviewer packets.
+
+The historical `06-Code-Sample/RESULTS.md` describes a 2026-10-24 run but contains no source blob SHAs. Its outcomes are not retroactively attributed to the packet-local artifacts. The new record also documents that some canonical and packet-local files have different blob SHAs and are not byte-identical.
+
+**Residual limitation:** the new run is local investigator reproduction, not CI, independent third-party verification, or reviewer evidence. See Section 12 for the exact inputs, environment, outcomes, and limits.
 
 ### F6 — AI provenance is absent by design
 
@@ -135,7 +142,7 @@ This is an initial investigator-side view using the **recovered historical wordi
 | P1 | Define exact A instruction amendment and link to authorized change | Completed: H1-A1 linked to DEC-K and AUTH-BASIS-01 | Preserve original common H1 |
 | P1 | Add B PR/approval identifiers and chronology only as scenario-defined | Traceable approval record | Do not imply authorization or its absence outside packet |
 | P1 | Create investigator-side A/B packet inventories | Completed: `investigator-manifest-S01-A.md` and `investigator-manifest-S01-B.md`; see Section 11 | No claim of reviewer delivery; blank assignment template remains reserved for Phase 2 |
-| P2 | Link test results to exact source versions | Reproducibility record | Same common evidence in A and B |
+| P1 | Link test results to exact source versions | Completed for packet-local investigator run; see Sections 12 and `17-Phase-1-Test-Reproducibility-Record.md` | Same common evidence in A and B; boundary test remains investigator-only |
 | P2 | Select criterion set for Phase 1 | Recorded criterion-set decision | Do not merge sets |
 | P2 | Complete investigator C1–C20 mapping and ambiguity register | Referenced reconstruction audit | No composite score or human-performance claim |
 
@@ -255,3 +262,29 @@ The existing `08-Reviewer-Packets/packet-manifest.md` remains a blank per-review
 **Verification:** both new manifest files and this audit update were fetched again from the repository after commit; their blob SHAs are recorded above. The underlying common code, tests, S01-A/S01-B decision records, investigator key, and evidence register were not changed in this F4 operation.
 
 **Phase 1 result:** F4's investigator-side inventory requirement is complete. F5 remains open.
+
+
+## 12. Packet-local test reproducibility — F5 correction (2026-11-02)
+
+**Finding F5 status: exact source/result linkage established for a new investigator-side local run.**
+
+The new record `17-Phase-1-Test-Reproducibility-Record.md` documents the environment, compiler flags, exact source/header/test blob SHAs, observed outputs, and limitations.
+
+**Packet-local inputs used for characterization:**
+
+| Role | Git blob SHA |
+|---|---|
+| Baseline implementation | `53edd7a08193b4b5e54f66b24dbb9b787811ece3` |
+| Proposed implementation | `beeb756fc14b9233199ffff7b2ec3a9b1c3b58e8` |
+| Header / contract | `be240c0d3013103648038d6e1f56f0e02be8980f` |
+| Characterization test | `77fa39f833a636d49c9a2e2128a32d15d8eb2586` |
+
+The compiler was `cc (Debian 14.2.0-19) 14.2.0`; flags were `-std=c99 -Wall -Wextra -Wpedantic -Werror`. Both packet-local implementations passed the characterization suite.
+
+The investigator-only boundary test, blob SHA `8ad1213cf07ea50abc960b4ef5bfb2e276c0aafa`, passed against the baseline and produced the expected non-zero result against the proposed implementation. It remains excluded from the default reviewer packet.
+
+**Canonical versus packet-local distinction:** the baseline implementation has the same blob SHA in both locations. The proposed implementation, header, and characterization test have different blob SHAs between `06-Code-Sample/` and `08-Reviewer-Packets/common/code/`. Their relevant behavior is consistent for this run, but they are not byte-identical. The historical 2026-10-24 `06-Code-Sample/RESULTS.md` has no source blob SHAs and is not treated as evidence for the packet-local versions.
+
+**Residual limits:** this is a local investigator reproduction, not CI or independent third-party verification. It does not establish reviewer performance, AI provenance, authorization, merge, deployment, or production execution. No source, header, or test artifact was modified to perform the run.
+
+**Phase 1 result:** F5 is complete for the current packet-local investigator reproduction. The historical canonical run remains a separate record with incomplete source-version linkage.
