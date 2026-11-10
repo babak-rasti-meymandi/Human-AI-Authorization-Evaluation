@@ -29,13 +29,13 @@ The pilot is about process usability and the interaction between human judgment 
 
 This protocol is subordinate to and must be read consistently with:
 
-- [Research Protocol](../01-Research-Protocol.md);
-- [Research Phases and Current Scope](../15-Research-Phases-and-Current-Scope.md);
-- [Reviewer Blinding and Data Integrity Plan](../14-Reviewer-Blinding-and-Data-Integrity-Plan.md);
-- [Reviewer Packets — Preparation Guide](README.md);
-- [Scenario S01](../03-Scenarios/S01-semantic-deviation.md).
+- [Research Protocol](../../../01-Research-Protocol.md);
+- [Research Phases and Current Scope](../../../15-Research-Phases-and-Current-Scope.md);
+- [Reviewer Blinding and Data Integrity Plan](../../../14-Reviewer-Blinding-and-Data-Integrity-Plan.md);
+- [Reviewer Packets — Preparation Guide](../../README.md);
+- [Scenario S01](../../../03-Scenarios/S01-semantic-deviation.md).
 
-It is distinct from [Independent Second-Coder Review Protocol v1.0](../28-Independent-Second-Coder-Review-Protocol-v1.0.md). A second coder independently verifies investigator coding against C1–C20. This pilot instead observes one human's interpretation of an assigned evidence packet with optional AI facilitation. It does not produce a second-coder validation.
+It is distinct from [Independent Second-Coder Review Protocol v1.0](../../../28-Independent-Second-Coder-Review-Protocol-v1.0.md). A second coder independently verifies investigator coding against C1–C20. This pilot instead observes one human's interpretation of an assigned evidence packet with optional AI facilitation. It does not produce a second-coder validation.
 
 If this pilot conflicts with a requirement in the main Research Protocol or the Reviewer Blinding and Data Integrity Plan, the higher-level project document governs. Any proposed change to the formal Phase 2 design must be handled as a separate, explicit protocol revision.
 
