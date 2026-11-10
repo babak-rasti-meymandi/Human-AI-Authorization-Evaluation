@@ -10,7 +10,8 @@ Do not use the investigator-facing repository as a blinded packet. The current S
 
 ## Related exploratory pilot protocol
 
-- [S01 — AI-Assisted Exploratory Human Reviewer Pilot Protocol (Madam Amber)](Human-Reviewer/Madam-Amber/AI-Assisted-Exploratory-Reviewer-Pilot-Protocol.md)
+- [S01 — AI-Assisted Exploratory Human Reviewer Pilot Protocol (English)](Human-Reviewer/Madam-Amber/AI-Assisted-Exploratory-Reviewer-Pilot-Protocol.md)
+- [S01 — AI 輔助探索性人工審查者試行方案（繁體中文，台灣）](Human-Reviewer/Madam-Amber/AI-Assisted-Exploratory-Reviewer-Pilot-Protocol.zh-TW.md)
 
 This is the participant-specific copy of a separate, draft procedure for exploratory usability work with the already-public S01 materials. It preserves an unaided initial assessment before AI assistance and a final human assessment afterward. It does not activate formal Phase 2, replace the formal condition-assignment design, or support confirmatory or population-level claims. Any responses must remain separate from confirmatory data. A Traditional Chinese (Taiwan) translation is provided alongside the English protocol for the participant's convenience; the English version remains the controlling text if any translation ambiguity arises.
 
