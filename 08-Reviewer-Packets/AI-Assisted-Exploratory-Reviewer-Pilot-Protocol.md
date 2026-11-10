@@ -147,7 +147,7 @@ A suggested opening instruction for the AI assistant is:
 
 The reviewer may stop AI assistance at any time. The researcher may suspend the AI component if it repeatedly fabricates facts, gives leading directions, exposes unrelated material, or otherwise compromises the exercise. Any suspension must be recorded; it does not invalidate or erase the preserved Stage 1 assessment.
 
-### Stage 3 — Final independent human assessment
+### Stage 3 — Final human assessment (human-authored)
 
 After AI assistance, the reviewer prepares a final assessment in their own words.
 
