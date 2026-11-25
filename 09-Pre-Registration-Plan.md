@@ -4,17 +4,21 @@
 
 **Status:** Draft for review; not registered or frozen  
 **Protocol basis:** Research Protocol 0.4.1-draft  
-**Study type:** Small, exploratory, scenario-based reviewer study  
+**Study type:** Small, exploratory, scenario-based reviewer pilot  
 **No reviewer recruitment or data collection has begun.**  
 **Integrity gate:** HDA-01 has been prepared privately but remains draft; access controls, protocol, and materials must be verified and frozen before collection.
 
 ## 1. Purpose
 
-Assess whether a public structured recording aid changes how reviewers evaluate a synthetic engineering change that may depart from an explicit human instruction. The study also examines whether reviewers distinguish evidence of informed authorization for a specific change from a generic artifact-approval record that leaves informed authorization unresolved.
+Assess how reviewers interpret the evidence supplied in a synthetic engineering change scenario, particularly whether they distinguish evidence of informed human authorization for a specific change from a generic artifact-approval record that leaves informed authorization unresolved. The structured condition uses task-specific review prompts and a recording scaffold; it is not merely a formatting change.
 
-This plan is not a claim that the structured condition is better. It is not a validated instrument and does not establish the validity or superiority of BAES.
+**AI-assistance boundary:** HDA-01 describes the task role as an AI-assisted implementation engineer, but this is scenario framing only. The supplied materials do not establish actual AI participation, model output, reasoning, tool use, provenance, or execution. The study does not evaluate actual AI or agent behavior, capability, reliability, or causal contribution. No synthetic AI-provenance artifact will be added. The study's subject is the evidence of informed human authorization, not empirical AI behavior.
+
+This plan is exploratory. With the planned small sample, it cannot establish causal effects, statistical significance, population-wide generalization, or confirmatory findings. It is not a claim that the structured condition is better. It is not a validated instrument and does not establish the validity or superiority of BAES.
 
 ## 2. Design
+
+The HDA-01 exercise is an exploratory held-out human-review pilot. It is not a blinded confirmatory study and must not be reported as one. Any later confirmatory study would require a separately justified design, protocol, and held-out materials.
 
 Use a small 2 × 2 between-reviewer design based on the held-out synthetic scenario HDA-01. The public materials intentionally do not disclose its substantive details or investigator key.
 
