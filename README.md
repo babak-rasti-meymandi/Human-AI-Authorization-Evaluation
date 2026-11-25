@@ -1,6 +1,6 @@
 # Evaluating Human Authorization and Semantic Deviation in AI-Assisted Engineering
 
-**Status:** Phase 1 — evidence-record reconstructability and sufficiency (active; investigator-side coding and initial framework-source mapping); Phase 2 — human reviewer interpretation (deferred)  
+**Status:** Phase 1 investigator-side documentary reconstruction and initial framework-source mapping recorded; independent second-coder verification pending. Phase 2 human reviewer interpretation deferred.  
 **Repository:** Public research record  
 **Research type:** Independent, scenario-based evaluation
 
@@ -99,6 +99,8 @@ This project does not initially aim to:
 - [S01 Historical C1–C20 Event Evidence Sufficiency — Axis B](23-S01-Historical-C1-C20-Event-Evidence-Sufficiency.md)
 - [Phase 1 Interim Comparative Synthesis](24-Phase-1-Interim-Comparative-Synthesis.md)
 - [Phase 1 Comparative Scope and Criterion-Dependence Review](25-Phase-1-Comparative-Scope-and-Criterion-Dependence-Review.md)
+- [Phase 1 Axis A T1/T2 Adversarial Calibration Review](26-Phase-1-Axis-A-T1-T2-Adversarial-Calibration-Review.md)
+- [Phase 1 Historical C1–C20 Axis A/B/C Consolidated Matrix](27-Phase-1-Historical-C1-C20-Axis-A-B-C-Consolidated-Matrix.md)
 
 - [Research protocol](01-Research-Protocol.md)
 - [Baseline and comparison method](02-Baseline-and-Comparison.md)
@@ -154,3 +156,39 @@ The initial comparative milestone is now accompanied by an explicit scope review
 
 
 A subsequent adversarial calibration of the BAES Axis A judgments revised **C18 Traceability from T3 to T2**. The public BAES text defines traceability and record linkage, but does not expressly require the coherent time-ordered chain asked by historical C18. BAES T3 is now limited to C3 (Delegated Authority), C4 (Authority Scope), and C11 (Human Decision). This was a text-to-criterion calibration only; no S01 R-levels, criterion wording, or Axis C ambiguity ratings changed. The revised mapping and rationale are recorded in [Historical C1–C20 Framework Text Coverage](22-Historical-C1-C20-Framework-Text-Coverage-NIST-ISO.md), the [Phase 1 Comparative Scope Review](25-Phase-1-Comparative-Scope-and-Criterion-Dependence-Review.md), and the [Phase 1 Audit](16-Phase-1-Documentary-Reconstruction-Audit.md).
+
+
+## Current Consolidated Status — 2026-11-25
+
+This section consolidates the investigator-side status recorded across the Phase 1 materials. It supersedes earlier summary wording in this README where that wording describes work as still pending. Historical entries are retained as part of the research record; they are not silently rewritten as if the work had been completed earlier.
+
+### Investigator-side work recorded
+
+- The investigator-side documentary reconstruction of S01-A and S01-B against the recovered historical C1–C20 criteria is recorded in the Phase 1 coding files and reconstruction audit.
+- The framework text-coverage assessment (Axis A), event-evidence sufficiency assessment (Axis B), and residual ambiguity assessment (Axis C) are kept separate. No composite score or overall framework ranking is claimed.
+- The investigator-side adversarial calibration review is recorded in document 26. NIST C7 is T1. NIST C3 and C4 remain T2 pending a further source-and-criterion challenge; no reduction to T1 has been adopted.
+- BAES C3, C4, and C11 remain T3; BAES C18 is T2. ISO/IEC 42001:2023 remains UL (unreviewed/access-limited) for clause-level assessment.
+- Local technical reproduction is documented at investigator level. Independent reproduction or independent second-coder verification has not been established.
+
+### S01 and claim boundaries
+
+S01 is a synthetic, domain-neutral C99 case. It is not a real production incident, a real financial-software event, or demonstrated output from a named AI model. The public evidence supports a documentary examination of semantic deviation and authorization evidence; it does not establish AI provenance, AI reasoning traces, or AI execution in an actual engineering workflow.
+
+The S01-A / S01-B ratings and interpretations are investigator-side findings. In S01-B, the reviewed packet does not establish informed authorization of the semantic change; this is not proof that authorization did not occur outside the packet.
+
+### Independent review and human participation
+
+No independent second coder has completed verification. No human reviewer has completed an assessment. The prospective S01 exploratory human-review protocol is a draft only; it is not recruitment, consent, participation, or a completed review. Because S01 and its test outcome are public, an S01 human exercise can only support exploratory process/usability observations, not blinded confirmatory claims.
+
+### Confidentiality and external validity
+
+The confidentiality review to date has been targeted, not a complete audit of every repository path. No claim of exhaustive repository-wide clearance is made. No private BAES material or HDA-01 scenario detail is included in this status statement. The public project remains independent of BAES normative repositories and does not establish BAES validity, effectiveness, or superiority.
+
+### Next gates
+
+1. Obtain independent second-coder verification if an appropriate reviewer becomes available.
+2. If the prospective S01 exploratory review is pursued, obtain informed consent and agree on AI-service use, data retention, attribution, quotation, and publication boundaries before sharing materials.
+3. Design and protect a genuinely held-out scenario before any confirmatory human evaluation.
+4. Review the private HDA-01 material separately, under its own access and confidentiality boundary; do not assume it is suitable as a replacement for S01 without a separate design assessment.
+
+**Overall status:** investigator-side Phase 1 documentary work is recorded; independent verification and human review remain outstanding; confirmatory Phase 2 remains deferred.
