@@ -8,12 +8,16 @@ These are constructed research stimuli, not historical records of a real human r
 
 Do not use the investigator-facing repository as a blinded packet. The current S01 scenario and boundary-test result are public, so S01 may support exploratory packet-usability work only; it is not eligible as a blinded confirmatory test. A confirmatory study requires a new held-out scenario and concealed key stored outside this public repository in access-controlled storage. A reviewer should receive only one assigned packet and the instructions for one condition. Do not send the investigator key, the alternate authorization variant, the task list, or the research log to reviewers before their assessment is complete. See [Reviewer Blinding and Data Integrity Plan](../14-Reviewer-Blinding-and-Data-Integrity-Plan.md).
 
-## Related exploratory pilot protocol
+## Prospective exploratory human review
 
-- [S01 — AI-Assisted Exploratory Human Reviewer Pilot Protocol (English)](Human-Reviewer/Madam-Amber/AI-Assisted-Exploratory-Reviewer-Pilot-Protocol.md)
-- [S01 — AI 輔助探索性人工審查者試行方案（繁體中文，台灣）](Human-Reviewer/Madam-Amber/AI-Assisted-Exploratory-Reviewer-Pilot-Protocol.zh-TW.md)
+- [S01 — AI-Assisted Exploratory Human Reviewer Pilot Protocol (English)](Human-Reviewer/Exploratory-Reviewer-01/AI-Assisted-Exploratory-Reviewer-Pilot-Protocol.md)
+- [S01 — AI 輔助探索性人工審查者試行方案（繁體中文，台灣）](Human-Reviewer/Exploratory-Reviewer-01/AI-Assisted-Exploratory-Reviewer-Pilot-Protocol.zh-TW.md)
 
-This is the participant-specific copy of a separate, draft procedure for exploratory usability work with the already-public S01 materials. It preserves an unaided initial assessment before AI assistance and a final human assessment afterward. It does not activate formal Phase 2, replace the formal condition-assignment design, or support confirmatory or population-level claims. Any responses must remain separate from confirmatory data. A Traditional Chinese (Taiwan) translation is provided alongside the English protocol for the participant's convenience; the English version remains the controlling text if any translation ambiguity arises.
+These are prospective, participant-neutral draft protocols for a possible exploratory usability exercise using the already-public S01 materials. No participant has been confirmed, recruited, consented, or assessed. The folder label is an administrative placeholder, not a statement that a named person has agreed to participate.
+
+The procedure preserves an unaided initial assessment, followed by AI-assisted examination and a final human assessment. Before any use, the researcher and prospective participant must explicitly agree on the purpose, AI-service use, data handling and retention, attribution, quotation, and publication boundaries. A participant may decline any public attribution. Do not submit private BAES material or HDA-01 content to an external AI service.
+
+This exercise would be exploratory only. It is not formal Phase 2 activation, independent second-coder verification, blinded confirmatory evaluation, or evidence of population-level reviewer performance. Any resulting observations must remain separate from confirmatory data.
 
 ## Planned structure
 
