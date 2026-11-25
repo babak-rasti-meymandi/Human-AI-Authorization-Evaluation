@@ -1,6 +1,6 @@
 # Research Protocol
 
-**Protocol version:** 0.4.1-draft  
+**Protocol version:** 0.4.2-draft  
 **Status:** Draft — not frozen or preregistered  
 **Research domain:** Human authorization and semantic deviation in AI-assisted engineering
 
@@ -33,7 +33,9 @@ The unit of analysis is a bounded engineering change represented by:
 
 The public S01 C99 example remains a synthetic demonstration. It is not eligible as a blinded confirmatory human-review scenario because its behavior and boundary-test result are already described publicly. In Phase 1, it may be used for documentary analysis and controlled evidence-packet design. Any Phase 2 usability responses based on S01 must be labelled exploratory and kept separate from confirmatory data.
 
-A separate synthetic held-out scenario, HDA-01, has been prepared in a private research repository for internal design work. Its scenario master, alternate decision records, expected distinctions, and investigator coding are not published here. This public protocol intentionally does not disclose the scenario's substantive details. HDA-01 remains a draft and has not been frozen or shown to reviewers. The existence of a private repository does not by itself verify its collaborator list or access controls; those checks remain a prerequisite to recruitment.
+A separate synthetic held-out scenario, HDA-01, has been prepared in a private research repository for a future exploratory human-review pilot. Its scenario master, alternate decision records, expected distinctions, and investigator coding are not published here. This public protocol intentionally does not disclose the scenario's substantive details. HDA-01 remains a draft and has not been frozen or shown to reviewers. The existence of a private repository does not by itself verify its collaborator list or access controls; those checks remain a prerequisite to recruitment.
+
+**HDA-01 scope boundary:** The study examines whether the supplied evidence supports a finding of informed authorization by a human with relevant decision authority. The scenario is described as AI-assisted, but that label is scenario framing only. The study does not evaluate actual AI or agent behavior, reasoning, capability, reliability, provenance, or causal contribution. No artifact establishing actual AI participation is being added. No such inference may be drawn from the scenario label.
 
 ## 4. Assessment dimensions
 
@@ -135,7 +137,7 @@ The public S01 case is a demonstration and may support exploratory usability wor
 
 Provide reviewers all operational instructions and scoring criteria needed to perform the task fairly. Withhold only pre-specified investigator-only keys, alternate packets, and concealed outcomes that are not part of the assigned evidence. Document any intentionally withheld evidence in advance and apply the rule consistently. Ask reviewers about prior exposure after they submit their responses; record reported exposure and packet deviations under a pre-specified handling rule. Do not infer contamination solely from an unexpected answer or assume that no contamination occurred merely because none was reported.
 
-Do not begin Phase 2 human data collection until the held-out scenario, controlled storage and access, packet versions, coding guide, exposure rule, and protocol are reviewed and frozen. Keep pilot responses separate from confirmatory responses. See the [Reviewer Blinding and Data Integrity Plan](14-Reviewer-Blinding-and-Data-Integrity-Plan.md) for operational controls.
+Do not begin Phase 2 human data collection until the held-out scenario, controlled storage and access, packet versions, coding guide, exposure rule, and protocol are reviewed and frozen. HDA-01 is an exploratory held-out human-review pilot only. Keep its responses separate from any later confirmatory research; do not describe HDA-01 itself as confirmatory. See the [Reviewer Blinding and Data Integrity Plan](14-Reviewer-Blinding-and-Data-Integrity-Plan.md) for operational controls.
 
 ## 11. Reporting
 
@@ -160,4 +162,4 @@ This document is version 0.4.1-draft and is not frozen or preregistered. Phase 1
 
 Public S01 is not eligible as a blinded confirmatory human-review scenario. HDA-01 and its packet templates exist in a separate private repository for the deferred Phase 2, but they remain drafts. The private repository's collaborator list and access controls have not yet been independently verified in the study record.
 
-Before completing Phase 1, stabilize and review the common artifacts, controlled evidence variants, evidence index, criterion mapping, and reconstruction audit; complete confidentiality/licensing/privacy checks. Before Phase 2 collection, additionally verify private access controls, finalize reviewer instructions and coding, define assignment and exposure handling, and freeze exact materials with commit identifiers and a checksum manifest. Do not describe Phase 2 as preregistered or blinding as verified until those steps are complete.
+Before completing Phase 1, stabilize and review the common artifacts, controlled evidence variants, evidence index, criterion mapping, and reconstruction audit; complete confidentiality/licensing/privacy checks. Before Phase 2 collection, additionally verify private access controls, finalize reviewer instructions and coding, define assignment and exposure handling, and freeze exact materials with commit identifiers and a checksum manifest. Do not describe Phase 2 as preregistered or blinding as verified until those steps are complete. HDA-01, if conducted, is exploratory and cannot support confirmatory or population-level claims.
