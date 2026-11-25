@@ -38,7 +38,9 @@ Therefore:
 
 ## 4. Held-out scenario and controlled storage
 
-A separate synthetic held-out scenario, HDA-01, has been prepared in the private research repository. It is independent of the public S01 demonstration and is not derived from private BAES material or a production system. However, HDA-01, its four packet templates, expected distinctions, and coding guide are still drafts; they have not been frozen or shown to reviewers.
+A separate synthetic held-out scenario, HDA-01, has been prepared in the private research repository. It is independent of the public S01 demonstration and is not derived from private BAES material or a production system. HDA-01 is reserved for an exploratory human-review pilot, not a blinded confirmatory study. Its four packet templates, expected distinctions, and coding guide are still drafts; they have not been frozen or shown to reviewers.
+
+**AI-assistance boundary:** The scenario's AI-assisted task-role label is framing only. The study evaluates whether the supplied records establish informed human authorization for the specific change. It does not evaluate actual AI/agent behavior, reasoning, capability, reliability, provenance, or causal contribution. No artifact establishing actual AI participation will be added, and reviewers must not infer it from the label.
 
 Before recruitment:
 1. verify the private repository's collaborator list and effective access controls;
@@ -96,10 +98,10 @@ Before formal recruitment, verify:
 - [ ] the protocol and pre-registration plan identify the held-out scenario/version at a level that does not disclose its substance and are frozen before collection;
 - [ ] confidentiality, licensing, consent/permission, and privacy checks are complete.
 
-After responses are submitted and preserved, decide what can be released without compromising reviewer privacy, third-party rights, or any continuing study. Report the public S01 stage and held-out confirmatory stage separately. State limitations plainly.
+After responses are submitted and preserved, decide what can be released without compromising reviewer privacy, third-party rights, or any continuing study. Report the public S01 documentary/exploratory-usability stage and the HDA-01 exploratory human-review pilot separately. Do not characterize HDA-01 as confirmatory. State limitations plainly.
 
 ## 9. Current status
 
-HDA-01 and four draft reviewer packet templates exist in a separate private repository. This does not mean that the scenario or protocol is frozen, that repository access controls and collaborators have been independently verified, or that reviewer blinding has been tested. The public protocol, pre-registration plan, recording sheet, and this plan remain drafts. No reviewer recruitment or formal data collection has begun.
+HDA-01 and four draft reviewer packet templates exist in a separate private repository for a possible exploratory human-review pilot. This does not mean that the scenario or protocol is frozen, that repository access controls and collaborators have been independently verified, or that reviewer blinding has been tested. The public protocol, pre-registration plan, recording sheet, and this plan remain drafts. No reviewer recruitment or formal data collection has begun.
 
 Do not begin confirmatory collection until the scenario and materials are reviewed and frozen, the private repository's collaborator list and effective access controls are verified, and the pre-specified assignment and exposure rules are complete. The researcher remains responsible for final integrity, confidentiality, and release decisions. This plan reduces identifiable risks but cannot guarantee that a reviewer has never encountered related information.
