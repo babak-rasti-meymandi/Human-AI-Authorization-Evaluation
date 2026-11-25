@@ -674,3 +674,38 @@ However, recovered historical C18 asks whether records can be linked into a **co
 This correction is made because the temporal-ordering element in C18 was not expressly established in the examined BAES text, not to strengthen or weaken any framework's comparative position.
 
 **Next:** subject the revised T-levels and rationales to an independent second coder. Until then, they remain investigator-side exploratory judgments.
+
+
+## Current Consolidated Status — 2026-11-25
+
+This section records the current investigator-side position and supersedes earlier status summaries in this document where they conflict. Earlier dated entries are retained as historical records.
+
+### Phase 1 investigator-side record
+
+The investigator-side documentary reconstruction for S01-A and S01-B against the recovered historical C1–C20 set is recorded. Axis A (framework text coverage), Axis B (event-evidence sufficiency), and Axis C (residual ambiguity) remain analytically separate. No composite score or overall framework ranking is justified.
+
+The current framework positions are:
+
+- **BAES:** C3, C4, and C11 remain T3; C18 is T2. These are judgments about the examined public BAES text only, not implementation or compliance findings.
+- **NIST AI RMF 1.0 Core:** C7 is T1. C3 and C4 remain T2 pending the follow-up challenge question in document 26. A possible T1 interpretation is a hypothesis to test, not an adopted correction.
+- **ISO/IEC 42001:2023:** clause-level mapping remains UL (unreviewed/access-limited).
+
+The recovered historical criteria's original date/version has not been independently established. The separate Proposed C1–C20 v0.1 set must not be merged with the recovered historical set.
+
+### S01 evidence and interpretation
+
+S01 is a synthetic C99 case, not a real production event or demonstrated AI-generated change. The packet-level assessment does not establish AI provenance, AI reasoning, or AI execution. S01-A contains an explicit disclosure/decision/amendment chain in the constructed evidence. For S01-B, the reviewed packet does not establish informed authorization of the semantic deviation; this is not proof that authorization did not occur outside the packet.
+
+Local reproduction is documented at investigator level. It is not independent reproduction. No independent second coder has completed verification.
+
+### Human review and confirmatory limits
+
+No human reviewer has completed an assessment and no reviewer-performance data exist. The prospective S01 exploratory protocol remains a draft and requires consent, packet/version checks, approved AI-service and data-boundary decisions, and agreement on retention and publication before use. Because S01 and its boundary-test outcome are public, any S01 human exercise is exploratory only and cannot be represented as blinded confirmatory evaluation.
+
+### Confidentiality boundary
+
+The public repository review has been targeted rather than exhaustive. This section does not claim that every repository path has been cleared. No private BAES material or HDA-01 scenario detail is disclosed here. The public research remains independent of BAES normative repositories.
+
+### Remaining validation gates
+
+Independent second-coder verification, a complete repository-wide confidentiality review, any independent technical reproduction, and any formal human evaluation remain pending or deferred. A held-out scenario is required before confirmatory evaluation.
