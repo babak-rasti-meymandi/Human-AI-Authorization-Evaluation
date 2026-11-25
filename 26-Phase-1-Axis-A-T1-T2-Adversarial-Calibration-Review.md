@@ -98,3 +98,32 @@ Independent second-coder review remains the next gate for the recovered criteria
 The BAES T1/T2 judgments survived this investigator-side challenge review with their stated limits. One NIST overstatement was identified: C7 should be T1, not T0, because MAP 2.2 provides indirect but relevant coverage of AI output use, human oversight, decisions, and subsequent actions. The Core still does not expressly establish the proposed-versus-executed distinction.
 
 This review changes one Axis A rating only: NIST C7 T0 to T1. No BAES rating, Axis B R-level, Axis C ambiguity status, or criterion wording is changed. Independent verification remains pending.
+
+
+## 8. Follow-up calibration question — NIST C3 and C4
+
+**Status:** Open challenge question; current ratings are retained pending further examination. This section does not authorize a rating change.
+
+### C3 — Delegated Authority
+
+**Current rating: T2.** The current rationale relies on GOVERN 2.1 (roles and responsibilities) and GOVERN 3.2 (human–AI roles and oversight). The unresolved question is whether these provisions expressly address delegation of authority to an AI agent for a defined action, or whether they establish organizational role allocation and oversight more generally.
+
+A T1 alternative may be considered only if a further examination shows that the cited Core text provides general or indirect coverage but does not establish the criterion's specific delegated-authority concept. The alternative is not adopted at this stage.
+
+### C4 — Authority Scope
+
+**Current rating: T2.** The current rationale includes MAP 3.3 (AI system application scope), alongside governance role/oversight provisions. The unresolved question is whether application scope establishes the scope of authority delegated to an agent for a particular action, or instead describes the intended/system-level application boundary.
+
+A T1 alternative may be considered only if the cited text does not establish action-specific delegated-authority scope. The alternative is not adopted at this stage.
+
+### Decision rule
+
+Before changing either rating:
+
+1. Re-read the exact recovered historical criterion wording and the relevant official NIST AI RMF 1.0 Core text.
+2. Distinguish organizational responsibility, human oversight, system/application scope, and action-specific delegated authority.
+3. Record the strongest evidence for both the current T2 interpretation and the competing T1 interpretation.
+4. Change a rating only if the scale definitions and source text support the change; record the rationale and update every affected consolidated table consistently.
+5. Preserve the current investigator-side rating until that review is completed. Independent second-coder verification remains a separate validation gate.
+
+C19 remains T2. Organizational accountability and role assignment do not by themselves establish event-level attribution of each decision or action to a specific actor.
