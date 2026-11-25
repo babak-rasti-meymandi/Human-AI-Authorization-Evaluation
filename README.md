@@ -100,7 +100,7 @@ This project does not initially aim to:
 - [Phase 1 Interim Comparative Synthesis](24-Phase-1-Interim-Comparative-Synthesis.md)
 - [Phase 1 Comparative Scope and Criterion-Dependence Review](25-Phase-1-Comparative-Scope-and-Criterion-Dependence-Review.md)
 - [Phase 1 Axis A T1/T2 Adversarial Calibration Review](26-Phase-1-Axis-A-T1-T2-Adversarial-Calibration-Review.md)
-- [Phase 1 Historical C1–C20 Axis A/B/C Consolidated Matrix](27-Phase-1-Historical-C1-C20-Axis-A-B-C-Consolidated-Matrix.md)
+- [Phase 1 Audit Supplement — Axis A T1/T2 Calibration](27-Phase-1-Audit-Supplement-Axis-A-T1-T2-Calibration.md)
 
 - [Research protocol](01-Research-Protocol.md)
 - [Baseline and comparison method](02-Baseline-and-Comparison.md)
