@@ -182,13 +182,13 @@ No independent second coder has completed verification. No human reviewer has co
 
 ### Confidentiality and external validity
 
-The confidentiality review to date has been targeted, not a complete audit of every repository path. No claim of exhaustive repository-wide clearance is made. No private BAES material or HDA-01 scenario detail is included in this status statement. The public project remains independent of BAES normative repositories and does not establish BAES validity, effectiveness, or superiority.
+The confidentiality review to date has been targeted, not a complete audit of every repository path. No claim of exhaustive repository-wide clearance is made. No restricted BAES material or non-public scenario details are included in this status statement. The public project remains independent of BAES normative repositories and does not establish BAES validity, effectiveness, or superiority.
 
 ### Next gates
 
 1. Obtain independent second-coder verification if an appropriate reviewer becomes available.
 2. If the prospective S01 exploratory review is pursued, obtain informed consent and agree on AI-service use, data retention, attribution, quotation, and publication boundaries before sharing materials.
 3. Design and protect a genuinely held-out scenario before any confirmatory human evaluation.
-4. Review the private HDA-01 material separately, under its own access and confidentiality boundary; do not assume it is suitable as a replacement for S01 without a separate design assessment.
+4. Any future held-out scenario must be reviewed separately under its own access and confidentiality boundary before it is considered for a study.
 
 **Overall status:** investigator-side Phase 1 documentary work is recorded; independent verification and human review remain outstanding; confirmatory Phase 2 remains deferred.
