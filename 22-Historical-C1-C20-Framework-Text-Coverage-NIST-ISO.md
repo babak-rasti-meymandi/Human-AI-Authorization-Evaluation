@@ -77,7 +77,7 @@ A T rating describes text coverage only. It is not a quality score, implementati
 
 ## 4. Initial BAES public-text mapping
 
-**Public source boundary:** This mapping uses only the public BAES repository. It does not inspect or expose BAES-SECRET, private research material, or internal Foundation records.
+**Public source boundary:** This mapping uses only the public BAES repository. It does not inspect or expose confidential BAES material, private research records, or internal Foundation records.
 
 ### BAES sources examined
 
