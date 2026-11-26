@@ -35,7 +35,7 @@ The public S01 C99 example remains a synthetic demonstration. It is not eligible
 
 Any future Phase 2 study would require a separately designed synthetic held-out scenario. This public protocol intentionally does not identify, describe, or claim readiness of any non-public scenario. A separate access-control review and explicit study authorization would be prerequisites before recruitment.
 
-**HDA-01 scope boundary:** The study examines whether the supplied evidence supports a finding of informed authorization by a human with relevant decision authority. The scenario is described as AI-assisted, but that label is scenario framing only. The study does not evaluate actual AI or agent behavior, reasoning, capability, reliability, provenance, or causal contribution. No artifact establishing actual AI participation is being added. No such inference may be drawn from the scenario label.
+**Future human-review scope boundary:** A human-review study may examine whether supplied evidence supports a finding of informed authorization by a human with relevant decision authority. Scenario framing alone does not establish actual AI or agent behavior, reasoning, capability, reliability, provenance, or causal contribution. Such claims require separate attributable evidence.
 
 ## 4. Assessment dimensions
 
