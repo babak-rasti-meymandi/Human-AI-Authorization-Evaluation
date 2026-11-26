@@ -20,7 +20,7 @@ These axes are not combined. No composite score, weighted total, or overall fram
 
 ### BAES
 
-The BAES mapping uses only the public repository `babak-rasti-meymandi/BAES-Public`, primarily `01_BAES_Introduction.md`, with public academic, technology, and enterprise context pages as supporting material. No BAES-SECRET or private research content was accessed or reproduced.
+The BAES mapping uses only the public repository `babak-rasti-meymandi/BAES-Public`, primarily `01_BAES_Introduction.md`, with public academic, technology, and enterprise context pages as supporting material. No confidential BAES material or private research content was accessed or reproduced.
 
 The public BAES record examined for this synthesis described the standard as under development. Its proposed evaluation dimensions were explicitly unvalidated.
 
