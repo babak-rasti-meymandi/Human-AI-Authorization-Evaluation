@@ -83,7 +83,7 @@ All other BAES and NIST T1/T2 ratings are retained. The current NIST Core mappin
 3. T2 does not mean the exact event-level requirement is established.
 4. T3 requires the criterion's specific mechanism or requirement to be expressly established.
 5. NIST ratings are limited to AI RMF 1.0 Core; Playbook, profiles, and other NIST publications are not silently imported.
-6. BAES ratings use public BAES text only; private material and BAES-SECRET were not examined.
+6. BAES ratings use public BAES text only; confidential and private BAES material was not examined.
 7. ISO/IEC 42001:2023 remains UL for C1–C20.
 8. Historical C1–C20 provenance remains unresolved; the criteria are not normative framework requirements.
 9. No Axis B R-level, Axis C ambiguity rating, or criterion wording is changed.
