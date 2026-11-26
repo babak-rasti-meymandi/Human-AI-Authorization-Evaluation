@@ -46,7 +46,7 @@ This is a blinded-to-investigator-ratings procedure, not a claim of double-blind
 6. Do not infer AI authorship, AI reasoning, AI execution, human review content, authorization, merge, deployment, or runtime execution unless the supplied source directly supports the specific claim.
 7. Do not treat PR approval as automatic evidence of informed acceptance of a semantic deviation.
 8. Do not treat authorization as evidence of implementation or execution.
-9. Do not use private BAES material, BAES-SECRET, private repository content, or unpublished research notes.
+9. Do not use confidential BAES material, private repository content, or unpublished research notes.
 10. Do not reproduce licensed ISO text or obtain it through unauthorized sources.
 
 ## 4. Materials to examine
