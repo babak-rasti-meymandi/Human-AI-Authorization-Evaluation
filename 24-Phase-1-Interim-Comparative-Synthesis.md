@@ -24,7 +24,7 @@ The BAES mapping uses only the public repository `babak-rasti-meymandi/BAES-Publ
 
 The public BAES record examined for this synthesis described the standard as under development. Its proposed evaluation dimensions were explicitly unvalidated.
 
-**Historical source-status note (added 2026-11-26):** This statement reflects the BAES public source set examined for this interim synthesis on 2026-11-02. BAES-Public was subsequently updated on 2026-11-26 with a Foundation Status & Maturity Statement describing an established Foundation; higher-layer development and independent validation continue. The later maturity statement does not retroactively change the historical text-coverage assessment in this document. The mapping therefore records public conceptual text coverage only.
+**Historical source-status note (added 2026-11-26):** This statement reflects the BAES public source set examined for this interim synthesis on 2026-11-02. BAES-Public was subsequently updated on 2026-11-26 with [a Foundation Status & Maturity Statement](https://github.com/babak-rasti-meymandi/BAES-Public/blob/main/06_BAES_Foundation_Status_and_Maturity.md) describing an established Foundation; higher-layer development and independent validation continue. The later maturity statement does not retroactively change the historical text-coverage assessment in this document. The mapping therefore records public conceptual text coverage only.
 
 ### NIST
 
