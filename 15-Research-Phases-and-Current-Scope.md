@@ -61,7 +61,7 @@ Examine how human reviewers, using only assigned evidence packets, distinguish:
 
 A further exploratory question may compare conventional review with a structured review-prompt and recording scaffold, provided the protocol and treatment difference are finalized in advance. This is an intervention in review prompts and attention, not merely a formatting comparison.
 
-HDA-01 is the designated held-out scenario for a possible exploratory human-review pilot only. Its AI-assisted label is scenario framing; the study assesses evidence of informed human authorization and does not evaluate actual AI or agent behavior, provenance, reasoning, capability, reliability, or causal contribution. No AI-provenance artifact will be added. HDA-01 is not a confirmatory study.
+Any future held-out scenario would require a separate design, access-control review, and explicit study authorization. The public record does not identify or describe non-public scenario materials. A human-review study must state its actual scope and limitations; no claim about AI or agent behavior, provenance, reasoning, capability, reliability, or causal contribution is supported unless separately evidenced.
 
 ### Entry conditions
 
@@ -73,7 +73,7 @@ Phase 2 may begin only when:
 - reviewer instructions, coding rules, assignment, exposure handling, consent/privacy arrangements, and data retention are defined;
 - the protocol and materials are explicitly versioned and frozen before recruitment.
 
-The existing public S01 scenario is not eligible for blinded confirmatory testing because its substantive behavior and boundary-test result are public. It may be used only for clearly labelled exploratory usability work. HDA-01 may support only an exploratory human-review pilot after freeze and access checks. Any later confirmatory human study would require a separately designed and frozen study, with its own justification and held-out materials.
+The existing public S01 scenario is not eligible for blinded confirmatory testing because its substantive behavior and boundary-test result are public. It may be used only for clearly labelled exploratory usability work. Any separately prepared held-out scenario may be used only after its protocol, materials, and access controls have been checked and frozen; this document does not authorize such a study. Any later confirmatory human study would require a separately designed and frozen study, with its own justification and held-out materials.
 
 ## 4. Relationship between the phases
 
@@ -96,7 +96,7 @@ The existing public S01 scenario is not eligible for blinded confirmatory testin
 - Keep framework text coverage, event evidence sufficiency, and residual ambiguity separate.
 - Do not create a composite score without a justified, pre-specified method.
 - Do not publish private BAES material or internal derivations.
-- No human-review result or comparative-performance claim may be reported before the relevant Phase 2 work is actually completed. HDA-01 results, if collected, must be reported as exploratory and bounded by the small sample and design.
+- No human-review result or comparative-performance claim may be reported before the relevant Phase 2 work is actually completed. Any exploratory results, if collected, must be reported within the actual sample and design limitations.
 
 ## 6. Current decision
 
