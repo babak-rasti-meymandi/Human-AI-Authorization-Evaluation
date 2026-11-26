@@ -46,7 +46,7 @@ Hello [Name]. I am seeking an independent second coder for a bounded research re
 - Personalize the first sentence to the recipient's actual research area.
 - Prefer researchers with demonstrable methods experience over seniority or title alone.
 - Do not attach the investigator's current coding, calibration review, audit, or synthesis.
-- Do not send BAES-SECRET or private repository links.
+- Do not send confidential BAES material or private repository links.
 - Do not imply that the recipient is being asked to validate or endorse BAES.
 - Agree scope, schedule, confidentiality, attribution, and any fee/terms before asking the person to begin.
 - Send individually; do not expose recipients in a group email.
