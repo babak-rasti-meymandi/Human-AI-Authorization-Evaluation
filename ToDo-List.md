@@ -18,7 +18,7 @@ A completed investigator-side task is not equivalent to independent verification
 
 - [x] Separate the active evidence-record reconstruction phase from the deferred human-review phase.
 - [x] Complete the investigator-side Phase 1 documentary reconstruction audit; independent second-coder verification remains pending.
-- [ ] Keep the HDA-01 human-review plan deferred until appropriate human participation and integrity controls are available.
+- [ ] Keep any non-public held-out human-review scenario and associated plan outside the public repository until readiness, access, and publication checks are complete.
 
 - [x] Draft the research protocol.
 - [x] Define the separation between technical correctness, intent alignment, authorization evidence, and evidence sufficiency.
