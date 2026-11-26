@@ -118,7 +118,7 @@ The introduction is the primary basis for the table. Audience-specific pages are
 - C18 is T2: the public text defines traceability and record linkage, but does not expressly require the coherent time-ordered chain asked by the historical criterion.
 - Most other rows are T2 because BAES explicitly distinguishes the related concepts but does not prescribe the event-level evidence artifact, schema, or procedure asked by the criterion.
 - C10 is T1 because reviewability is a proposed evaluation dimension and review is discussed, but no specific human-review record requirements are defined.
-- The public BAES text expressly describes its proposed evaluation dimensions as unvalidated and the standard as under development. This status must be carried into every comparison; conceptual coverage is not validation.
+- In the source snapshot examined on 2026-11-02, the public BAES text described the standard as under development and its proposed evaluation dimensions as unvalidated. This is a historical source-status observation, not the current BAES maturity statement. On 2026-11-26, BAES-Public published a separate Foundation Status & Maturity Statement describing an established Foundation, with higher-layer development and independent validation continuing. The later maturity statement does not retroactively alter this historical text-coverage coding; future mappings must identify the exact BAES source version examined. Conceptual coverage is not validation.
 
 ## 5. ISO/IEC 42001:2023 status — public-source boundary
 
