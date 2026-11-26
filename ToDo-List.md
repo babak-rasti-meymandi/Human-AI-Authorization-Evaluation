@@ -10,7 +10,10 @@ A completed investigator-side task is not equivalent to independent verification
 - [x] State the project's independence from BAES normative repositories.
 - [x] Define an initial research question and a bounded scenario.
 - [x] Add a public confidentiality and publication-boundary rule.
-- [~] Conduct a targeted confidentiality review of selected public files; a complete file-by-file review of the repository has not been established.
+- [x] Conduct a targeted confidentiality review of high-risk public files; a complete file-by-file review of every repository path has not been established.
+- [x] Remove non-public study identifiers and prospective reviewer-allocation details from the reviewed current public documents.
+- [ ] Decide whether historical Git commits containing earlier public references require history rewriting; account for forks, caches, and external copies.
+- [ ] Confirm explicit publication clearance for the recovered historical C1–C20 source text and all derivative public mappings before declaring the research record confidentiality-cleared.
 - [x] Add a dated research log for the synthetic-case decision and initial test run.
 - [x] Add draft reviewer packets and investigator-only mapping; keep the investigator key out of reviewer-facing materials.
 
