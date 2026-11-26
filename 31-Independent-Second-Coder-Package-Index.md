@@ -47,4 +47,4 @@ Do not provide the reviewer with investigator-side coding, adversarial calibrati
 4. Obtain a dated independent worksheet and preserve it unchanged.
 5. Only then compare it with investigator coding and create a separate disagreement/adjudication record.
 
-**Repository boundary:** This package is contained in the independent evaluation repository. It does not modify BAES-Public or BAES-SECRET.
+**Repository boundary:** This package is contained in the independent evaluation repository. It does not modify BAES-Public or any confidential BAES repository.
