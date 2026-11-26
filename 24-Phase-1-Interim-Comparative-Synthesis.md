@@ -22,7 +22,9 @@ These axes are not combined. No composite score, weighted total, or overall fram
 
 The BAES mapping uses only the public repository `babak-rasti-meymandi/BAES-Public`, primarily `01_BAES_Introduction.md`, with public academic, technology, and enterprise context pages as supporting material. No BAES-SECRET or private research content was accessed or reproduced.
 
-The public BAES record describes the standard as under development. Its proposed evaluation dimensions are explicitly unvalidated. The mapping therefore records public conceptual text coverage only.
+The public BAES record examined for this synthesis described the standard as under development. Its proposed evaluation dimensions were explicitly unvalidated.
+
+**Historical source-status note (added 2026-11-26):** This statement reflects the BAES public source set examined for this interim synthesis on 2026-11-02. BAES-Public was subsequently updated on 2026-11-26 with a Foundation Status & Maturity Statement describing an established Foundation; higher-layer development and independent validation continue. The later maturity statement does not retroactively change the historical text-coverage assessment in this document. The mapping therefore records public conceptual text coverage only.
 
 ### NIST
 
