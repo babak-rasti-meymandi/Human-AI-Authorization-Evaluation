@@ -10,7 +10,7 @@
 
 Protect the interpretability of reviewer responses when scenario artifacts, test outcomes, investigator notes, or expected distinctions may be discoverable in the public repository or its history, forks, caches, and external references.
 
-This plan addresses study integrity. It does not require changing BAES-Public or BAES-SECRET and does not authorize disclosure of private BAES material.
+This plan addresses study integrity. It does not require changing BAES-Public or any confidential BAES repository and does not authorize disclosure of private BAES material.
 
 ## 2. The essential distinction: transparent criteria, withheld answer key
 
